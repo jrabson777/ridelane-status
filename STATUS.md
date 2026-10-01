@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-01 11:15:57 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-01 12:38:55 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
+- probe heartbeat: 4s ago
 - last pass: 2026-10-01 09:22:42 PASS cause=state-change prev=bf4da700 now=a9deafbd
-- notifier last ran: 48m ago
+- notifier last ran: 6m ago
 
 ## Phase board
 
@@ -47,34 +47,34 @@ FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 co
 PASS   SO-3  no build links on the page
 FAIL   SO-4   CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 3454m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 3537m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 2174m ago
+PASS   SO-10 STANDING-ORDERS.md updated 2257m ago
 FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
 FAIL   SO-12 approved and dirty, refresh this pass: ?
 FAIL   SO-13  pushed after APPROVE: 
 FAIL   SO-14  native PR(s) with no [native] in the title: 
-PASS   SO-15 reviewer session active 1m ago (8687 lines)
+PASS   SO-15 reviewer session active 0m ago (8747 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 PASS   SO-21 no undeclared holds; no PR held without a money citation; his page uses no PR-held language
-PASS   SO-22 advisor live: ADV ran 1m ago, 106 ruling(s), file 705m old
+PASS   SO-22 advisor live: ADV ran 4m ago, 106 ruling(s), file 788m old
 PASS   SO-23 every merged app PR has an OTA published after it
 FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-NIGHTLY-20261001(PAX)
-PASS   SO-24 heartbeat 21s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1114.md(1p/0t) out-REV-1027.md(0p/0t) out-REV-1010.md(0p/0t)
+PASS   SO-24 heartbeat 9s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1228.md(1p/0t) out-DRV-0905.md(36p/0t)
 FAIL   SO-26 queue item(s) with no FD or phase-board id: REVIEWER
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
 FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
-FAIL   SO-33 notifier last ran 48m ago, over the 10m line -- the channel to the founder is going quiet
-FAIL   SO-34 mirror 47m stale, over the 5m line -- the advisor is reading a dead page
+PASS   SO-33 notifier ran 6m ago; 7 event(s) delivered to date
+FAIL   SO-34 mirror 14m stale, over the 5m line -- the advisor is reading a dead page
 ---
-FAILS: 20   (UNPROV is not a pass and not counted as a fail)
+FAILS: 19   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
