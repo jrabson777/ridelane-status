@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-09-30 21:02:37 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-09-30 21:04:24 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 48s ago
+- probe heartbeat: 39s ago
 - last pass: 2026-09-30 20:49:32 PASS cause=state-change prev=f4eac87e now=214477de
 - notifier last ran: 0m ago
 
@@ -30,7 +30,7 @@ _Generated 2026-09-30 21:02:37 EDT by the probe. Public mirror; no tokens, keys,
 |  **FD-7**  |  "the app does not tell him which build/update he is running"  |  **IN-PR**  |
 |  **FD-8**  |  runtime-version audit  |  **IN-PR — blocks the next OTA. Build 2 and build 8 are ORPHANED BY DESIGN: nothing publishes to runtime `0.2.0` again.**  |
 |  **FD-9**  |  "after installing passenger build 10, it still shows **Tampa Bay** as an area — no areas, cities, neighborhoods or zones; a result must have a **physical address**"  |  **MERGED `#536` 15:12 Mon AND LIVE** — running api is 19 commits past the merge  |
-|  **FD-10**  |  "I CAN'T CHANGE TIME !!! STILL STATIC" — the schedule sheet's `6 40 AM` time wheel does not move **+ 15-min increments only (founder, 28 Sep): the minute column offers :00 :15 :30 :45 and nothing else, matching the website**  |  **MERGED `#79` (wheel, 01:03 Mon) + `#82` (quarter-hour slots, 17:25 Mon
+|  **FD-10**  |  "I CAN'T CHANGE TIME !!! STILL STATIC" — the schedule sheet's `6 40 AM` time wheel does not move **+ 15-min increments only (founder, 28 Sep): the minute column offers :00 :15 :30 :45 and nothing else, matching the website**  |  **MERGED `#79` (wheel, 01:03 Mon) + `#82` (quarter-hour slots, 17:25 Mon) — ON NO PHONE UNTIL BUILD 11** (`3a6f03a1`, CFBundleVersion 11, cut 00:35 Tue)  |
 |  **FD-11**  |  **Every customer booking email carries a FAKE phone number.** `[REDACTED-PHONE]` is hardcoded in the live v3 templates  |  **MERGED `#537` 17:03 Mon** — verify the footer prints no New York address  |
 |  **FD-13**  |  **REGRESSION on build 11: "Tap to pay" says payment is not available and the booking cannot complete.** Build 10 booked; build 11 does not  |  **ORDER 0 — DISPATCHED**  |
 |  **FD-4**  |  Theme does not change on build 11  |  **OPEN (tokens merged, nothing visible)**  |
@@ -39,11 +39,11 @@ _Generated 2026-09-30 21:02:37 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #548 | `654160c4fc62` | 5 total, 0 failed | **none** | 36 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 9970 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 10392 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 21273 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 4208 |
+| ridelane-api | #548 | `654160c4fc62` | 5 total, 0 failed | **none** | 37 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 9972 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 10394 |
+| ridelane-api | #459 | `648529c233` | 3 total, 0 failed | YES | 21275 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 4210 |
 
 ## Last standing-orders run
 
@@ -53,31 +53,31 @@ PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 6 build link(s) named by content
 FAIL   SO-4  7 CLAIMS row(s) without an id
 PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 2601m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 2603m
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 1321m ago
+PASS   SO-10 STANDING-ORDERS.md updated 1323m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 15m ago (8343 lines)
+PASS   SO-15 reviewer session active 17m ago (8343 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 785m stale -- it is an hourly board
+FAIL   SO-18 board 787m stale -- it is an hourly board
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
-PASS   SO-22 advisor live: ADV ran 15m ago, 104 ruling(s), file 16m old
+PASS   SO-22 advisor live: ADV ran 17m ago, 104 ruling(s), file 17m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:18 (#253,#252,#251,...)  pax:19 (#92,#91,#90,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 103s old
+PASS   SO-24 heartbeat 94s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-2046.md(5p/0t) out-DRV-1951.md(50p/0t)
 FAIL   SO-26 queue item(s) with no FD or phase-board id: REVIEWER
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 785m old)
+PASS   SO-28 nightly section present on the page (page 787m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 7 event(s) delivered to date
+PASS   SO-33 notifier ran 1m ago; 7 event(s) delivered to date
 ---
 FAILS: 7   (UNPROV is not a pass and not counted as a fail)
 ```
