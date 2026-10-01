@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-09-30 21:45:23 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-09-30 21:48:03 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
 - probe heartbeat: 1s ago
-- last pass: 2026-09-30 21:16:31 PASS cause=state-change prev=9a69dec2 now=f11c69ec
-- notifier last ran: 1m ago
+- last pass: 2026-09-30 21:47:02 PASS cause=state-change prev=11a4cfd7 now=232a7570
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -39,11 +39,11 @@ _Generated 2026-09-30 21:45:23 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 10013 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 10435 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 21316 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 4251 |
-| jrax-driver-app | #257 | `4bf8e2a15be7` | 8 total, 0 failed | YES | 15 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 10015 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 10437 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 21319 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 4253 |
+| jrax-driver-app | #257 | `4bf8e2a15be7` | 8 total, 0 failed | YES | 17 |
 
 ## Last standing-orders run
 
@@ -53,31 +53,31 @@ PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  no build links on the page
 FAIL   SO-4   CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 2644m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 2647m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 1364m ago
+PASS   SO-10 STANDING-ORDERS.md updated 1367m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 FAIL   SO-13  pushed after APPROVE: 
 FAIL   SO-14  native PR(s) with no [native] in the title: 
-PASS   SO-15 reviewer session active 1m ago (8432 lines)
+PASS   SO-15 reviewer session active 3m ago (8432 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 PASS   SO-21 no undeclared holds; no PR held without a money citation; his page uses no PR-held language
-PASS   SO-22 advisor live: ADV ran 3m ago, 105 ruling(s), file 30m old
+PASS   SO-22 advisor live: ADV ran 6m ago, 105 ruling(s), file 33m old
 PASS   SO-23 every merged app PR has an OTA published after it
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 48s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-2142.md(6p/0t) out-REV-2115.md(6p/0t)
+PASS   SO-24 heartbeat 47s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-DRV-2114.md(41p/8t) out-REV-2142.md(6p/0t)
 FAIL   SO-26 queue item(s) with no FD or phase-board id: REVIEWER
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
 FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
-PASS   SO-33 notifier ran 1m ago; 7 event(s) delivered to date
+PASS   SO-33 notifier ran 0m ago; 7 event(s) delivered to date
 PASS   SO-34 public mirror pushed 2m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 ---
 FAILS: 13   (UNPROV is not a pass and not counted as a fail)
