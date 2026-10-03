@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-03 19:21:05 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-03 19:22:17 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 1s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-03 19:04:07 PASS cause=state-change prev=2ac9365c now=1d58699a
 - notifier last ran: 1m ago
 
@@ -47,11 +47,11 @@ FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 co
 PASS   SO-3  no build links on the page
 FAIL   SO-4   CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 6819m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 6820m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 5539m ago
+PASS   SO-10 STANDING-ORDERS.md updated 5540m ago
 FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
 FAIL   SO-12 approved and dirty, refresh this pass: ?
 FAIL   SO-13  pushed after APPROVE: 
