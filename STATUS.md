@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-03 19:00:32 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-03 19:02:30 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 18s ago
+- probe heartbeat: 6s ago
 - last pass: 2026-10-03 18:59:14 PASS cause=state-change prev=ca8a4ce6 now=6d26a434
-- notifier last ran: 2m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -47,34 +47,34 @@ FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 co
 PASS   SO-3  no build links on the page
 FAIL   SO-4   CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 6799m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 6801m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 5519m ago
+PASS   SO-10 STANDING-ORDERS.md updated 5520m ago
 FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
 FAIL   SO-12 approved and dirty, refresh this pass: ?
 FAIL   SO-13  pushed after APPROVE: 
 FAIL   SO-14  native PR(s) with no [native] in the title: 
-PASS   SO-15 reviewer session active 0m ago (9040 lines)
+PASS   SO-15 reviewer session active 0m ago (9064 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
-PASS   SO-19 every queue file is read by a session
+FAIL   SO-19 orphan queue file(s), written but never read: QUEUED-FOR-API.md QUEUED-FOR-DRIVER.md QUEUED-FOR-PAX.md QUEUED-FOR-REVIEWER.md
 PASS   SO-21 no undeclared holds; no PR held without a money citation; his page uses no PR-held language
-FAIL   SO-22 ADV idle 2663m, over the 30m line -- the loop cannot see its advisor
+FAIL   SO-22 THE LOOP HAS NO ADVISOR -- no ADV row in lib.sh
 PASS   SO-23 every merged app PR has an OTA published after it
-PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 45s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-2237.md(0p/0t) out-REV-2010.md(6p/0t)
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-A7-INVENTORY-0929(API)
+PASS   SO-24 heartbeat 13s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1901.md(0p/0t) out-REV-2237.md(0p/0t) out-REV-2010.md(6p/0t)
 FAIL   SO-26 queue item(s) with no FD or phase-board id: REVIEWER
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
 FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
-PASS   SO-33 notifier ran 2m ago; 8 event(s) delivered to date
-FAIL   SO-34 mirror 2647m stale, over the 5m line -- the advisor is reading a dead page
+PASS   SO-33 notifier ran 0m ago; 8 event(s) delivered to date
+PASS   SO-34 public mirror pushed 1m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 ---
-FAILS: 19   (UNPROV is not a pass and not counted as a fail)
+FAILS: 20   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
