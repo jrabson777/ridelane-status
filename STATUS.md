@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-03 19:07:41 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-03 19:08:59 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 8s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-03 19:04:07 PASS cause=state-change prev=2ac9365c now=1d58699a
 - notifier last ran: 1m ago
 
@@ -47,11 +47,11 @@ FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 co
 PASS   SO-3  no build links on the page
 FAIL   SO-4   CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 6806m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 6807m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 5526m ago
+PASS   SO-10 STANDING-ORDERS.md updated 5527m ago
 FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
 FAIL   SO-12 approved and dirty, refresh this pass: ?
 FAIL   SO-13  pushed after APPROVE: 
@@ -65,7 +65,7 @@ PASS   SO-21 no undeclared holds; no PR held without a money citation; his page 
 FAIL   SO-22 THE LOOP HAS NO ADVISOR -- no ADV row in lib.sh
 PASS   SO-23 every merged app PR has an OTA published after it
 FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-A7-INVENTORY-0929(API)
-PASS   SO-24 heartbeat 11s old
+PASS   SO-24 heartbeat 7s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1901.md(0p/0t) out-REV-2237.md(0p/0t)
 FAIL   SO-26 queue item(s) with no FD or phase-board id: REVIEWER
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
