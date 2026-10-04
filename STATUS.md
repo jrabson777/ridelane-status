@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-04 08:44:18 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-04 08:48:28 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
+- probe heartbeat: 4s ago
 - last pass: 2026-10-04 08:21:37 PASS cause=state-change prev=c85a73a7 now=9e364566
-- notifier last ran: 5m ago
+- notifier last ran: 4m ago
 
 ## Phase board
 
@@ -41,14 +41,14 @@ _Generated 2026-10-04 08:44:18 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #552 | `8eec76465ef4` | 5 total, 0 failed | **none** | 373 |
-| ridelane-api | #551 | `33254f1b34c3` | 5 total, 0 failed | **none** | 374 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14991 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15414 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 26295 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 9229 |
-| jrax-driver-app | #261 | `8b83110103f9` | 3 total, 0 failed | **none** | 4 |
-| jrax-driver-app | #260 | `f6e5908d1419` | 2 total, 0 failed | YES | 394 |
+| ridelane-api | #552 | `8eec76465ef4` | 5 total, 0 failed | **none** | 378 |
+| ridelane-api | #551 | `33254f1b34c3` | 5 total, 0 failed | **none** | 378 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14996 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15418 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 26299 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 9234 |
+| jrax-driver-app | #261 | `8b83110103f9` | 3 total, 0 failed | **none** | 8 |
+| jrax-driver-app | #260 | `f6e5908d1419` | 2 total, 0 failed | YES | 398 |
 
 ## Last standing-orders run
 
@@ -58,26 +58,26 @@ FAIL   SO-2  2 open PRs >60m with no verdict at head: api#552, api#551
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 437m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 441m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 6343m ago
+PASS   SO-10 STANDING-ORDERS.md updated 6347m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 FAIL   SO-14 1 native PR(s) with no [native] in the title:  jrax-driver-app#261 touches app.config.js with no [native] in the title; 
-PASS   SO-15 reviewer session active 1m ago (9490 lines)
+PASS   SO-15 reviewer session active 5m ago (9490 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
-PASS   SO-22 advisor live: ADV ran 0m ago, 106 ruling(s), file 553m old
+PASS   SO-22 advisor live: ADV ran 4m ago, 106 ruling(s), file 558m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#259,#258,#257,...)  pax:19 (#92,#91,#90,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 85s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-ADV-0844.md(0p/0t) out-REV-0841.md(13p/0t) out-DRV-0839.md(47p/0t)
+PASS   SO-24 heartbeat 91s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-0847.md(1p/0t) out-ADV-0844.md(0p/0t) out-REV-0841.md(13p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
@@ -86,9 +86,9 @@ PASS   SO-33 notifier ran 1m ago; 10 event(s) delivered to date
 PASS   SO-34 public mirror pushed 4m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
-FAIL   SO-38 loop script(s) source lib.sh from the SCRATCHPAD: pass.sh -- it has vanished twice, and a script that dies on its source line exits 0 and logs nothing
+PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
 ---
-FAILS: 15   (UNPROV is not a pass and not counted as a fail)
+FAILS: 14   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
