@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-04 08:48:28 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-04 08:53:03 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 4s ago
+- probe heartbeat: 7s ago
 - last pass: 2026-10-04 08:21:37 PASS cause=state-change prev=c85a73a7 now=9e364566
 - notifier last ran: 4m ago
 
@@ -41,14 +41,18 @@ _Generated 2026-10-04 08:48:28 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #552 | `8eec76465ef4` | 5 total, 0 failed | **none** | 378 |
-| ridelane-api | #551 | `33254f1b34c3` | 5 total, 0 failed | **none** | 378 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14996 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15418 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 26299 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 9234 |
-| jrax-driver-app | #261 | `8b83110103f9` | 3 total, 0 failed | **none** | 8 |
-| jrax-driver-app | #260 | `f6e5908d1419` | 2 total, 0 failed | YES | 398 |
+| ridelane-api | #553 | `ac150795ec9d` | 5 total, 0 failed | **none** | 4 |
+| ridelane-api | #552 | `8eec76465ef4` | 5 total, 0 failed | **none** | 382 |
+| ridelane-api | #551 | `33254f1b34c3` | 5 total, 0 failed | **none** | 383 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 15000 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15422 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 26304 |
+| jrax-admin | #226 | `737e3006bb7c` | 3 total, 0 failed | **none** | 3 |
+| ridelane-passenger-app | #95 | `635f0d8a58c9` | 2 total, 1 failed | **none** | 4 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 9238 |
+| jrax-driver-app | #262 | `4a4bacef9c57` | 2 total, 0 failed | **none** | 4 |
+| jrax-driver-app | #261 | `8b83110103f9` | 3 total, 0 failed | **none** | 13 |
+| jrax-driver-app | #260 | `f6e5908d1419` | 2 total, 0 failed | YES | 403 |
 
 ## Last standing-orders run
 
@@ -58,25 +62,25 @@ FAIL   SO-2  2 open PRs >60m with no verdict at head: api#552, api#551
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 441m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 446m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 6347m ago
+PASS   SO-10 STANDING-ORDERS.md updated 6352m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 FAIL   SO-14 1 native PR(s) with no [native] in the title:  jrax-driver-app#261 touches app.config.js with no [native] in the title; 
-PASS   SO-15 reviewer session active 5m ago (9490 lines)
+PASS   SO-15 reviewer session active 10m ago (9490 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
-PASS   SO-22 advisor live: ADV ran 4m ago, 106 ruling(s), file 558m old
+PASS   SO-22 advisor live: ADV ran 9m ago, 106 ruling(s), file 563m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#259,#258,#257,...)  pax:19 (#92,#91,#90,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 91s old
+PASS   SO-24 heartbeat 115s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-0847.md(1p/0t) out-ADV-0844.md(0p/0t) out-REV-0841.md(13p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
