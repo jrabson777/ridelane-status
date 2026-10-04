@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-04 08:22:39 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-04 08:23:54 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -8,7 +8,7 @@ _Generated 2026-10-04 08:22:39 EDT by the probe. Public mirror; no tokens, keys,
 
 - probe heartbeat: 2s ago
 - last pass: 2026-10-04 08:21:37 PASS cause=state-change prev=c85a73a7 now=9e364566
-- notifier last ran: 1m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -49,22 +49,22 @@ FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 co
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 414m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 416m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 6321m ago
+PASS   SO-10 STANDING-ORDERS.md updated 6322m ago
 FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
 FAIL   SO-12 approved and dirty, refresh this pass: ?
 UNPROV SO-13 REFUSE
 UNPROV SO-14 REFUSE
-FAIL   SO-15 reviewer session idle 353m -- over the 60m line
+FAIL   SO-15 reviewer session idle 355m -- over the 60m line
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 UNPROV SO-21 GitHub call did not answer -- not reporting a clean board
-FAIL   SO-22 ADV idle 387m, over the 30m line -- the loop cannot see its advisor
+FAIL   SO-22 ADV idle 388m, over the 30m line -- the loop cannot see its advisor
 UNPROV SO-23 the delivery read returned nothing at all -- not reporting delivery as clean on an empty read
 PASS   SO-20 every dispatched id has been acknowledged in a handback
 PASS   SO-24 heartbeat 6s old
@@ -73,9 +73,9 @@ PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
 FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
-PASS   SO-33 notifier ran 1m ago; 10 event(s) delivered to date
+PASS   SO-33 notifier ran 0m ago; 10 event(s) delivered to date
 PASS   SO-34 public mirror pushed 1m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
-FAIL   SO-35 CONTROL PLANE BROKEN:PAX:silent-360m DRV:silent-353m REV:silent-353m ADV:silent-387m API:silent-351m CRM:silent-351m -- the loop can report green while this is true, which is how three days were lost
+FAIL   SO-35 CONTROL PLANE BROKEN:PAX:silent-362m DRV:silent-355m REV:silent-355m ADV:silent-388m API:silent-352m CRM:silent-353m -- the loop can report green while this is true, which is how three days were lost
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 ---
 FAILS: 17   (UNPROV is not a pass and not counted as a fail)
