@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-04 07:58:54 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-04 08:02:48 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -41,14 +41,14 @@ _Generated 2026-10-04 07:58:54 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #552 | `8eec76465ef4` | 5 total, 0 failed | **none** | 328 |
-| ridelane-api | #551 | `33254f1b34c3` | 5 total, 0 failed | **none** | 329 |
-| ridelane-api | #550 | `d0c17a400068` | 5 total, 0 failed | **none** | 347 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14946 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15368 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 26249 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 9184 |
-| jrax-driver-app | #260 | `f6e5908d1419` | 2 total, 0 failed | **none** | 349 |
+| ridelane-api | #552 | `8eec76465ef4` | 5 total, 0 failed | **none** | 332 |
+| ridelane-api | #551 | `33254f1b34c3` | 5 total, 0 failed | **none** | 333 |
+| ridelane-api | #550 | `d0c17a400068` | 5 total, 0 failed | **none** | 351 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14950 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15372 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 26253 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 9188 |
+| jrax-driver-app | #260 | `f6e5908d1419` | 2 total, 0 failed | **none** | 353 |
 
 ## Last standing-orders run
 
@@ -58,22 +58,22 @@ FAIL   SO-2  4 open PRs >60m with no verdict at head: api#552, api#551, api#550,
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 391m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 395m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 6298m ago
+PASS   SO-10 STANDING-ORDERS.md updated 6302m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-FAIL   SO-15 reviewer session idle 331m -- over the 60m line
+FAIL   SO-15 reviewer session idle 335m -- over the 60m line
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
-FAIL   SO-22 ADV idle 364m, over the 30m line -- the loop cannot see its advisor
+FAIL   SO-22 ADV idle 368m, over the 30m line -- the loop cannot see its advisor
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#259,#258,#257,...)  pax:19 (#92,#91,#90,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
 PASS   SO-24 heartbeat 76s old
@@ -82,9 +82,9 @@ PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
 FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
-PASS   SO-33 notifier ran 0m ago; 9 event(s) delivered to date
+PASS   SO-33 notifier ran 0m ago; 10 event(s) delivered to date
 PASS   SO-34 public mirror pushed 3m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
-FAIL   SO-35 CONTROL PLANE BROKEN:PAX:silent-337m DRV:silent-330m REV:silent-330m ADV:silent-363m API:silent-327m CRM:silent-328m -- the loop can report green while this is true, which is how three days were lost
+FAIL   SO-35 CONTROL PLANE BROKEN:PAX:silent-340m DRV:silent-333m REV:silent-333m ADV:silent-367m API:silent-331m CRM:silent-331m -- the loop can report green while this is true, which is how three days were lost
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 ---
 FAILS: 16   (UNPROV is not a pass and not counted as a fail)
