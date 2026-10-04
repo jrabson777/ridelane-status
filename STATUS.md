@@ -1,13 +1,13 @@
 # RideLane — loop status
 
-_Generated 2026-10-03 21:40:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-03 21:43:44 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
 - probe heartbeat: 4s ago
-- last pass: 2026-10-03 21:23:36 PASS cause=state-change prev=4aab15d9 now=5cbbc13a
+- last pass: 2026-10-03 21:42:40 PASS cause=state-change prev=bc9a02fc now=01b6c7a6
 - notifier last ran: 3m ago
 
 ## Phase board
@@ -39,10 +39,10 @@ _Generated 2026-10-03 21:40:33 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14328 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 14750 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 25631 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 8566 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14331 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 14753 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 25634 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 8569 |
 
 ## Last standing-orders run
 
@@ -52,25 +52,25 @@ PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 120m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 123m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 5679m ago
+PASS   SO-10 STANDING-ORDERS.md updated 5682m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-FAIL   SO-15 reviewer session idle 158m -- over the 60m line
+FAIL   SO-15 reviewer session idle 162m -- over the 60m line
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
-FAIL   SO-22 ADV idle 158m, over the 30m line -- the loop cannot see its advisor
+FAIL   SO-22 ADV idle 161m, over the 30m line -- the loop cannot see its advisor
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#259,#258,#257,...)  pax:19 (#92,#91,#90,...) -- a run that was created is not a publish (AR-7)
 FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-A7-INVENTORY-0929(API) QI-FD10-15MIN-0028(PAX) QI-FD13-0929(PAX) QI-FD13-0929-B(PAX) QI-NIGHTLY-20260929(PAX) QI-NIGHTLY-20261001(PAX) QI-NIGHTLY-20261003(PAX)
-PASS   SO-24 heartbeat 60s old
+PASS   SO-24 heartbeat 59s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1901.md(0p/0t) out-REV-2237.md(0p/0t)
 FAIL   SO-26 queue item(s) with no FD or phase-board id: REVIEWER
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
