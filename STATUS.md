@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-04 11:35:10 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-04 11:39:19 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -8,7 +8,7 @@ _Generated 2026-10-04 11:35:10 EDT by the probe. Public mirror; no tokens, keys,
 
 - probe heartbeat: 4s ago
 - last pass: 2026-10-04 11:34:05 PASS cause=state-change prev=ea6cdbc6 now=809c8cf5
-- notifier last ran: 0m ago
+- notifier last ran: 4m ago
 
 ## Phase board
 
@@ -41,14 +41,14 @@ _Generated 2026-10-04 11:35:10 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #554 | `8b7f0fd7e271` | 5 total, 0 failed | **none** | 98 |
-| ridelane-api | #553 | `3cbd4c26e4c8` | 6 total, 0 failed | YES | 166 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 15162 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15585 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 26466 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 9400 |
-| jrax-driver-app | #261 | `8b83110103f9` | 3 total, 0 failed | YES | 175 |
-| jrax-driver-app | #260 | `ec3c954b1e09` | 2 total, 0 failed | YES | 565 |
+| ridelane-api | #554 | `8b7f0fd7e271` | 5 total, 0 failed | **none** | 102 |
+| ridelane-api | #553 | `3cbd4c26e4c8` | 6 total, 0 failed | YES | 170 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 15166 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15589 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 26470 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 9404 |
+| jrax-driver-app | #261 | `8b83110103f9` | 3 total, 0 failed | YES | 179 |
+| jrax-driver-app | #260 | `ec3c954b1e09` | 2 total, 0 failed | YES | 569 |
 
 ## Last standing-orders run
 
@@ -58,25 +58,25 @@ FAIL   SO-2  1 open PRs >60m with no verdict at head: api#554
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 608m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 612m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 6514m ago
+PASS   SO-10 STANDING-ORDERS.md updated 6518m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 FAIL   SO-13 1 pushed after APPROVE:  jrax-driver-app#260 approved f6e5908d1419 but head is ec3c954b1e09; 
 FAIL   SO-14 2 native PR(s) with no [native] in the title:  jrax-driver-app#261 touches app.config.js with no [native] in the title;  jrax-driver-app#260 touches app.config.js with no [native] in the title; 
-FAIL   SO-15 reviewer session idle 155m -- over the 60m line
+FAIL   SO-15 reviewer session idle 159m -- over the 60m line
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
-FAIL   SO-22 ADV idle 117m, over the 30m line -- the loop cannot see its advisor
+FAIL   SO-22 ADV idle 121m, over the 30m line -- the loop cannot see its advisor
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#262,#259,#258,...)  pax:19 (#95,#92,#91,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 85s old
+PASS   SO-24 heartbeat 86s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-API-0957.md(31p/7t) out-CRM-0855.md(6p/12t) out-DRV-0903.md(40p/0t) out-REV-0900.md(0p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
