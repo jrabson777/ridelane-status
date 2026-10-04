@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-03 23:23:08 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-03 23:24:29 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 4s ago
 - last pass: 2026-10-03 23:10:11 PASS cause=state-change prev=84c2c936 now=429b94cf
 - notifier last ran: 1m ago
 
@@ -37,45 +37,50 @@ _Generated 2026-10-03 23:23:08 EDT by the probe. Public mirror; no tokens, keys,
 
 ## Open PRs, verdict at head
 
-REFUSED: the PR read did not answer. Not reporting an empty board.
+| repo | pr | head | checks | verdict at head | age (m) |
+|---|---|---|---|---|---|
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14432 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 14854 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 25735 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 8670 |
 
 ## Last standing-orders run
 
 ```
 FAIL   SO-1  no [HOURLY] on his page
-FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
+PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 222m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 224m
 FAIL   SO-7  CLAIMS table has no OTA updates row
-FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
+PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 5781m ago
-FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
-FAIL   SO-12 approved and dirty, refresh this pass: ?
-UNPROV SO-13 REFUSE
-UNPROV SO-14 REFUSE
-FAIL   SO-15 reviewer session idle 260m -- over the 60m line
+PASS   SO-10 STANDING-ORDERS.md updated 5783m ago
+PASS   SO-11 no author over the WIP limit
+PASS   SO-12 no approved PR sitting dirty
+PASS   SO-13 no open PR was pushed after its approval
+UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
+FAIL   SO-15 reviewer session idle 262m -- over the 60m line
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
-UNPROV SO-21 GitHub call did not answer -- not reporting a clean board
-FAIL   SO-22 ADV idle 260m, over the 30m line -- the loop cannot see its advisor
-UNPROV SO-23 the delivery read returned nothing at all -- not reporting delivery as clean on an empty read
+FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
+FAIL   SO-22 ADV idle 262m, over the 30m line -- the loop cannot see its advisor
+FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#259,#258,#257,...)  pax:19 (#92,#91,#90,...) -- a run that was created is not a publish (AR-7)
 FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-A7-INVENTORY-0929(API) QI-FD10-15MIN-0028(PAX) QI-FD13-0929(PAX) QI-FD13-0929-B(PAX) QI-NIGHTLY-20260929(PAX) QI-NIGHTLY-20261001(PAX) QI-NIGHTLY-20261003(PAX)
-PASS   SO-24 heartbeat 6s old
+PASS   SO-24 heartbeat 67s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1901.md(0p/0t) out-REV-2237.md(0p/0t)
 FAIL   SO-26 queue item(s) with no FD or phase-board id: REVIEWER
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
 FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
-PASS   SO-33 notifier ran 1m ago; 9 event(s) delivered to date
-PASS   SO-34 public mirror pushed 1m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
-FAIL   SO-35 CONTROL PLANE BROKEN:REV:silent-260m ADV:silent-260m API:silent-260m CRM:silent-260m -- the loop can report green while this is true, which is how three days were lost
+PASS   SO-33 notifier ran 0m ago; 9 event(s) delivered to date
+PASS   SO-34 public mirror pushed 2m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
+FAIL   SO-35 CONTROL PLANE BROKEN:REV:silent-262m ADV:silent-261m API:silent-261m CRM:silent-261m -- the loop can report green while this is true, which is how three days were lost
 ---
-FAILS: 19   (UNPROV is not a pass and not counted as a fail)
+FAILS: 17   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
