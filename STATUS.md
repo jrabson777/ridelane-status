@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-04 03:25:41 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-04 03:27:53 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 4s ago
 - last pass: 2026-10-04 03:24:38 PASS cause=state-change prev=e09a79e2 now=b0ce985d
 - notifier last ran: 1m ago
 
@@ -39,46 +39,55 @@ _Generated 2026-10-04 03:25:41 EDT by the probe. Public mirror; no tokens, keys,
 
 ## Open PRs, verdict at head
 
-REFUSED: the PR read did not answer. Not reporting an empty board.
+| repo | pr | head | checks | verdict at head | age (m) |
+|---|---|---|---|---|---|
+| ridelane-api | #552 | `8eec76465ef4` | 5 total, 0 failed | **none** | 57 |
+| ridelane-api | #551 | `33254f1b34c3` | 5 total, 0 failed | **none** | 58 |
+| ridelane-api | #550 | `d0c17a400068` | 5 total, 0 failed | **none** | 76 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 14675 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 15097 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 25978 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 8913 |
+| jrax-driver-app | #260 | `f6e5908d1419` | 2 total, 0 failed | **none** | 78 |
 
 ## Last standing-orders run
 
 ```
 FAIL   SO-1  no [HOURLY] on his page
-FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
+FAIL   SO-2  2 open PRs >60m with no verdict at head: api#550, app#260
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 117m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 121m
 FAIL   SO-7  CLAIMS table has no OTA updates row
-FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
+PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 6024m ago
-FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
-FAIL   SO-12 approved and dirty, refresh this pass: ?
-UNPROV SO-13 REFUSE
-UNPROV SO-14 REFUSE
-PASS   SO-15 reviewer session active 56m ago (9342 lines)
+PASS   SO-10 STANDING-ORDERS.md updated 6027m ago
+PASS   SO-11 no author over the WIP limit
+PASS   SO-12 no approved PR sitting dirty
+PASS   SO-13 no open PR was pushed after its approval
+UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
+PASS   SO-15 reviewer session active 60m ago (9342 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
-UNPROV SO-21 GitHub call did not answer -- not reporting a clean board
-FAIL   SO-22 ADV idle 90m, over the 30m line -- the loop cannot see its advisor
-UNPROV SO-23 the delivery read returned nothing at all -- not reporting delivery as clean on an empty read
+FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
+FAIL   SO-22 ADV idle 93m, over the 30m line -- the loop cannot see its advisor
+FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#259,#258,#257,...)  pax:19 (#92,#91,#90,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 5s old
+PASS   SO-24 heartbeat 78s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-0218.md(9p/5t) out-DRV-0218.md(44p/0t) out-REV-0627.md(1p/0t) out-REV-0214.md(0p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 UNPROV SO-28 before 07:00; the nightly has not been due yet
 FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
-PASS   SO-33 notifier ran 1m ago; 9 event(s) delivered to date
-PASS   SO-34 public mirror pushed 1m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
+PASS   SO-33 notifier ran 2m ago; 9 event(s) delivered to date
+PASS   SO-34 public mirror pushed 3m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 ---
-FAILS: 14   (UNPROV is not a pass and not counted as a fail)
+FAILS: 13   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
