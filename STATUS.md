@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 17:48:32 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 17:49:44 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 7s ago
+- probe heartbeat: 5s ago
 - last pass: 2026-10-05 17:44:57   -> pass SKIPPED (lock held by a real pass)
 - notifier last ran: 1m ago
 
@@ -44,20 +44,20 @@ _Generated 2026-10-05 17:48:32 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | **none** | 29 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 716 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 788 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16966 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17388 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28269 |
-| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 852 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11204 |
-| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 73 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | **none** | 40 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 728 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 800 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16977 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17399 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28280 |
+| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 863 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11215 |
+| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 84 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 3m ago)
+(from the last pass, 6m ago)
 NOTE: another check-so is running (320s) and there is no cached result. Reporting nothing rather than a half board.
 ```
 
