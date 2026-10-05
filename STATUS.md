@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 19:23:34 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 19:26:29 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 8s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-05 19:17:13 TRIGGER cause=state-change NOT RUN -- lock held 43s
 - notifier last ran: 2m ago
 
@@ -42,21 +42,12 @@ _Generated 2026-10-05 19:23:34 EDT by the probe. Public mirror; no tokens, keys,
 
 ## Open PRs, verdict at head
 
-| repo | pr | head | checks | verdict at head | age (m) |
-|---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 124 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 812 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 883 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17061 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17483 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28364 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11299 |
-| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 0 failed | YES | 168 |
+REFUSED: the PR read did not answer. Not reporting an empty board.
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 5m ago)
+(from the last pass, 8m ago)
 NOTE: another check-so has been running 0s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (115s, holder 45171 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
