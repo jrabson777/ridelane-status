@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 16:51:51 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 16:52:22 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
 - probe heartbeat: 2s ago
-- last pass: 2026-10-05 16:50:02 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 2s
-- notifier last ran: 0m ago
+- last pass: 2026-10-05 16:52:18 TRIGGER cause=idle-floor-10m prev=bb662282 now=bb662282
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -44,14 +44,14 @@ _Generated 2026-10-05 16:51:51 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 668 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 740 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16917 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17339 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28221 |
-| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 804 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11155 |
-| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 25 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 669 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 741 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16918 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17341 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28222 |
+| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 805 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11156 |
+| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 26 |
 
 ## Last standing-orders run
 
