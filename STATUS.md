@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 01:35:37 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 01:37:15 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 23s ago
+- probe heartbeat: 121s ago
 - last pass: 2026-10-05 01:29:31 PASS cause=state-change prev=0a30fc87 now=99474772
-- notifier last ran: 0m ago
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -52,35 +52,35 @@ FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 co
 PASS   SO-3  all 5 build link(s) named by content
 FAIL   SO-4  7 CLAIMS row(s) without an id
 PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 153m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 155m
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 73m ago
+PASS   SO-10 STANDING-ORDERS.md updated 75m ago
 FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
 FAIL   SO-12 approved and dirty, refresh this pass: ?
 UNPROV SO-13 REFUSE
 UNPROV SO-14 REFUSE
-PASS   SO-15 reviewer session active 19m ago (10214 lines)
+PASS   SO-15 reviewer session active 21m ago (10214 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 1796m stale -- it is an hourly board
+FAIL   SO-18 board 1798m stale -- it is an hourly board
 PASS   SO-19 every queue file is read by a session
 UNPROV SO-21 GitHub call did not answer -- not reporting a clean board
-PASS   SO-22 advisor live: ADV ran 7m ago, 109 ruling(s), file 74m old
+PASS   SO-22 advisor live: ADV ran 9m ago, 109 ruling(s), file 75m old
 UNPROV SO-23 the delivery read returned nothing at all -- not reporting delivery as clean on an empty read
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 26s old
+PASS   SO-24 heartbeat 123s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-ADV-0126.md(0p/0t) out-REV-0114.md(7p/0t) out-API-0111.md(6p/8t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 1796m old)
+PASS   SO-28 nightly section present on the page (page 1798m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 10 event(s) delivered to date
-PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
+PASS   SO-33 notifier ran 2m ago; 10 event(s) delivered to date
+PASS   SO-34 public mirror pushed 1m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
-PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
+PASS   SO-38 no loop script sources the scratchpad; pass.log grew 1m ago
 PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
@@ -103,17 +103,6 @@ FAILS: 8   (UNPROV is not a pass and not counted as a fail)
 
 **[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
 ```
-e65a5d` | FAIL | Build the .app — sentry-cli needs an organization |
-| `37231443545` | jrax-driver-app | `07e65a5d` | FAIL | Prove the twin — guard asserted the impossible (production host is a source fallback) |
-| `37232686444` | jrax-driver-app | `8e157399` | FAIL | Prove the twin — bundle lacked localhost:4010 (export died at the step boundary) |
-| `37257186190` | jrax-driver-app | `8e157399` | GREEN (evidence wrong) | all steps passed; both screenshots were byte-identical SPLASH frames |
-| `37259006809` | jrax-driver-app | `92db0032` | FAIL | Boot the simulator and install — hung, hit the 60-minute timeout |
-
-## OTA
-
-| update id | commit | proving walk id |
-|---|---|---|
-| — | — | **no OTA has been published** |
 
 ## WALKS
 
