@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 16:31:42 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 16:31:50 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-05 15:33:54 TRIGGER cause=state-change NOT RUN -- lock held 648s
-- notifier last ran: 3m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-05 16:31:46 TRIGGER cause=state-change prev=893a3473 now=b95c2654
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -56,7 +56,7 @@ _Generated 2026-10-05 16:31:42 EDT by the probe. Public mirror; no tokens, keys,
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
+(from the last pass, 2m ago)
 NOTE: another check-so is running (267s) and there is no cached result. Reporting nothing rather than a half board.
 ```
 
