@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 03:00:46 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 03:04:17 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 115s ago
+- probe heartbeat: 326s ago
 - last pass: 2026-10-05 02:47:48   -> pass RAN
-- notifier last ran: 9m ago
+- notifier last ran: 3m ago
 
 ## Phase board
 
@@ -44,16 +44,16 @@ _Generated 2026-10-05 03:00:46 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #560 | `85536297f823` | 6 total, 1 failed | **none** | 15 |
-| ridelane-api | #559 | `55bcaeb36ef6` | 7 total, 0 failed | YES | 116 |
-| ridelane-api | #557 | `6ebf97a66b1f` | 6 total, 0 failed | **none** | 219 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16088 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16510 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27391 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10326 |
-| jrax-driver-app | #270 | `987aba167b32` | 3 total, 0 failed | **none** | 8 |
-| jrax-driver-app | #269 | `4747913d7ac7` | 3 total, 0 failed | **none** | 14 |
-| jrax-driver-app | #267 | `732436a5eefb` | 3 total, 0 failed | **none** | 227 |
+| ridelane-api | #560 | `85536297f823` | 6 total, 1 failed | **none** | 18 |
+| ridelane-api | #559 | `55bcaeb36ef6` | 7 total, 0 failed | YES | 120 |
+| ridelane-api | #557 | `6ebf97a66b1f` | 6 total, 0 failed | **none** | 223 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16091 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16514 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27395 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10329 |
+| jrax-driver-app | #270 | `987aba167b32` | 3 total, 0 failed | **none** | 12 |
+| jrax-driver-app | #269 | `4747913d7ac7` | 3 total, 0 failed | **none** | 18 |
+| jrax-driver-app | #267 | `732436a5eefb` | 3 total, 0 failed | **none** | 230 |
 
 ## Last standing-orders run
 
@@ -63,39 +63,39 @@ FAIL   SO-2  2 open PRs >60m with no verdict at head: api#557, app#267
 PASS   SO-3  all 5 build link(s) named by content
 FAIL   SO-4  14 CLAIMS row(s) without an id
 PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 239m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 243m
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 9m ago
+PASS   SO-10 STANDING-ORDERS.md updated 12m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 9m ago (10460 lines)
+PASS   SO-15 reviewer session active 12m ago (10460 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 1m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 4m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
-PASS   SO-22 advisor live: ADV ran 16m ago, 109 ruling(s), file 160m old
+PASS   SO-22 advisor live: ADV ran 1m ago, 109 ruling(s), file 164m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:16 (#268,#265,#262,...)  pax:18 (#95,#92,#91,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-FAIL   SO-24 heartbeat 196s old -- the loop has STOPPED, not gone quiet
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-ADV-0245.md(0p/0t) out-CRM-0245.md(2p/0t) out-REV-0245.md(1p/0t)
+FAIL   SO-24 heartbeat 406s old -- the loop has STOPPED, not gone quiet
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-ADV-0245.md(1p/0t) out-CRM-0303.md(2p/0t) out-CRM-0245.md(2p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 1m old)
+PASS   SO-28 nightly section present on the page (page 4m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 1m ago; 10 event(s) delivered to date
-FAIL   SO-34 mirror 10m stale, over the 5m line -- the advisor is reading a dead page
+PASS   SO-33 notifier ran 6m ago; 10 event(s) delivered to date
+PASS   SO-34 public mirror pushed 1m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
-PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
+PASS   SO-38 no loop script sources the scratchpad; pass.log grew 1m ago
 PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
-FAILS: 8   (UNPROV is not a pass and not counted as a fail)
+FAILS: 7   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
@@ -130,6 +130,17 @@ FAILS: 8   (UNPROV is not a pass and not counted as a fail)
 | `37232686444` | jrax-driver-app | `8e157399` | FAIL | Prove the twin — bundle lacked localhost:4010 (export died at the step boundary) |
 | `37257186190` | jrax-driver-app | `8e157399` | GREEN (evidence wrong) | all steps passed; both screenshots were byte-identical SPLASH frames |
 | `37259006809` | jrax-driver-app | `92db0032` | FAIL | Boot the simulator and install — hung, hit the 60-minute timeout |
+
+**EAS cloud runs: 0.** `ridelane-passenger-app#96` (the walk ported to
+Maestro) merged at `f1a02e4b` on 5 Oct after review APPROVE at `d2de3c5a`.
+**A merge is not a run** -- the flows have never executed against the app.
+
+They cannot yet, deliberately: the EAS workflow declares an `api_url` input
+and never consumes it, so a twin resolves its api base from the `e2e-test`
+profile, which inherits the **preview** environment -- production. W10 and
+W11 both tap the booking CTA. The trigger refuses to dispatch until that
+input is wired, and stops refusing on its own once it is. The target it
+needs is STG-1, which does not exist yet.
 
 ## OTA
 
