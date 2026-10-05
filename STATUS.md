@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 16:35:36 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 16:39:44 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-05 16:32:01   -> pass SKIPPED (lock held by a real pass)
-- notifier last ran: 0m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-05 16:39:41 TRIGGER cause=state-change prev=b95c2654 now=bb662282
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -44,19 +44,19 @@ _Generated 2026-10-05 16:35:36 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 643 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 715 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16892 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17314 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28195 |
-| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 779 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11130 |
-| jrax-driver-app | #278 | `b9b254180f2c` | 2 total, 0 failed | **none** | 0 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 656 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 728 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16905 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17327 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28208 |
+| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 792 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11143 |
+| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 0 failed | **none** | 13 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
+(from the last pass, 5m ago)
 NOTE: another check-so is running (553s) and there is no cached result. Reporting nothing rather than a half board.
 ```
 
