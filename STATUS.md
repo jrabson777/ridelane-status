@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 17:56:16 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 17:56:21 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-05 17:56:12 TRIGGER cause=idle-floor-10m prev=3688a80c now=3688a80c
 - notifier last ran: 0m ago
 
@@ -57,8 +57,8 @@ _Generated 2026-10-05 17:56:16 EDT by the probe. Public mirror; no tokens, keys,
 ## Last standing-orders run
 
 ```
-(from the last pass, 2m ago)
-NOTE: another check-so is running (153s) and there is no cached result. Reporting nothing rather than a half board.
+(from the last pass, 0m ago)
+NOTE: another check-so is running (321s) and there is no cached result. Reporting nothing rather than a half board.
 ```
 
 ## LOOP-ALERTS, tail
