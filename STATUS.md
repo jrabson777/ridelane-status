@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 05:43:02 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 05:49:01 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-05 05:39:12 TRIGGER cause=state-change prev=20e82786 now=eeff9204
-- notifier last ran: 1m ago
+- probe heartbeat: 6s ago
+- last pass: 2026-10-05 05:47:51   -> pass SKIPPED (lock held by a real pass)
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -44,18 +44,19 @@ _Generated 2026-10-05 05:43:02 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #565 | `866398ffa26d` | 7 total, 1 failed | **none** | 1 |
-| ridelane-api | #564 | `f39245d717ec` | 7 total, 0 failed | YES | 62 |
-| ridelane-api | #563 | `4ae54bfa19f5` | 7 total, 0 failed | YES | 63 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 73 |
-| ridelane-api | #557 | `ed963836b75c` | 7 total, 0 failed | YES | 382 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16250 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16672 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27554 |
-| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 137 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10488 |
-| jrax-driver-app | #271 | `7f188e0e7e77` | 3 total, 0 failed | YES | 76 |
-| jrax-driver-app | #267 | `8a19f2c5ca21` | 3 total, 0 failed | YES | 389 |
+| ridelane-api | #566 | `d97e114869e1` | 7 total, 0 failed | **none** | 5 |
+| ridelane-api | #565 | `866398ffa26d` | 7 total, 1 failed | **none** | 7 |
+| ridelane-api | #564 | `f39245d717ec` | 7 total, 0 failed | YES | 68 |
+| ridelane-api | #563 | `4ae54bfa19f5` | 7 total, 0 failed | YES | 69 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 79 |
+| ridelane-api | #557 | `ed963836b75c` | 7 total, 0 failed | YES | 388 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16256 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16678 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27560 |
+| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 143 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10494 |
+| jrax-driver-app | #271 | `7f188e0e7e77` | 3 total, 0 failed | YES | 82 |
+| jrax-driver-app | #267 | `8a19f2c5ca21` | 3 total, 0 failed | YES | 395 |
 
 ## Last standing-orders run
 
@@ -65,39 +66,39 @@ PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 5 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-PASS   SO-6  FOUNDER-DEFECTS.md touched 18m ago
+PASS   SO-6  FOUNDER-DEFECTS.md touched 24m ago
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 172m ago
+PASS   SO-10 STANDING-ORDERS.md updated 178m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 7m ago (11128 lines)
+PASS   SO-15 reviewer session active 13m ago (11128 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 1m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 7m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#565,ridelane-api#562,ridelane-api#246
-PASS   SO-22 advisor live: ADV ran 21m ago, 109 ruling(s), file 324m old
+PASS   SO-22 advisor live: ADV ran 27m ago, 109 ruling(s), file 330m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#270,#269,#268,...)  pax:18 (#96,#95,#94,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 175s old
+PASS   SO-24 heartbeat 7s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-API-0533.md(11p/8t) out-REV-0533.md(14p/13t) out-CRM-0524.md(6p/11t) out-DRV-0523.md(54p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 1m old)
+PASS   SO-28 nightly section present on the page (page 7m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 4m ago; 13 event(s) delivered to date
-FAIL   SO-34 mirror 7m stale, over the 5m line -- the advisor is reading a dead page
-FAIL   SO-35 control-plane verifier 18m stale
+PASS   SO-33 notifier ran 2m ago; 13 event(s) delivered to date
+PASS   SO-34 public mirror pushed 4m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
+PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
-PASS   SO-38 no loop script sources the scratchpad; pass.log grew 1m ago
+PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
 PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
-FAILS: 5   (UNPROV is not a pass and not counted as a fail)
+FAILS: 3   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
