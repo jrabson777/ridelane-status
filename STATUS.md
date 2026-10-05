@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 01:01:23 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 01:11:44 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 580s ago
+- probe heartbeat: 4s ago
 - last pass: 2026-10-05 00:48:09 PASS cause=idle-floor-10m prev=a61b3628 now=a61b3628
-- notifier last ran: 9m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -44,16 +44,18 @@ _Generated 2026-10-05 01:01:23 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #557 | `6c12229f1efb` | 5 total, 0 failed | **none** | 100 |
-| ridelane-api | #556 | `d53cf66c24b0` | 5 total, 0 failed | **none** | 105 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 15969 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16391 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27272 |
-| ridelane-passenger-app | #96 | `aa715e525cd4` | 3 total, 0 failed | YES | 56 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10207 |
-| jrax-driver-app | #267 | `480b624ad010` | 3 total, 0 failed | YES | 107 |
-| jrax-driver-app | #261 | `8b83110103f9` | 3 total, 0 failed | YES | 981 |
-| jrax-driver-app | #260 | `6e2240b126f6` | 4 total, 1 failed | YES | 1371 |
+| ridelane-api | #559 | `55bcaeb36ef6` | 7 total, 0 failed | **none** | 7 |
+| ridelane-api | #558 | `52a25bcffe6f` | 6 total, 0 failed | **none** | 7 |
+| ridelane-api | #557 | `6c12229f1efb` | 5 total, 0 failed | **none** | 110 |
+| ridelane-api | #556 | `d53cf66c24b0` | 5 total, 0 failed | **none** | 115 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 15979 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16401 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27282 |
+| ridelane-passenger-app | #96 | `e7fde37d644f` | 3 total, 0 failed | YES | 66 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10217 |
+| jrax-driver-app | #267 | `480b624ad010` | 3 total, 0 failed | YES | 118 |
+| jrax-driver-app | #261 | `8b83110103f9` | 3 total, 0 failed | YES | 991 |
+| jrax-driver-app | #260 | `6e2240b126f6` | 4 total, 1 failed | YES | 1382 |
 
 ## Last standing-orders run
 
@@ -63,39 +65,39 @@ FAIL   SO-2  2 open PRs >60m with no verdict at head: api#557, api#556
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 120m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 131m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 40m ago
-PASS   SO-11 no author over the WIP limit
+PASS   SO-10 STANDING-ORDERS.md updated 50m ago
+FAIL   SO-11 over WIP limit: api:4 — next item is a review, not a new PR
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 FAIL   SO-14 2 native PR(s) with no [native] in the title:  jrax-driver-app#261 touches app.config.js with no [native] in the title;  jrax-driver-app#260 touches app.config.js with no [native] in the title; 
-PASS   SO-15 reviewer session active 41m ago (10133 lines)
+PASS   SO-15 reviewer session active 51m ago (10133 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#246
-FAIL   SO-22 ADV idle 36m, over the 30m line -- the loop cannot see its advisor
+PASS   SO-22 advisor live: ADV ran 2m ago, 109 ruling(s), file 51m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#265,#262,#259,...)  pax:19 (#95,#92,#91,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-FAIL   SO-24 heartbeat 679s old -- the loop has STOPPED, not gone quiet
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-0019.md(10p/0t) out-API-2321.md(9p/9t)
+PASS   SO-24 heartbeat 104s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-API-0111.md(6p/8t) out-REV-0019.md(10p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 UNPROV SO-28 before 07:00; the nightly has not been due yet
 FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
-FAIL   SO-33 notifier last ran 11m ago, over the 10m line -- the channel to the founder is going quiet
-FAIL   SO-34 mirror 9m stale, over the 5m line -- the advisor is reading a dead page
-FAIL   SO-35 control-plane verifier 11m stale
+PASS   SO-33 notifier ran 3m ago; 10 event(s) delivered to date
+FAIL   SO-34 mirror 8m stale, over the 5m line -- the advisor is reading a dead page
+PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
-PASS   SO-39 every expected check is present as a check run on the open PRs
+FAIL   SO-39 PR(s) with an EXPECTED CHECK ABSENT (reads green, was never run): jrax-driver-app#260 -- a missing check is a failing one
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
-FAILS: 18   (UNPROV is not a pass and not counted as a fail)
+FAILS: 16   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
