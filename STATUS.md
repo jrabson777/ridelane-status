@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 18:39:13 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 18:39:49 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
 - probe heartbeat: 2s ago
-- last pass: 2026-10-05 18:37:29   -> pass RAN
-- notifier last ran: 2m ago
+- last pass: 2026-10-05 18:39:45 TRIGGER cause=state-change prev=9db1d12f now=9c690b6a
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -45,12 +45,12 @@ _Generated 2026-10-05 18:39:13 EDT by the probe. Public mirror; no tokens, keys,
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
 | ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 89 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 776 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 777 |
 | ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 848 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17025 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17447 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28328 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11263 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17026 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17448 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28329 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11264 |
 | jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 0 failed | **none** | 133 |
 
 ## Last standing-orders run
