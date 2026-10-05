@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 11:35:22 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 12:04:01 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 992s ago
 - last pass: 2026-10-05 11:35:20 TRIGGER cause=state-change NOT RUN -- lock held 1856s
-- notifier last ran: 7m ago
+- notifier last ran: 36m ago
 
 ## Phase board
 
@@ -47,8 +47,28 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 ## Last standing-orders run
 
 ```
-NO FRESH STANDING-ORDERS RESULT (none within 20 minutes).
-This is not a clean board -- it is a board nobody has read recently.
+(from the last pass, 16m ago)
+PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
+FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
+PASS   SO-3  all 5 build link(s) named by content
+PASS   SO-4  every CLAIMS row carries an artifact id
+PASS   SO-5  blocking list stated and scoped
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 286m
+PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
+FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
+UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
+PASS   SO-10 STANDING-ORDERS.md updated 534m ago
+FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
+FAIL   SO-12 approved and dirty, refresh this pass: ?
+UNPROV SO-13 REFUSE: curl failed on repos/jrabson777/jrax-admin/pulls?state=open&per_page=100
+UNPROV SO-14 REFUSE: curl failed on repos/jrabson777/jrax-admin/pulls?state=open&per_page=100
+PASS   SO-15 reviewer session active 21m ago (11877 lines)
+PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
+PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
+FAIL   SO-18 board 75m stale -- it is an hourly board
+PASS   SO-19 every queue file is read by a session
+FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#565,ridelane-api#562,ridelane-api#246
+PASS   SO-22 advisor live: ADV ran 21m ago, 109 ruling(s), file 702m old
 ```
 
 ## LOOP-ALERTS, tail
