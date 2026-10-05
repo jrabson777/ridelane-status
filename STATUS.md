@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 02:35:11 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 02:35:10 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-05 02:26:18 PASS cause=state-change prev=68315f50 now=a679de6b
 - notifier last ran: 2m ago
 
@@ -47,13 +47,13 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 ## Last standing-orders run
 
 ```
-PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
+FAIL   SO-1  no [HOURLY] on his page
 FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
-PASS   SO-3  all 5 build link(s) named by content
+PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
-PASS   SO-5  blocking list stated and scoped
+FAIL   SO-5  no scoped blocking list on his page
 FAIL   SO-6  FOUNDER-DEFECTS.md untouched 213m
-PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
+FAIL   SO-7  CLAIMS table has no OTA updates row
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
 PASS   SO-10 STANDING-ORDERS.md updated 133m ago
@@ -63,8 +63,8 @@ UNPROV SO-13 REFUSE
 UNPROV SO-14 REFUSE
 PASS   SO-15 reviewer session active 20m ago (10288 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
-PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 1856m stale -- it is an hourly board
+FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
+FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 UNPROV SO-21 GitHub call did not answer -- not reporting a clean board
 PASS   SO-22 advisor live: ADV ran 18m ago, 109 ruling(s), file 133m old
@@ -74,8 +74,8 @@ PASS   SO-24 heartbeat 6s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-0214.md(11p/14t) out-REV-0213.md(0p/0t) out-ADV-0126.md(1p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 1856m old)
-PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
+UNPROV SO-28 before 07:00; the nightly has not been due yet
+FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
 PASS   SO-33 notifier ran 2m ago; 10 event(s) delivered to date
 PASS   SO-34 public mirror pushed 2m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
@@ -84,7 +84,14 @@ PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
 PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
-FAILS: 8   (UNPROV is not a pass and not counted as a fail)
+FAILS: 13   (UNPROV is not a pass and not counted as a fail)
+```
+
+## LOOP-ALERTS, tail
+
+```
+```
+   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
@@ -103,6 +110,28 @@ FAILS: 8   (UNPROV is not a pass and not counted as a fail)
 
 **[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
+
+## WALKS
+
+| run id | repo | commit | result | failed step |
+|---|---|---|---|---|
+| `37204201794` | jrax-driver-app | `e54e07a2` | FAIL | no jobs created — reusable workflow uncallable (Actions access=none) |
+| `37204417084` | jrax-driver-app | `4711ffef` | FAIL | Build the .app — '' is not a workspace file (pods not installed) |
+| `37205943775` | jrax-driver-app | `e833efc2` | FAIL | no jobs created — error parsing called workflow (YAML block ended early) |
+| `37223229178` | jrax-driver-app | `07e65a5d` | FAIL | log not retained — class unknown |
+| `37223723681` | jrax-driver-app | `3189ad83` | FAIL | Build the .app — no device matching destination (Xcode 16.4) |
+| `37224581375` | jrax-driver-app | `07e65a5d` | FAIL | Build the .app — ExpoModulesCore Swift errors (SDK vs Xcode 16.4) |
+| `37230349450` | jrax-driver-app | `07e65a5d` | FAIL | Build the .app — sentry-cli needs an organization |
+| `37231443545` | jrax-driver-app | `07e65a5d` | FAIL | Prove the twin — guard asserted the impossible (production host is a source fallback) |
+| `37232686444` | jrax-driver-app | `8e157399` | FAIL | Prove the twin — bundle lacked localhost:4010 (export died at the step boundary) |
+| `37257186190` | jrax-driver-app | `8e157399` | GREEN (evidence wrong) | all steps passed; both screenshots were byte-identical SPLASH frames |
+| `37259006809` | jrax-driver-app | `92db0032` | FAIL | Boot the simulator and install — hung, hit the 60-minute timeout |
+
+## OTA
+
+| update id | commit | proving walk id |
+|---|---|---|
+| — | — | **no OTA has been published** |
 
 ## WALKS
 
