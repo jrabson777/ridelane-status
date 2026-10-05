@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 09:59:42 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 10:23:44 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 14s ago
-- last pass: 2026-10-05 09:21:04   -> pass SKIPPED (lock held by a real pass)
-- notifier last ran: 28m ago
+- probe heartbeat: 4s ago
+- last pass: 2026-10-05 10:22:58   -> pass SKIPPED (lock held by a real pass)
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -44,57 +44,73 @@ _Generated 2026-10-05 09:59:42 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #567 | `09c2d900a0fb` | 7 total, 0 failed | **none** | 101 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | **none** | 258 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 329 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16507 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16929 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27810 |
-| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 393 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10745 |
+| ridelane-api | #567 | `41b7606b12ea` | 7 total, 0 failed | **none** | 125 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 282 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 354 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16531 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16953 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27834 |
+| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 417 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10769 |
 
 ## Last standing-orders run
 
 ```
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
-FAIL   SO-2  2 open PRs >60m with no verdict at head: api#567, api#565
+FAIL   SO-2  1 open PRs >60m with no verdict at head: api#567
 PASS   SO-3  all 5 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 182m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 207m
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 431m ago
+PASS   SO-10 STANDING-ORDERS.md updated 455m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
-PASS   SO-13 no open PR was pushed after its approval
+FAIL   SO-13 1 pushed after APPROVE:  ridelane-api#567 approved 09c2d900a0fb but head is 41b7606b12ea; 
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 5m ago (11708 lines)
+PASS   SO-15 reviewer session active 14m ago (11780 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 6m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 13m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#565,ridelane-api#562,ridelane-api#246
-FAIL   SO-22 ADV idle 33m, over the 30m line -- the loop cannot see its advisor
+PASS   SO-22 advisor live: ADV ran 19m ago, 109 ruling(s), file 607m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:16 (#275,#274,#272,...)  pax:19 (#98,#96,#95,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 65s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-0909.md(38p/12t) out-CRM-0925.md(7p/0t) out-PAX-0836.md(45p/10t) out-API-0836.md(9p/5t)
+FAIL   SO-24 heartbeat 269s old -- the loop has STOPPED, not gone quiet
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-API-1009.md(13p/12t) out-REV-1008.md(8p/13t) out-PAX-0909.md(38p/12t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 7m old)
+PASS   SO-28 nightly section present on the page (page 14m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-FAIL   SO-33 notifier last ran 33m ago, over the 10m line -- the channel to the founder is going quiet
-FAIL   SO-34 mirror 6m stale, over the 5m line -- the advisor is reading a dead page
-FAIL   SO-35 control-plane verifier 33m stale
+PASS   SO-33 notifier ran 6m ago; 20 event(s) delivered to date
+FAIL   SO-34 mirror 20m stale, over the 5m line -- the advisor is reading a dead page
+PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
-PASS   SO-38 no loop script sources the scratchpad; pass.log grew 1m ago
+PASS   SO-38 no loop script sources the scratchpad; pass.log grew 5m ago
+PASS   SO-39 every expected check is present as a check run on the open PRs
+PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
+---
+FAILS: 8   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
