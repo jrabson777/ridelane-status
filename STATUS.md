@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-04 23:54:05 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-04 23:54:51 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 42s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-04 23:53:49 PASS cause=state-change prev=5cba197b now=c341c61e
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -47,58 +47,47 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 ## Last standing-orders run
 
 ```
-PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
+FAIL   SO-1  no [HOURLY] on his page
 FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
-PASS   SO-3  all 5 build link(s) named by content
+PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
-PASS   SO-5  blocking list stated and scoped
-PASS   SO-6  FOUNDER-DEFECTS.md touched 52m ago
-PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
+FAIL   SO-5  no scoped blocking list on his page
+PASS   SO-6  FOUNDER-DEFECTS.md touched 53m ago
+FAIL   SO-7  CLAIMS table has no OTA updates row
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 16m ago
+PASS   SO-10 STANDING-ORDERS.md updated 0m ago
 FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
 FAIL   SO-12 approved and dirty, refresh this pass: ?
 UNPROV SO-13 REFUSE
 UNPROV SO-14 REFUSE
-PASS   SO-15 reviewer session active 39m ago (10058 lines)
+PASS   SO-15 reviewer session active 40m ago (10058 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
-PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 1695m stale -- it is an hourly board
+FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
+FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 UNPROV SO-21 GitHub call did not answer -- not reporting a clean board
-FAIL   SO-22 ADV idle 36m, over the 30m line -- the loop cannot see its advisor
+FAIL   SO-22 ADV idle 37m, over the 30m line -- the loop cannot see its advisor
 UNPROV SO-23 the delivery read returned nothing at all -- not reporting delivery as clean on an empty read
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 45s old
+PASS   SO-24 heartbeat 6s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-API-2321.md(9p/9t) out-REV-2313.md(0p/0t) out-API-2257.md(14p/4t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 1695m old)
-PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 10 event(s) delivered to date
-PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
+FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
+FAIL   SO-29 the page neither states AUTOPILOT: NOT YET PROVED nor carries a window table -- silence reads as a claim
+PASS   SO-33 notifier ran 1m ago; 10 event(s) delivered to date
+PASS   SO-34 public mirror pushed 1m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
 PASS   SO-39 every expected check is present as a check run on the open PRs
+PASS   SO-41 7 remote(s) checked, none carries userinfo
 ---
-FAILS: 8   (UNPROV is not a pass and not counted as a fail)
+FAILS: 14   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
 
 ```
-
-**[WATCHDOG 23:49]** no orchestrator pass in 28 minutes — launching one.
-
-**[WATCHDOG 23:50]** no orchestrator pass in 29 minutes — launching one.
-
-**[WATCHDOG 23:51]** no orchestrator pass in 30 minutes — launching one.
-
-**[HEARTBEAT 23:52 EDT]** **The orchestrator has not completed a turn in 29852872 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
-
-**[WATCHDOG 23:52]** no orchestrator pass in 31 minutes — launching one.
-
-**[WATCHDOG 23:53]** no orchestrator pass in 32 minutes — launching one.
 ```
