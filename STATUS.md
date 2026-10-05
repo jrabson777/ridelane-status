@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 07:53:15 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 08:01:32 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
-- last pass: 2026-10-05 07:49:50 TRIGGER cause=state-change prev=71fed9a1 now=d7ab5b09
-- notifier last ran: 1m ago
+- probe heartbeat: 8s ago
+- last pass: 2026-10-05 08:00:21   -> pass SKIPPED (lock held by a real pass)
+- notifier last ran: 3m ago
 
 ## Phase board
 
@@ -44,52 +44,51 @@ _Generated 2026-10-05 07:53:15 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | **none** | 131 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 203 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16380 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16803 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27684 |
-| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 267 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10618 |
-| jrax-driver-app | #274 | `f6fa23586a99` | 3 total, 0 failed | YES | 21 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | **none** | 140 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 211 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16389 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 16811 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 27692 |
+| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 275 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10627 |
 
 ## Last standing-orders run
 
 ```
-UNPROV SO-1  cannot read his page (mirror STALE 48m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-1  cannot read his page (mirror STALE 56m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 FAIL   SO-2  1 open PRs >60m with no verdict at head: api#565
 PASS   SO-3  no build links on the page
-UNPROV SO-4  cannot read his page (mirror STALE 48m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-UNPROV SO-5  cannot read his page (mirror STALE 48m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-PASS   SO-6  FOUNDER-DEFECTS.md touched 54m ago
-UNPROV SO-7  cannot read his page (mirror STALE 48m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-4  cannot read his page (mirror STALE 56m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-5  cannot read his page (mirror STALE 56m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 62m
+UNPROV SO-7  cannot read his page (mirror STALE 56m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 302m ago
+PASS   SO-10 STANDING-ORDERS.md updated 311m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 3m ago (11537 lines)
+PASS   SO-15 reviewer session active 12m ago (11537 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
-UNPROV SO-17 cannot read his page (mirror STALE 48m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-UNPROV SO-18 cannot read his page (mirror STALE 48m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-17 cannot read his page (mirror STALE 56m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-18 cannot read his page (mirror STALE 56m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#565,ridelane-api#562,ridelane-api#246
-PASS   SO-22 advisor live: ADV ran 4m ago, 109 ruling(s), file 454m old
-FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:15 (#271,#270,#269,...)  pax:19 (#98,#96,#95,...) -- a run that was created is not a publish (AR-7)
+PASS   SO-22 advisor live: ADV ran 12m ago, 109 ruling(s), file 462m old
+FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:14 (#271,#270,#269,...)  pax:19 (#98,#96,#95,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 158s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-0737.md(53p/11t) out-REV-0726.md(6p/10t)
+PASS   SO-24 heartbeat 12s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-0800.md(54p/8t) out-PAX-0737.md(53p/11t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
-UNPROV SO-29 cannot read his page (mirror STALE 48m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-PASS   SO-33 notifier ran 4m ago; 15 event(s) delivered to date
-FAIL   SO-34 mirror 12m stale, over the 5m line -- the advisor is reading a dead page
-FAIL   SO-35 control-plane verifier 16m stale
+UNPROV SO-29 cannot read his page (mirror STALE 56m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+PASS   SO-33 notifier ran 5m ago; 17 event(s) delivered to date
+FAIL   SO-34 mirror 6m stale, over the 5m line -- the advisor is reading a dead page
+PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
-PASS   SO-38 no loop script sources the scratchpad; pass.log grew 2m ago
+PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
 PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
