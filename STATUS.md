@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 18:00:13 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 18:01:15 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 7s ago
 - last pass: 2026-10-05 18:00:06   -> pass SKIPPED (lock held by a real pass)
 - notifier last ran: 0m ago
 
@@ -44,38 +44,26 @@ _Generated 2026-10-05 18:00:13 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | **none** | 40 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 728 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 800 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16977 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17399 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28280 |
-| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 863 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11215 |
-| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 84 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | **none** | 52 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 739 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 811 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16988 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17411 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28292 |
+| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 875 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11226 |
+| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 96 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: another check-so is running (553s) and there is no cached result. Reporting nothing rather than a half board.
 ```
 
 ## LOOP-ALERTS, tail
 
 ```
-
-**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
-
-**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
-
-**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
-
-**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
-
-**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
-
-**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
