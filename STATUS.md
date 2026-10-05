@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 15:28:44 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 15:29:52 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 338s ago
+- probe heartbeat: 406s ago
 - last pass: 2026-10-05 14:51:03 TRIGGER cause=state-change NOT RUN -- lock held 1078s
-- notifier last ran: 45m ago
+- notifier last ran: 46m ago
 
 ## Phase board
 
@@ -47,44 +47,8 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 ## Last standing-orders run
 
 ```
-(from the last pass, 6m ago)
-UNPROV SO-1  cannot read his page (mirror STALE 226m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
-PASS   SO-3  no build links on the page
-UNPROV SO-4  cannot read his page (mirror STALE 226m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-UNPROV SO-5  cannot read his page (mirror STALE 226m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 458m
-grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
-UNPROV SO-7  cannot read his page (mirror STALE 226m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
-UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 707m ago
-FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
-FAIL   SO-12 approved and dirty, refresh this pass: ?
-UNPROV SO-13 REFUSE: curl failed on repos/jrabson777/ridelane-api/pulls/459/reviews
-UNPROV SO-14 REFUSE: curl failed on repos/jrabson777/ridelane-api/pulls/459/reviews
-PASS   SO-15 reviewer session active 0m ago (11997 lines)
-PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
-UNPROV SO-17 cannot read his page (mirror STALE 226m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-UNPROV SO-18 cannot read his page (mirror STALE 226m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-PASS   SO-19 every queue file is read by a session
-grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
-FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#565,ridelane-api#562,ridelane-api#246
-PASS   SO-22 advisor live: ADV ran 15m ago, 109 ruling(s), file 861m old
-UNPROV SO-23 GitHub call did not answer -- not reporting delivery as clean
-PASS   SO-20 every dispatched id has been acknowledged in a handback
-FAIL   SO-24 heartbeat 494s old -- the loop has STOPPED, not gone quiet
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1227.md(1p/0t) out-REV-1349.md(6p/28t) out-CRM-1327.md(2p/0t)
-PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
-UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
-UNPROV SO-29 cannot read his page (mirror STALE 226m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-PASS   SO-33 notifier ran 1m ago; 24 event(s) delivered to date
-FAIL   SO-34 mirror 8m stale, over the 5m line -- the advisor is reading a dead page
-FAIL   SO-35 control-plane verifier 81m stale
-PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
-PASS   SO-38 no loop script sources the scratchpad; pass.log grew 1m ago
-/private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/check-so.sh: line 669: 80165 Terminated: 15          ( sleep 240; kill -0 $$ 2> /dev/null && { echo "CHECK-SO SELF-TERMINATED at 240s -- not reporting a clean board."; pkill -9 -P $$ 2> /dev/null; kill -9 $$ 2> /dev/null; } )
+NO FRESH STANDING-ORDERS RESULT (none within 20 minutes).
+This is not a clean board -- it is a board nobody has read recently.
 ```
 
 ## LOOP-ALERTS, tail
