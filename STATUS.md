@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 18:53:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 18:54:22 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-05 18:46:00 TRIGGER cause=state-change NOT RUN -- lock held 38s
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-05 18:53:37 TRIGGER cause=state-change NOT RUN -- lock held 66s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -56,43 +56,46 @@ _Generated 2026-10-05 18:53:33 EDT by the probe. Public mirror; no tokens, keys,
 ## Last standing-orders run
 
 ```
-(from the last pass, 9m ago)
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (162s, holder 19025 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  1 open PRs >60m with no verdict at head: app#278
 PASS   SO-3  all 5 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-PASS   SO-6  FOUNDER-DEFECTS.md touched 21m ago
+PASS   SO-6  FOUNDER-DEFECTS.md touched 31m ago
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 950m ago
+PASS   SO-10 STANDING-ORDERS.md updated 960m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 5m ago (12205 lines)
+PASS   SO-15 reviewer session active 4m ago (12221 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 29m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 6m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
-FAIL   SO-21 his page calls a PR held without a money citation: 999:- #464's audit now PASSES against parser commit 357c67c10 — null
-PASS   SO-22 advisor live: ADV ran 10m ago, 109 ruling(s), file 1101m old
+FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2809:- **(b)** "held" really is reserved for money, and `#562` should 
+PASS   SO-22 advisor live: ADV ran 4m ago, 109 ruling(s), file 1111m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#277,#276,#275,...)  pax:18 (#98,#96,#95,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
 PASS   SO-24 heartbeat 21s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-API-1842.md(3p/0t) out-REV-1831.md(11p/0t) out-CRM-1819.md(2p/0t) out-CRM-1814.md(2p/0t)
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-1852.md(2p/0t) out-REV-1848.md(1p/0t) out-API-1842.md(3p/0t) out-REV-1831.md(11p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 29m old)
+PASS   SO-28 nightly section present on the page (page 6m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
 PASS   SO-33 notifier ran 0m ago; 30 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
-/private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/check-so.sh: line 674: syntax error near unexpected token `Founder,'
-/private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/check-so.sh: line 674: `ck. (Founder, 4 Oct.)'
+PASS   SO-39 every expected check is present as a check run on the open PRs
+PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
+---
+FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
