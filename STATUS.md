@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 18:35:54 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 18:35:58 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-05 18:33:34   -> pass SKIPPED (lock held by a real pass)
 - notifier last ran: 1m ago
 
@@ -92,6 +92,9 @@ PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
 PASS   SO-39 every expected check is present as a check run on the open PRs
+PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
+---
+FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
