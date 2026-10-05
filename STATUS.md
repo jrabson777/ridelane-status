@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 19:10:58 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 19:11:12 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 6s ago
 - last pass: 2026-10-05 19:10:04 TRIGGER cause=state-change NOT RUN -- lock held 88s
 - notifier last ran: 2m ago
 
