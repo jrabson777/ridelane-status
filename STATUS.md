@@ -1,13 +1,13 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 18:43:32 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 18:44:11 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-05 18:39:58   -> pass RAN
+- probe heartbeat: 2s ago
+- last pass: 2026-10-05 18:43:36 TRIGGER cause=state-change NOT RUN -- lock held 69s
 - notifier last ran: 0m ago
 
 ## Phase board
@@ -91,6 +91,8 @@ PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/r
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
+/private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/check-so.sh: line 674: syntax error near unexpected token `Founder,'
+/private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/check-so.sh: line 674: `ck. (Founder, 4 Oct.)'
 ```
 
 ## LOOP-ALERTS, tail
