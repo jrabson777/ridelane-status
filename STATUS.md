@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 18:24:02 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 18:29:08 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 6s ago
 - last pass: 2026-10-05 18:21:35   -> pass RAN
-- notifier last ran: 0m ago
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -44,19 +44,19 @@ _Generated 2026-10-05 18:24:02 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | **none** | 64 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 752 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 823 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17001 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17423 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28304 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11239 |
-| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 108 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 77 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 765 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 836 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17014 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17436 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28317 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11252 |
+| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 121 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 5m ago)
 NOTE: another check-so is running (1s) and there is no cached result. Reporting nothing rather than a half board.
 ```
 
