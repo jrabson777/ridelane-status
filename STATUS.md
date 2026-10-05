@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 18:12:41 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 18:14:45 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-05 18:07:55   -> pass RAN
-- notifier last ran: 1m ago
+- probe heartbeat: 1s ago
+- last pass: 2026-10-05 18:13:53 TRIGGER cause=state-change NOT RUN -- lock held 46s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -44,20 +44,20 @@ _Generated 2026-10-05 18:12:41 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | **none** | 63 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 751 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 822 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17000 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17422 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28303 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11238 |
-| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 107 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | **none** | 64 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 752 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 823 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17001 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17423 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28304 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11239 |
+| jrax-driver-app | #278 | `b9b254180f2c` | 3 total, 3 failed | **none** | 108 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
-NOTE: another check-so is running (577s) and there is no cached result. Reporting nothing rather than a half board.
+(from the last pass, 0m ago)
+NOTE: another check-so is running (67s) and there is no cached result. Reporting nothing rather than a half board.
 ```
 
 ## LOOP-ALERTS, tail
