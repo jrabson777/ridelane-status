@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 00:49:11 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 00:51:48 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 5s ago
 - last pass: 2026-10-05 00:48:09 PASS cause=idle-floor-10m prev=a61b3628 now=a61b3628
 - notifier last ran: 2m ago
 
@@ -52,25 +52,25 @@ FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 co
 PASS   SO-3  no build links on the page
 FAIL   SO-4  7 CLAIMS row(s) without an id
 FAIL   SO-5  no scoped blocking list on his page
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 107m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 109m
 FAIL   SO-7  CLAIMS table has no OTA updates row
 FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 27m ago
+PASS   SO-10 STANDING-ORDERS.md updated 29m ago
 FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
 FAIL   SO-12 approved and dirty, refresh this pass: ?
 UNPROV SO-13 REFUSE
 UNPROV SO-14 REFUSE
-PASS   SO-15 reviewer session active 27m ago (10133 lines)
+PASS   SO-15 reviewer session active 30m ago (10133 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 FAIL   SO-17 no '## OPEN ASKS' section -- an unstructured page cannot be checked
 FAIL   SO-18 no five-row board on his page
 PASS   SO-19 every queue file is read by a session
 UNPROV SO-21 GitHub call did not answer -- not reporting a clean board
-PASS   SO-22 advisor live: ADV ran 22m ago, 109 ruling(s), file 27m old
+PASS   SO-22 advisor live: ADV ran 25m ago, 109 ruling(s), file 30m old
 UNPROV SO-23 the delivery read returned nothing at all -- not reporting delivery as clean on an empty read
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 7s old
+PASS   SO-24 heartbeat 9s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-0019.md(10p/0t) out-API-2321.md(9p/9t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
