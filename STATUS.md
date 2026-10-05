@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 13:22:38 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 13:32:52 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-05 13:21:17 TRIGGER cause=state-change NOT RUN -- lock held 5914s
 - notifier last ran: 10m ago
 
@@ -47,43 +47,8 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 ## Last standing-orders run
 
 ```
-(from the last pass, 10m ago)
-UNPROV SO-1  cannot read his page (mirror STALE 119m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
-PASS   SO-3  no build links on the page
-UNPROV SO-4  cannot read his page (mirror STALE 119m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-UNPROV SO-5  cannot read his page (mirror STALE 119m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 348m
-grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
-UNPROV SO-7  cannot read his page (mirror STALE 119m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
-UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 596m ago
-FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
-FAIL   SO-12 approved and dirty, refresh this pass: ?
-UNPROV SO-13 REFUSE: curl failed on repos/jrabson777/ridelane-passenger-app/pulls/78/files?per_page=100
-UNPROV SO-14 REFUSE: curl failed on repos/jrabson777/ridelane-passenger-app/pulls/78/files?per_page=100
-PASS   SO-15 reviewer session active 0m ago (11895 lines)
-PASS   SO-16 file-watch loaded (coUNPROV SO-23 GitHub call did not answer -- not reporting delivery as clean
-PASS   SO-20 every dispatched id has been acknowledged in a handback
-FAIL   SO-24 heartbeat 751s old -- the loop has STOPPED, not gone quiet
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1227.md(1p/0t) out-ADV-1230.md(0p/0t)
-PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR igrep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
-FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#565,ridelane-api#562,ridelane-api#246
-PASS   SO-22 advisor live: ADV ran 0m ago, 109 ruling(s), file 759m old
-UNPROV SO-23 GitHub call did not answer -- not reporting delivery as clean
-PASS   SO-20 every dispatched id has been acknowledged in a handback
-FAIL   SO-24 heartbeat 1707s old -- the loop has STOPPED, not gone quiet
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1227.md(1p/0t) out-ADV-1230.md(0p/0t)
-PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
-UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
-UNPROV SO-29 cannot read his page (mirror STALE 119m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-PASS   SO-33 notifier ran 5m ago; 23 event(s) delivered to date
-FAIL   SO-34 mirror 49m stale, over the 5m line -- the advisor is reading a dead page
-FAIL   SO-35 control-plane verifier 89m stale
-PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
-FAIL   SO-38 pass.log has not grown in 28m, past two fire intervals -- the loop is firing and producing nothing, which is exactly how 4 Oct lost six hours
+(from the last pass, 1m ago)
+NOTE: another check-so is running (0s) and there is no cached result. Reporting nothing rather than a half board.
 ```
 
 ## LOOP-ALERTS, tail
