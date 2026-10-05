@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 13:21:25 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 13:22:38 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 8s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-05 13:21:17 TRIGGER cause=state-change NOT RUN -- lock held 5914s
-- notifier last ran: 9m ago
+- notifier last ran: 10m ago
 
 ## Phase board
 
@@ -42,21 +42,12 @@ _Generated 2026-10-05 13:21:25 EDT by the probe. Public mirror; no tokens, keys,
 
 ## Open PRs, verdict at head
 
-| repo | pr | head | checks | verdict at head | age (m) |
-|---|---|---|---|---|---|
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 459 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 531 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 16709 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17131 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28012 |
-| ridelane-passenger-app | #97 | `c58551c6ba8d` | 3 total, 0 failed | YES | 595 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 10947 |
-| jrax-driver-app | #277 | `88bc1713eaf9` | 3 total, 0 failed | **none** | 158 |
+REFUSED: the PR read did not answer. Not reporting an empty board.
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 5m ago)
+(from the last pass, 10m ago)
 UNPROV SO-1  cannot read his page (mirror STALE 119m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
 PASS   SO-3  no build links on the page
