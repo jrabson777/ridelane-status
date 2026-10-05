@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 13:49:47 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 14:33:08 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 945s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-05 13:21:17 TRIGGER cause=state-change NOT RUN -- lock held 5914s
-- notifier last ran: 15m ago
+- notifier last ran: 59m ago
 
 ## Phase board
 
@@ -47,25 +47,49 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 ## Last standing-orders run
 
 ```
-NO FRESH STANDING-ORDERS RESULT (none within 20 minutes).
-This is not a clean board -- it is a board nobody has read recently.
+(from the last pass, 2m ago)
+UNPROV SO-1  cannot read his page (mirror STALE 192m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-2  ? open PRs >60m with no verdict at head: Expecting value: line 1 column 1 (char 0)
+PASS   SO-3  no build links on the page
+UNPROV SO-4  cannot read his page (mirror STALE 192m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-5  cannot read his page (mirror STALE 192m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 421m
+grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
+UNPROV SO-7  cannot read his page (mirror STALE 192m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-8  ? open PRs have ZERO checks — red, not unknown
+UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
+PASS   SO-10 STANDING-ORDERS.md updated 670m ago
+FAIL   SO-11 over WIP limit: ? — next item is a review, not a new PR
+FAIL   SO-12 approved and dirty, refresh this pass: ?
+PASS   SO-13 no open PR was pushed after its approval
+UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
+PASS   SO-15 reviewer session active 1m ago (11974 lines)
+PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
+UNPROV SO-17 cannot read his page (mirror STALE 192m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-18 cannot read his page (mirror STALE 192m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+PASS   SO-19 every queue file is read by a session
+grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
+FAIL   SO-21 declared-held PR(s) citing neither D-n nor #474: ridelane-api#565,ridelane-api#562,ridelane-api#246
+PASS   SO-22 advisor live: ADV ran 0m ago, 109 ruling(s), file 825m old
+UNPROV SO-23 GitHub call did not answer -- not reporting delivery as clean
+PASS   SO-20 every dispatched id has been acknowledged in a handback
+FAIL   SO-24 heartbeat 1703s old -- the loop has STOPPED, not gone quiet
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-1227.md(1p/0t) out-REV-1349.md(6p/28t) out-CRM-1327.md(2p/0t)
+PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
+UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
+FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
+UNPROV SO-29 cannot read his page (mirror STALE 192m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-33 notifier last ran 55m ago, over the 10m line -- the channel to the founder is going quiet
+FAIL   SO-34 mirror 28m stale, over the 5m line -- the advisor is reading a dead page
+FAIL   SO-35 control-plane verifier 67m stale
+PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
+FAIL   SO-38 pass.log has not grown in 28m, past two fire intervals -- the loop is firing and producing nothing, which is exactly how 4 Oct lost six hours
+/private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/check-so.sh: line 669: 78331 Terminated: 15          ( sleep 240; kill -0 $$ 2> /dev/null && { echo "CHECK-SO SELF-TERMINATED at 240s -- not reporting a clean board."; pkill -9 -P $$ 2> /dev/null; kill -9 $$ 2> /dev/null; } )
 ```
 
 ## LOOP-ALERTS, tail
 
 ```
-
-**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
-
-**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
-
-**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
-
-**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
-
-**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
-
-**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
