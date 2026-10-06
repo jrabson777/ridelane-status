@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 06:07:40 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 06:08:13 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -135,18 +135,18 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 768 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1455 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1527 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17704 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18126 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29007 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 0 failed | **none** | 3 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 779 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1466 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1538 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17715 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18138 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29019 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 14 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: breaking a stale check-so lock (134s, holder 81689 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
