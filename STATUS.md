@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 06:05:16 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 06:05:31 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-06 06:04:08 TRIGGER cause=state-change NOT RUN -- lock held 43s
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-06 06:05:20 TRIGGER cause=state-change NOT RUN -- lock held 115s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -146,33 +146,33 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 2m ago)
-NOTE: breaking a stale check-so lock (121s, holder 75782 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (137s, holder 78058 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-PASS   SO-6  FOUNDER-DEFECTS.md touched 26m ago
+PASS   SO-6  FOUNDER-DEFECTS.md touched 29m ago
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 349m ago
+PASS   SO-10 STANDING-ORDERS.md updated 351m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 15m ago (13819 lines)
+PASS   SO-15 reviewer session active 0m ago (13846 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 49m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 52m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2891:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 7m ago, 112 ruling(s), file 181m old
+PASS   SO-22 advisor live: ADV ran 9m ago, 112 ruling(s), file 183m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#279,#278,#277,...)  pax:18 (#102,#101,#100,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback [6 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 24s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-0553.md(10p/11t) out-DRV-0553.md(9p/4t) out-CRM-0546.md(5p/0t)
+PASS   SO-24 heartbeat 20s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-0603.md(1p/0t) out-CRM-0603.md(5p/0t) out-PAX-0553.md(10p/11t) out-DRV-0553.md(9p/4t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 PASS   SO-28 nightly section dated TODAY (6 Oct) on his page
