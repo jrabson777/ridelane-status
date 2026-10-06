@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 21:41:45 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 21:43:34 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-05 21:38:12   -> pass RAN
-- notifier last ran: 1m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -57,41 +57,38 @@ _Generated 2026-10-05 21:41:45 EDT by the probe. Public mirror; no tokens, keys,
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
-NOTE: another check-so has been running 68s; this is its last result, 1m old.
-NOTE: another check-so has been running 0s; this is its last result, 1m old.
-NOTE: another check-so has been running 21s; this is its last result, 2m old.
-NOTE: breaking a stale check-so lock (146s, holder 90190 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (142s, holder 98387 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 5 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-PASS   SO-6  FOUNDER-DEFECTS.md touched 20m ago
+PASS   SO-6  FOUNDER-DEFECTS.md touched 27m ago
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 1121m ago
+PASS   SO-10 STANDING-ORDERS.md updated 1129m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 3m ago (12525 lines)
+PASS   SO-15 reviewer session active 3m ago (12541 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 28m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 1m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2809:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 4m ago, 110 ruling(s), file 119m old
+PASS   SO-22 advisor live: ADV ran 1m ago, 110 ruling(s), file 127m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#278,#277,#276,...)  pax:18 (#98,#96,#95,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 23s old
+PASS   SO-24 heartbeat 22s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-2129.md(7p/15t) out-CRM-2113.md(2p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 28m old)
+PASS   SO-28 nightly section present on the page (page 1m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 34 event(s) delivered to date
+PASS   SO-33 notifier ran 1m ago; 34 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
