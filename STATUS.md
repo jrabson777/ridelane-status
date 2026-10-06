@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 02:06:55 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 02:07:54 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -58,7 +58,7 @@ does.
 
 - probe heartbeat: 2s ago
 - last pass: 2026-10-06 02:04:18 TRIGGER cause=state-change NOT RUN -- lock held 55s
-- notifier last ran: 1m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -94,21 +94,22 @@ does.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #571 | `cd88aea97f67` | 8 total, 0 failed | **none** | 10 |
-| ridelane-api | #570 | `32dd9504fc4b` | 7 total, 0 failed | YES | 41 |
-| ridelane-api | #569 | `4e6312beea10` | 7 total, 0 failed | YES | 51 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 527 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1214 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1286 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17463 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17885 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28767 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11701 |
+| ridelane-api | #571 | `cd88aea97f67` | 8 total, 0 failed | **none** | 22 |
+| ridelane-api | #570 | `32dd9504fc4b` | 7 total, 0 failed | YES | 53 |
+| ridelane-api | #569 | `4e6312beea10` | 7 total, 0 failed | YES | 63 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 539 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1226 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1298 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17475 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17897 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28778 |
+| ridelane-passenger-app | #101 | `b1ebd81f1e1b` | 3 total, 0 failed | **none** | 4 |
+| ridelane-passenger-app | #78 | `e8e264145a4d` | 3 total, 0 failed | **none** | 11713 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: another check-so has been running 83s; this is its last result, 0m old.
 NOTE: another check-so has been running 26s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (135s, holder 75116 not alive).
