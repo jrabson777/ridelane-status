@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 23:21:47 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 23:22:58 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -8,7 +8,7 @@ _Generated 2026-10-05 23:21:47 EDT by the probe. Public mirror; no tokens, keys,
 
 - probe heartbeat: 3s ago
 - last pass: 2026-10-05 23:14:23 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 94s
-- notifier last ran: 1m ago
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -44,7 +44,7 @@ _Generated 2026-10-05 23:21:47 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 372 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 373 |
 | ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1060 |
 | ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1132 |
 | ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17309 |
