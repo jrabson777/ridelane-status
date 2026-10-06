@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 02:15:15 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 02:16:08 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -13,10 +13,10 @@ _Generated 2026-10-06 02:15:15 EDT by the probe. Public mirror; no tokens, keys,
 | **M1a** staging redeploy ACTIVE | **DONE** | deploy `b08f1358` · health 200 `commit=e9698534dd4c` `bootedAt=2026-10-06T04:27:26Z` · CRM 200 | — |
 | **M1b** Stripe TEST key | **DONE (Path B, D-20)** | `stripeMode=test` · `/api/stripe/config` pk_test_ acct `51QY4ZQCxi29dqjf` | restricted-key dialog won't render; using the test secret key |
 | **M1c** staging store for realtime | **DONE** | `persistence=redis` `ping=1ms` · engine.io handshake on `/socket.io/` · redis:7-alpine internal, `basic-xxs` **$5/mo** | — |
-| **M1d** boot-completeness CI step | **PR OPEN, ALL CHECKS GREEN** | `ridelane-api#571` `cd88aea9` · `boot-env` **SUCCESS**, `test` **SUCCESS** · 6 boots: 1 completeness + 5 necessity controls · drilled both ways · **SO-43** mirrors it onto the staging spec (`8c37174`) | reviewer verdict; **merge #569 first** |
-| **Safety** `CRM_BASE_URL` fail closed | **PR OPEN, ALL CHECKS GREEN** | `ridelane-api#569` `4e6312be` · **FOUR** fallbacks, not two — `index.ts` and `employeeRoutes.ts:88` build the EMAILED invite/reset urls · 10/10 at head · class gate counts the literal per file · `ride-chat-sockets` + `test` SUCCESS | reviewer verdict |
+| **M1d** boot-completeness CI step | **PR OPEN, GREEN, RETARGETED TO `master`** | `ridelane-api#571` `cd88aea9` (head unchanged) · 8/8 SUCCESS · 6 boots: 1 completeness + 5 necessity controls · **SO-43** mirrors it onto the staging spec | reviewer verdict |
+| **Safety** `CRM_BASE_URL` fail closed | **MERGED** `d0f4d0b2` | `ridelane-api#569` on `VERDICT: APPROVE 4e6312be…` at the exact head · **FOUR** fallbacks, not two — `index.ts` and `employeeRoutes.ts:88` build the EMAILED invite/reset urls · **production NOT deployed** (still `e3cce008`, booted 5 Oct 14:49) · follow-up `#572` closes the evasion the reviewer found in my own gate | — |
 | **M2** EAS walk green on staging ×3 | **WIRING PR OPEN; NO RUN STARTED** | `ridelane-passenger-app#101` `b1ebd81` · job `env` outranks the profile env AND the `preview` environment (EAS Precedence table) · trigger's own guard passes on line 59, refuses again if that line is commented · flows renamed to the **required** `MAESTRO_` prefix · dropoff values measured from `fixtureAutocomplete("Amalie")` → one match | **founder: is an EAS e2e build a "new native build" (hard stop) or inside the approved $100/mo cap?** · and someone with `EXPO_TOKEN` must confirm `OTP_TEST_*` exist in the job's EAS environment |
-| **M3** OTA to build 12's runtime | NOT STARTED | UNKNOWN | M2 |
+| **M3** OTA to build 12's runtime | **GATE EXISTS AND IS CI-ONLY** | the publish gate is already built (`eas-update.yml` → *Refuse an update no installed build can accept*): resolves the runtime locally, counts installable `preview` builds, refuses on 0 · the 29 Sep refusal (`78ce8bc2`, **0 builds**) was the HARNESS — the key was unset — and is already fixed in-file | **UNPROVABLE from this machine.** The runtime hashes the EVALUATED config, so it tracks `GOOGLE_MAPS_IOS_CONFIG_KEY`'s **value**: same tree `a25b16f` → unset `25ce74c3`, dummy-A `c803f9d1`, dummy-B `d1502fc8`. Needs the real secret (CI) and `eas build:list` (`EXPO_TOKEN`) · **so it waits on `pax#78`** |
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | *(parallel)* A7 chat server half | DISPATCHED to API | UNKNOWN | none — staging store is live |
 
@@ -54,11 +54,21 @@ was and it got production's.
 `ubuntu-latest`, so **SO-42 does not gate them**. `render-ios.yml` is `macos-15` and
 does.
 
+**`ridelane-passenger-app#78` is the key that is actually stuck.** It is the only
+read either app repo has of what a build *is* — Build ID, commit, version and
+**runtime** — and its own comment says it best: *an OTA published to a runtime no
+build is listening on succeeds silently and reaches nobody.* It is **M3's gate** and
+**SO-14's unprovable half**, and it sat BLOCKED for 8 days on **one missing comment
+line**: `check:gates-enumerated` treats a workflow that declares nothing about gates
+as a failure, and `builds-list.yml` declared nothing. Fixed at `e8e26414`, `gates`
+now **SUCCESS**. The BLOCK clears only on a verdict at that newer sha — a green gate
+is not a lifted block.
+
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 49s ago
 - last pass: 2026-10-06 02:11:54 TRIGGER cause=state-change NOT RUN -- lock held 51s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -109,7 +119,7 @@ does.
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: another check-so has been running 84s; this is its last result, 1m old.
 NOTE: another check-so has been running 9s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (124s, holder 86511 not alive).
@@ -157,6 +167,18 @@ FAILS: 6   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
