@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 21:18:46 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 21:19:16 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-05 21:17:39 TRIGGER cause=state-change NOT RUN -- lock held 15s
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-05 21:18:51 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 87s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -57,37 +57,36 @@ _Generated 2026-10-05 21:18:46 EDT by the probe. Public mirror; no tokens, keys,
 ## Last standing-orders run
 
 ```
-(from the last pass, 5m ago)
-NOTE: another check-so has been running 77s; this is its last result, 2m old.
-NOTE: breaking a stale check-so lock (126s, holder 64484 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (303s, holder 70630 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 5 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 66m
+PASS   SO-6  FOUNDER-DEFECTS.md touched 3m ago
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 1097m ago
+PASS   SO-10 STANDING-ORDERS.md updated 1104m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 5m ago (12476 lines)
+PASS   SO-15 reviewer session active 12m ago (12476 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 3m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 11m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2809:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 0m ago, 110 ruling(s), file 95m old
+PASS   SO-22 advisor live: ADV ran 7m ago, 110 ruling(s), file 102m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#278,#277,#276,...)  pax:18 (#98,#96,#95,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 25s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-2058.md(7p/14t)
+PASS   SO-24 heartbeat 24s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-2113.md(2p/0t) out-REV-2058.md(7p/14t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 4m old)
+PASS   SO-28 nightly section present on the page (page 11m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
 PASS   SO-33 notifier ran 0m ago; 34 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
@@ -97,7 +96,7 @@ PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
 PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
-FAILS: 4   (UNPROV is not a pass and not counted as a fail)
+FAILS: 3   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
