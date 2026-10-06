@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 07:38:35 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 07:39:25 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -98,8 +98,8 @@ is not a lifted block.
 ## Heartbeat
 
 - probe heartbeat: 2s ago
-- last pass: 2026-10-06 07:34:24 TRIGGER cause=idle-floor-10m prev=e9bfa125 now=e9bfa125
-- notifier last ran: 2m ago
+- last pass: 2026-10-06 07:38:39   -> pass RAN
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -135,19 +135,19 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #577 | `49d68b640021` | 8 total, 0 failed | **none** | 57 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 859 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1546 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1618 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17795 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18217 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29099 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 94 |
+| ridelane-api | #577 | `49d68b640021` | 8 total, 0 failed | **none** | 68 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 870 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1557 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1629 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17807 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18229 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29110 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 105 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 4m ago)
+(from the last pass, 6m ago)
 NOTE: another check-so has been running 205s; this is its last result, 1m old.
 NOTE: another check-so has been running 144s; this is its last result, 11m old.
 NOTE: another check-so has been running 204s; this is its last result, 1m old.
