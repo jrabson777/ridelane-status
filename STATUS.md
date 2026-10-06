@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 05:30:47 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 05:33:30 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -135,43 +135,43 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 741 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 742 |
 | ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1429 |
 | ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1501 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17678 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18100 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28981 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17679 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18101 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28982 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 5m ago)
-NOTE: breaking a stale check-so lock (214s, holder 43249 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (320s, holder 48178 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 64m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 71m
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 313m ago
+PASS   SO-10 STANDING-ORDERS.md updated 320m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 0m ago (13797 lines)
+PASS   SO-15 reviewer session active 6m ago (13800 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 13m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 20m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2891:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 10m ago, 112 ruling(s), file 145m old
+PASS   SO-22 advisor live: ADV ran 0m ago, 112 ruling(s), file 152m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#279,#278,#277,...)  pax:18 (#102,#101,#100,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-API-568-CONFIRMED(API,20m) [6 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 23s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-0524-6oct.md(5p/0t) out-PAX-0518.md(14p/12t) out-DRV-0518.md(11p/4t) out-API-0514.md(2p/0t)
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: [REDACTED-TOKENLIKE](ADV,20m) QI-API-568-CONFIRMED(API,27m) [REDACTED-TOKENLIKE](API,20m) [6 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+PASS   SO-24 heartbeat 22s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-0524-6oct.md(5p/0t) out-PAX-0518.md(14p/12t) out-DRV-0518.md(11p/4t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 PASS   SO-28 nightly section dated TODAY (6 Oct) on his page
