@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 04:20:14 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 04:21:00 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -19,7 +19,7 @@ _Generated 2026-10-06 04:20:14 EDT by the probe. Public mirror; no tokens, keys,
 | **M3** OTA to build 12's runtime | **PUBLISH SOURCE PREPARED; BUILD 12'S REAL RUNTIME NOW KNOWN** | `pax#78` merged (`39c82d9b`) and I dispatched it: **build 12 is `appBuildVersion 12`, profile `preview`, `isForIosSimulator: false`, runtime **`a0b43caeaf16610e19c9735c1b164c88df8c5123`** — EAS's own number, computed with the real Maps secret. Locally (one dummy key held constant) `ca4304ec` and `ca4304ec + main's JS` resolve IDENTICALLY, while `main` differs — so branch `ota/build12-runtime-js-only` `cf9d11f` should resolve to `a0b43cae…` in CI and be accepted. 30/30 gates, 289 tests, tsc and lint clean on it. Rollback target recorded: the embedded bundle. | **founder: may I publish?** · the absolute match is still CI's to confirm — my local numbers are relative, and `eas-update.yml` resolves with the real secret |
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | **D-17** a binary on his phone | **BUILD 12 IS CUT AND INSTALLABLE** | run `37179820368` from `ca4304ec`, 4 Oct: *"Shipping CFBundleVersion: 12 (prior: 11)"*, *"Build is safe to install"*, GMSApiKey asserted in the shipped `.ipa` · install link on his page · **his page said "NEVER CUT" for two days; corrected** | he installs it |
-| **FD-15 / FD-14** money correctness | **ALREADY DONE ON `main`** | `__tests__/fd15-fd14-walk-ids.test.tsx`: FD-14 lines sum to the total, FD-15 booked total is the server's stored number not the screen's quote, plus a `$NaN` guard and the U+202F AM/PM case · passed in a 19-suite / 289-test run | — |
+| **FD-15 / FD-14** money correctness | **FD-14 IS LIVE — and its test passes** | measured on the twin: Fare **$89.10** + Tax **$5.35** = $94.45 against a displayed Total **$112.27**; the missing **$17.82** is the api's `gratuity`, which the card never renders. `summary.tsx` on `main` has only Fare/Tax/Total rows. The test passes because its fixture carries **no gratuity field**, so its own two-sided staleness guard can never fire. Screenshot + api payload captured; dispatched to PAX, component untouched | PAX to decide the fix |
 | *(parallel)* A7 chat | **FIVE OF SIX PROVED** | **4a** 10.9 ms · **4b** 6 ms, now a committed test (`#574` merged `974c82bd`) · **4c** support→passenger, `authorRole: ops` · **4e** 9 clean frames + a planted control that fails · **4f** unread **1→4 after exactly 3**, thread count agrees · run on a Redis I started (`:6396`), never the rig's `:6390` · 74 artifacts | **4d** is a production write — founder's call · **no client-level step claimed**: the bar is a screenshot per step and five of these are wire/API proofs · 4f's *zero* case does have a client screenshot |
 
 **Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, **redis:7-alpine store, engine.io handshake proved on `/socket.io/`** (the "in-memory, no socket until M1c" note that stood here was stale the moment M1c landed).
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 42s ago
 - last pass: 2026-10-06 04:17:41 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 25s
-- notifier last ran: 1m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -193,6 +193,18 @@ FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
