@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 03:36:07 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 03:36:25 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -20,7 +20,7 @@ _Generated 2026-10-06 03:36:07 EDT by the probe. Public mirror; no tokens, keys,
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | **D-17** a binary on his phone | **BUILD 12 IS CUT AND INSTALLABLE** | run `37179820368` from `ca4304ec`, 4 Oct: *"Shipping CFBundleVersion: 12 (prior: 11)"*, *"Build is safe to install"*, GMSApiKey asserted in the shipped `.ipa` · install link on his page · **his page said "NEVER CUT" for two days; corrected** | he installs it |
 | **FD-15 / FD-14** money correctness | **ALREADY DONE ON `main`** | `__tests__/fd15-fd14-walk-ids.test.tsx`: FD-14 lines sum to the total, FD-15 booked total is the server's stored number not the screen's quote, plus a `$NaN` guard and the U+202F AM/PM case · passed in a 19-suite / 289-test run | — |
-| *(parallel)* A7 chat server half | DISPATCHED to API | UNKNOWN | none — staging store is live |
+| *(parallel)* A7 chat server half | **4a, 4b, 4e PROVED ON THE WIRE against :4010** | engine.io handshake on `/socket.io/` (`0{"sid":`, not just HTTP 200) · Redis 7.2.5 on **6390/6391** · **4a 10.9 ms** (driver socket receives the rider's message) · **4b 6 ms** (`authorRole: "driver"` on the passenger socket) · **4e** 9 frames with zero phone-shaped strings and a planted 10th that FAILS the same checker in the same run · 25 artifacts in `PROOF-4a-4f/` | **4c** CRM paused by PLAN.md · **4d** is a production write, founder's call · **4f** not proved · **no client screenshots**: the committed flows' `appId` targets the PRODUCTION-aimed install (measured in the Hermes bundles), so running them here would write to prod |
 
 **Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, **redis:7-alpine store, engine.io handshake proved on `/socket.io/`** (the "in-memory, no socket until M1c" note that stood here was stale the moment M1c landed).
 
@@ -84,7 +84,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-06 03:30:08 TRIGGER cause=state-change NOT RUN -- lock held 83s
 - notifier last ran: 3m ago
 
@@ -180,6 +180,18 @@ FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
