@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 07:04:19 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 07:06:32 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -98,8 +98,8 @@ is not a lifted block.
 ## Heartbeat
 
 - probe heartbeat: 6s ago
-- last pass: 2026-10-06 07:03:10 TRIGGER cause=state-change NOT RUN -- lock held 217s
-- notifier last ran: 1m ago
+- last pass: 2026-10-06 07:05:24 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 90s
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -139,7 +139,7 @@ is not a lifted block.
 | ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 835 |
 | ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1522 |
 | ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1594 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17771 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17772 |
 | ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18194 |
 | ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29075 |
 | ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 70 |
@@ -147,7 +147,7 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 6m ago)
+(from the last pass, 8m ago)
 NOTE: another check-so has been running 25s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (116s, holder 44117 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
