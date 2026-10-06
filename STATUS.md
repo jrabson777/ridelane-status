@@ -1,14 +1,39 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 00:24:59 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 00:25:07 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
+## PLAN
+
+**Phase 1 goal: an update running on his phone.** Plan of record: `PLAN.md`.
+
+| milestone | state | proof id | blocker |
+|---|---|---|---|
+| **M1a** staging redeploy ACTIVE | IN PROGRESS | deployment `b08f1358` | none — building |
+| **M1b** Stripe TEST restricted key | BLOCKED | UNKNOWN | founder must sign in to Stripe |
+| **M1c** staging store for realtime (≤ +$15/mo) | NOT STARTED | UNKNOWN | price the options first |
+| **M1d** boot-completeness CI step | NOT STARTED | UNKNOWN | none |
+| **Safety** `rbac.ts:50` fail closed on `CRM_BASE_URL` | NOT STARTED | UNKNOWN | none |
+| **M2** EAS walk green on staging ×3 | NOT STARTED | UNKNOWN | M1 |
+| **M3** OTA to build 12's runtime | NOT STARTED | UNKNOWN | M2 |
+| **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
+| *(parallel)* A7 chat server half | NOT STARTED | UNKNOWN | M1c — no store ⇒ no socket |
+
+**Done and carried in:** `ridelane-staging` `36db9a85` created at $10/mo ·
+production unchanged (`ridelane-api` `835c47ae`, `monkfish-app` `13cbce10`) ·
+token containment `POST /v2/droplets` → 403 · first-deploy root cause fixed in
+`e0fd45c`.
+
+**Frozen until M4:** no new standing orders; no loop-infra work unless it blocks
+M1–M4; DRIVER and CRM sessions paused.
+
+
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 10s ago
 - last pass: 2026-10-06 00:14:21 TRIGGER cause=state-change NOT RUN -- lock held 60s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -102,6 +127,18 @@ FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
