@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 07:50:19 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 07:54:27 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 7s ago
-- last pass: 2026-10-06 07:49:10   -> pass RAN
-- notifier last ran: 0m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-06 07:54:23 TRIGGER cause=state-change prev=ad94061f now=d5e198d1
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -135,19 +135,19 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #577 | `49d68b640021` | 8 total, 0 failed | **none** | 69 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 871 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1558 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1630 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17807 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18229 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29110 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 105 |
+| ridelane-api | #577 | `49d68b640021` | 8 total, 0 failed | YES | 81 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 883 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1570 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1642 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17820 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18242 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29123 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 118 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 9m ago)
+(from the last pass, 13m ago)
 NOTE: another check-so has been running 21s; this is its last result, 0m old.
 NOTE: another check-so has been running 8s; this is its last result, 7m old.
 NOTE: another check-so has been running 205s; this is its last result, 1m old.
