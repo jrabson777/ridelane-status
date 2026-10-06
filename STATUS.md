@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 20:11:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 20:12:30 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-05 20:10:17 TRIGGER cause=state-change NOT RUN -- lock held 59s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -44,19 +44,19 @@ _Generated 2026-10-05 20:11:33 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 171 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 859 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 930 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17108 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17530 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28411 |
-| ridelane-passenger-app | #100 | `8454ec256a82` | 3 total, 0 failed | **none** | 0 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11346 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 183 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 870 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 942 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17120 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17542 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28423 |
+| ridelane-passenger-app | #100 | `8454ec256a82` | 3 total, 1 failed | **none** | 12 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11358 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: another check-so has been running 2s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (134s, holder 770 not alive).
 UNPROV SO-1  cannot read his page (mirror STALE 53m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
