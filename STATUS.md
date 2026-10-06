@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 02:29:39 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 02:30:22 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -56,6 +56,22 @@ was and it got production's.
 `ubuntu-latest`, so **SO-42 does not gate them**. `render-ios.yml` is `macos-15` and
 does.
 
+**The OTA publish source is fully de-risked, and I still did not publish.**
+`eas-update.yml` runs four steps before its runtime gate; all four pass on
+`ota/build12-runtime-js-only` (`cf9d11f`): **30/30 gates**, **19 suites / 289 tests**,
+**`tsc` 0 errors**, **lint 0 errors**. So a dispatch reaches the runtime gate, which is
+the real decision point — and that gate refuses unless an installed build accepts the
+runtime, so the dispatch is safe by construction either way.
+
+**Why I held anyway:** an OTA only matters once build 12 is ON his phone. Publishing
+before he installs gains nothing he could see, and spends an outward-facing action
+that no reviewer has checked yet. It is one line in the 07:00 email instead.
+
+**Not a blocker, measured:** the walk's flows hardcode `appId: com.ride.ridelane`,
+which **matches** `app.json`'s `ios.bundleIdentifier`, and the `e2e-test` profile does
+not override it. So ADV's `${APP_ID}` item is a durability improvement, not an M2
+blocker — the walk would launch.
+
 **`ridelane-passenger-app#78` is the key that is actually stuck.** It is the only
 read either app repo has of what a build *is* — Build ID, commit, version and
 **runtime** — and its own comment says it best: *an OTA published to a runtime no
@@ -68,9 +84,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 29s ago
 - last pass: 2026-10-06 02:25:54 TRIGGER cause=state-change NOT RUN -- lock held 47s
-- notifier last ran: 2m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -168,6 +184,18 @@ FAILS: 6   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
