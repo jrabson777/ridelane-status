@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 03:34:01 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 03:35:35 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -86,7 +86,7 @@ is not a lifted block.
 
 - probe heartbeat: 2s ago
 - last pass: 2026-10-06 03:30:08 TRIGGER cause=state-change NOT RUN -- lock held 83s
-- notifier last ran: 1m ago
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -134,34 +134,33 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
-NOTE: another check-so has been running 19s; this is its last result, 0m old.
-NOTE: breaking a stale check-so lock (107s, holder 97687 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (94s, holder 3977 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
-FAIL   SO-2  1 open PRs >60m with no verdict at head: api#571
+PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-PASS   SO-6  FOUNDER-DEFECTS.md touched 40m ago
+PASS   SO-6  FOUNDER-DEFECTS.md touched 43m ago
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 198m ago
+PASS   SO-10 STANDING-ORDERS.md updated 202m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 3m ago (13482 lines)
+PASS   SO-15 reviewer session active 6m ago (13482 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 42m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 45m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2891:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 15m ago, 112 ruling(s), file 30m old
+PASS   SO-22 advisor live: ADV ran 0m ago, 112 ruling(s), file 34m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#279,#278,#277,...)  pax:15 (#100,#99,#98,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-NIGHTLY-20261006(PASSENGER,30m) QI-ACKS-REVIEWER-0145(REVIEWER,110m) [5 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 28s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-0319.md(6p/4t) out-DRV-0319.md(7p/3t) out-API-0315.md(1p/0t)
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-ACKS-REVIEWER-0145(REVIEWER,114m) [5 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+PASS   SO-24 heartbeat 23s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-0332.md(11p/11t) out-API-0315.md(2p/0t) out-CRM-0319.md(6p/4t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 PASS   SO-28 nightly section dated TODAY (6 Oct) on his page
@@ -175,7 +174,7 @@ PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 UNPROV SO-43 all 5 boot-required name(s) ARE bound by the spec (11 keys), but the
 ---
-FAILS: 5   (UNPROV is not a pass and not counted as a fail)
+FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
