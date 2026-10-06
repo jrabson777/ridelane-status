@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 03:56:12 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 03:58:24 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -20,7 +20,7 @@ _Generated 2026-10-06 03:56:12 EDT by the probe. Public mirror; no tokens, keys,
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | **D-17** a binary on his phone | **BUILD 12 IS CUT AND INSTALLABLE** | run `37179820368` from `ca4304ec`, 4 Oct: *"Shipping CFBundleVersion: 12 (prior: 11)"*, *"Build is safe to install"*, GMSApiKey asserted in the shipped `.ipa` · install link on his page · **his page said "NEVER CUT" for two days; corrected** | he installs it |
 | **FD-15 / FD-14** money correctness | **ALREADY DONE ON `main`** | `__tests__/fd15-fd14-walk-ids.test.tsx`: FD-14 lines sum to the total, FD-15 booked total is the server's stored number not the screen's quote, plus a `$NaN` guard and the U+202F AM/PM case · passed in a 19-suite / 289-test run | — |
-| *(parallel)* A7 chat server half | **4a, 4b, 4e PROVED ON THE WIRE against :4010** | engine.io handshake on `/socket.io/` (`0{"sid":`, not just HTTP 200) · Redis 7.2.5 on **6390/6391** · **4a 10.9 ms** (driver socket receives the rider's message) · **4b 6 ms** (`authorRole: "driver"` on the passenger socket) · **4e** 9 frames with zero phone-shaped strings and a planted 10th that FAILS the same checker in the same run · 25 artifacts in `PROOF-4a-4f/` | **4c** CRM paused by PLAN.md · **4d** is a production write, founder's call · **4f** not proved · **no client screenshots**: the committed flows' `appId` targets the PRODUCTION-aimed install (measured in the Hermes bundles), so running them here would write to prod |
+| *(parallel)* A7 chat | **4a, 4b, 4e proved on the wire; 4f PARTIAL on the client** | **4a 10.9 ms** · **4b 6 ms** (`authorRole: "driver"`) · **4e** 9 clean frames + a planted 10th that fails the same checker · **client:** the twin was **SIGNED OUT** (screenshot), now signed in with the D-18 identity; cold start keeps the session and the Inbox renders "NO MESSAGES YET" — unread correctly **zero** · places fixture **live** on :4010 ("Amalie" → `fixture:amalie-arena`), so the 30-Sep `503 PLACES_UNCONFIGURED` blocker is gone · 51 artifacts, 7 screenshots | **4f non-zero unread** needs a booking with an assigned driver and auto-dispatch is off · **4c** CRM paused · **4d** is a production write, founder's call · I wrote test data into the live :4010 Redis and cannot attribute it — no before-reading. Self-reported to API/REV; deleted nothing. |
 
 **Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, **redis:7-alpine store, engine.io handshake proved on `/socket.io/`** (the "in-memory, no socket until M1c" note that stood here was stale the moment M1c landed).
 
@@ -84,8 +84,8 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-06 03:52:39 TRIGGER cause=state-change NOT RUN -- lock held 54s
+- probe heartbeat: 5s ago
+- last pass: 2026-10-06 03:57:17 TRIGGER cause=state-change NOT RUN -- lock held 36s
 - notifier last ran: 0m ago
 
 ## Phase board
@@ -133,38 +133,38 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
-NOTE: breaking a stale check-so lock (107s, holder 33341 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (188s, holder 36558 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 63m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 66m
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 222m ago
+PASS   SO-10 STANDING-ORDERS.md updated 225m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 8m ago (13522 lines)
+PASS   SO-15 reviewer session active 0m ago (13543 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 18m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 2m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2891:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 4m ago, 112 ruling(s), file 54m old
+PASS   SO-22 advisor live: ADV ran 7m ago, 112 ruling(s), file 57m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#279,#278,#277,...)  pax:16 (#101,#100,#99,...) -- a run that was created is not a publish (AR-7)
-PASS   SO-20 every dispatched id has been acknowledged in a handback [6 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 24s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-DRV-0351.md(7p/3t) out-CRM-0351.md(5p/0t) out-PAX-0349.md(14p/11t) out-API-0338.md(2p/0t)
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-API-4B-COVERAGE(API,20m) [6 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+PASS   SO-24 heartbeat 22s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-0356.md(1p/0t) out-DRV-0351.md(7p/3t) out-CRM-0351.md(5p/0t) out-PAX-0349.md(14p/11t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 PASS   SO-28 nightly section dated TODAY (6 Oct) on his page
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 39 event(s) delivered to date
+PASS   SO-33 notifier ran 1m ago; 39 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
@@ -173,7 +173,7 @@ PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 PASS   SO-43 all 5 boot-required name(s) bound by the staging spec (11 api keys), contract from origin/master
 ---
-FAILS: 4   (UNPROV is not a pass and not counted as a fail)
+FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
