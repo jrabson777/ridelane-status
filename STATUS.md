@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 04:05:16 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 04:06:00 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,8 +97,8 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-06 04:04:08   -> pass RAN
+- probe heartbeat: 2s ago
+- last pass: 2026-10-06 04:05:20 TRIGGER cause=state-change NOT RUN -- lock held 58s
 - notifier last ran: 0m ago
 
 ## Phase board
@@ -146,38 +146,38 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
-NOTE: breaking a stale check-so lock (106s, holder 46883 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (118s, holder 49486 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-PASS   SO-6  FOUNDER-DEFECTS.md touched 0m ago
+PASS   SO-6  FOUNDER-DEFECTS.md touched 2m ago
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 230m ago
+PASS   SO-10 STANDING-ORDERS.md updated 232m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 4m ago (13578 lines)
+PASS   SO-15 reviewer session active 6m ago (13578 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 2m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 4m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2891:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 12m ago, 112 ruling(s), file 62m old
+PASS   SO-22 advisor live: ADV ran 14m ago, 112 ruling(s), file 64m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#279,#278,#277,...)  pax:17 (#101,#100,#99,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback [6 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 22s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-API-0338.md(1p/0t) out-DRV-0351.md(7p/3t) out-CRM-0351.md(5p/0t) out-PAX-0349.md(14p/11t)
+PASS   SO-24 heartbeat 21s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-API-0404.md(2p/0t) out-API-0338.md(1p/0t) out-DRV-0351.md(7p/3t) out-CRM-0351.md(5p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 PASS   SO-28 nightly section dated TODAY (6 Oct) on his page
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 1m ago; 39 event(s) delivered to date
+PASS   SO-33 notifier ran 0m ago; 39 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
