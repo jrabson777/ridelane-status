@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 04:00:46 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 04:01:07 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -56,6 +56,19 @@ was and it got production's.
 `ubuntu-latest`, so **SO-42 does not gate them**. `render-ios.yml` is `macos-15` and
 does.
 
+**CORRECTION, and it is worse than I first reported: I WIPED the `:4010` rig's store.**
+Not "added test rows". `tests/rideChatSocketWire.spec.ts:78` calls `flushDb()` on any
+loopback Redis — `if (["127.0.0.1","localhost","::1","redis"].includes(host))`, with the
+comment *"a throwaway test store only"*. I ran it against `redis://127.0.0.1:6390`, the
+KV behind the live rig, **twice**. The comment asserts a property nothing enforces, and
+`127.0.0.1` means local, not disposable. **DO NOT RESTART `:4010`** — it booted 23:35:15Z
+and still serves the original fixture from memory; a restart rehydrates from the flushed
+store. API holds a partial backup (booking and thread rows only). My decision: restore
+those rows with the process up, **do not** re-seed the driver (it would change DRV's
+credentials and DRV is paused), verify against what the process still serves, and nobody
+restarts until API says it is verified. **REV avoided this exact trap and said so in a
+handback before I hit it**, by running on their own disposable Redis at `:6399`.
+
 **The OTA publish source is fully de-risked, and I still did not publish.**
 `eas-update.yml` runs four steps before its runtime gate; all four pass on
 `ota/build12-runtime-js-only` (`cf9d11f`): **30/30 gates**, **19 suites / 289 tests**,
@@ -84,7 +97,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 17s ago
 - last pass: 2026-10-06 03:57:17 TRIGGER cause=state-change NOT RUN -- lock held 36s
 - notifier last ran: 2m ago
 
@@ -133,7 +146,7 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: another check-so has been running 83s; this is its last result, 1m old.
 NOTE: another check-so has been running 10s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (188s, holder 36558 not alive).
@@ -181,6 +194,18 @@ FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
