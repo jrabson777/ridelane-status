@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 23:20:45 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 23:21:47 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-05 23:14:23 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 94s
-- notifier last ran: 3m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -44,54 +44,52 @@ _Generated 2026-10-05 23:20:45 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 361 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1048 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1120 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17297 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17719 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28600 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11535 |
-| jrax-driver-app | #279 | `77877f9c57ed` | 3 total, 0 failed | YES | 130 |
-| jrax-driver-app | #266 | `541b9b65f261` | 4 total, 0 failed | **none** | 1827 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 372 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1060 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1132 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17309 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17731 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28612 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11547 |
+| jrax-driver-app | #266 | `541b9b65f261` | 4 total, 0 failed | YES | 1839 |
 
 ## Last standing-orders run
 
 ```
 (from the last pass, 1m ago)
-NOTE: another check-so has been running 22s; this is its last result, 4m old.
-NOTE: breaking a stale check-so lock (182s, holder 63096 not alive).
-UNPROV SO-1  cannot read his page (mirror STALE 52m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+NOTE: breaking a stale check-so lock (98s, holder 73339 not alive).
+UNPROV SO-1  cannot read his page (mirror STALE 59m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 FAIL   SO-2  1 open PRs >60m with no verdict at head: app#266
 PASS   SO-3  no build links on the page
-UNPROV SO-4  cannot read his page (mirror STALE 52m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-UNPROV SO-5  cannot read his page (mirror STALE 52m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 118m
+UNPROV SO-4  cannot read his page (mirror STALE 59m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-5  cannot read his page (mirror STALE 59m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 126m
 grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
-UNPROV SO-7  cannot read his page (mirror STALE 52m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-7  cannot read his page (mirror STALE 59m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 1220m ago
+PASS   SO-10 STANDING-ORDERS.md updated 1227m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 0m ago (12727 lines)
+PASS   SO-15 reviewer session active 1m ago (12741 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
-UNPROV SO-17 cannot read his page (mirror STALE 52m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-UNPROV SO-18 cannot read his page (mirror STALE 52m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-17 cannot read his page (mirror STALE 59m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-18 cannot read his page (mirror STALE 59m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 PASS   SO-19 every queue file is read by a session
 grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
 FAIL   SO-21 PR(s) describing themselves as held in prose but never DECLARING it (no label, no HELD title) -- an undeclared hold is invisible to every check: ridelane-api#492
-PASS   SO-22 advisor live: ADV ran 2m ago, 111 ruling(s), file 75m old
+PASS   SO-22 advisor live: ADV ran 10m ago, 111 ruling(s), file 82m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:16 (#278,#277,#276,...)  pax:18 (#100,#98,#96,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: AR-101(API,55m) AR-19(API,55m) QI-A7-INVENTORY-0929(API,55m) QI-NOTIFY-0929(API,55m) QI-NOTIFY-0929-B(API,55m) QI-DRV-ACK-NOW(DRIVER,53m) QI-FD18-PRESENCE(DRIVER,55m) AR-101(PASSENGER,55m) QI-BOOKINGS-UNBLOCKED(PASSENGER,55m) QI-BUILD12-0929(PASSENGER,55m) QI-BUILD12-RUN(PASSENGER,55m) QI-CHAT-TWIN-BUILD(PASSENGER,55m) QI-FD13-0929(PASSENGER,55m) QI-FD13-0929-B(PASSENGER,55m) QI-FD14-REAL(PASSENGER,55m) QI-PLACES-FIXTURE-ON(PASSENGER,55m) AR-19(REVIEWER,55m) AR-54(REVIEWER,55m) QI-CHAT-REV-1004-C(REVIEWER,55m) QI-REV-557(REVIEWER,55m) QI-REV-97(REVIEWER,55m) QI-REV-98(REVIEWER,55m)
-PASS   SO-24 heartbeat 19s old
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: AR-101(API,62m) AR-19(API,62m) QI-A7-INVENTORY-0929(API,62m) QI-NOTIFY-0929(API,62m) QI-NOTIFY-0929-B(API,62m) QI-DRV-ACK-NOW(DRIVER,60m) QI-FD18-PRESENCE(DRIVER,62m) AR-101(PASSENGER,62m) QI-BOOKINGS-UNBLOCKED(PASSENGER,62m) QI-BUILD12-0929(PASSENGER,62m) QI-BUILD12-RUN(PASSENGER,62m) QI-CHAT-TWIN-BUILD(PASSENGER,62m) QI-FD13-0929(PASSENGER,62m) QI-FD13-0929-B(PASSENGER,62m) QI-FD14-REAL(PASSENGER,62m) QI-PLACES-FIXTURE-ON(PASSENGER,62m) AR-19(REVIEWER,62m) AR-54(REVIEWER,62m) QI-CHAT-REV-1004-C(REVIEWER,62m) QI-REV-557(REVIEWER,62m) QI-REV-97(REVIEWER,62m) QI-REV-98(REVIEWER,62m)
+PASS   SO-24 heartbeat 24s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-2307.md(17p/9t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
-UNPROV SO-29 cannot read his page (mirror STALE 52m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
-PASS   SO-33 notifier ran 0m ago; 36 event(s) delivered to date
+UNPROV SO-29 cannot read his page (mirror STALE 59m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+PASS   SO-33 notifier ran 2m ago; 36 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
