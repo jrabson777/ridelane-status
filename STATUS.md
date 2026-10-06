@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 00:30:53 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 00:31:56 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -33,9 +33,9 @@ M1–M4; DRIVER and CRM sessions paused.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-06 00:28:24 TRIGGER cause=state-change NOT RUN -- lock held 83s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -71,19 +71,19 @@ M1–M4; DRIVER and CRM sessions paused.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 431 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1118 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1190 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17367 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17789 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28671 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11605 |
-| jrax-driver-app | #266 | `541b9b65f261` | 4 total, 0 failed | YES | 1898 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 443 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1130 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1202 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17379 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17801 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28682 |
+| ridelane-passenger-app | #99 | `46ac6086792e` | 4 total, 0 failed | YES | 972 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11617 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: another check-so has been running 75s; this is its last result, 1m old.
 NOTE: another check-so has been running 14s; this is its last result, 1m old.
 NOTE: breaking a stale check-so lock (113s, holder 48802 not alive).
