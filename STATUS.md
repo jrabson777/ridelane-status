@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 00:27:03 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 00:28:15 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -10,8 +10,8 @@ _Generated 2026-10-06 00:27:03 EDT by the probe. Public mirror; no tokens, keys,
 
 | milestone | state | proof id | blocker |
 |---|---|---|---|
-| **M1a** staging redeploy ACTIVE | IN PROGRESS | deployment `b08f1358` | none — building |
-| **M1b** Stripe TEST restricted key | BLOCKED | UNKNOWN | founder must sign in to Stripe |
+| **M1a** staging redeploy ACTIVE | **DONE** | deploy `b08f1358` · health 200 `commit=e9698534dd4c` `bootedAt=2026-10-06T04:27:26Z` · CRM 200 | — |
+| **M1b** Stripe TEST restricted key | WAITING ON FOUNDER | UNKNOWN (`stripeMode=unknown` now) | he signs in at dashboard.stripe.com |
 | **M1c** staging store for realtime (≤ +$15/mo) | NOT STARTED | UNKNOWN | price the options first |
 | **M1d** boot-completeness CI step | NOT STARTED | UNKNOWN | none |
 | **Safety** `rbac.ts:50` fail closed on `CRM_BASE_URL` | NOT STARTED | UNKNOWN | none |
@@ -19,6 +19,8 @@ _Generated 2026-10-06 00:27:03 EDT by the probe. Public mirror; no tokens, keys,
 | **M3** OTA to build 12's runtime | NOT STARTED | UNKNOWN | M2 |
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | *(parallel)* A7 chat server half | NOT STARTED | UNKNOWN | M1c — no store ⇒ no socket |
+
+**Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, in-memory store (no socket until M1c).
 
 **Done and carried in:** `ridelane-staging` `36db9a85` created at $10/mo ·
 production unchanged (`ridelane-api` `835c47ae`, `monkfish-app` `13cbce10`) ·
@@ -31,9 +33,9 @@ M1–M4; DRIVER and CRM sessions paused.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
-- last pass: 2026-10-06 00:14:21 TRIGGER cause=state-change NOT RUN -- lock held 60s
-- notifier last ran: 2m ago
+- probe heartbeat: 69s ago
+- last pass: 2026-10-06 00:27:12 TRIGGER cause=state-change NOT RUN -- lock held 11s
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -81,7 +83,7 @@ M1–M4; DRIVER and CRM sessions paused.
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: breaking a stale check-so lock (121s, holder 45741 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
@@ -126,6 +128,18 @@ FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
