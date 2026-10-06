@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 07:33:45 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 07:33:51 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -148,6 +148,7 @@ is not a lifted block.
 
 ```
 (from the last pass, 0m ago)
+NOTE: another check-so has been running 205s; this is its last result, 1m old.
 NOTE: another check-so has been running 144s; this is its last result, 11m old.
 NOTE: another check-so has been running 204s; this is its last result, 1m old.
 NOTE: another check-so has been running 110s; this is its last result, 1m old.
