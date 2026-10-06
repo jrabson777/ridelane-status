@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 02:04:14 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 02:04:34 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -13,9 +13,9 @@ _Generated 2026-10-06 02:04:14 EDT by the probe. Public mirror; no tokens, keys,
 | **M1a** staging redeploy ACTIVE | **DONE** | deploy `b08f1358` · health 200 `commit=e9698534dd4c` `bootedAt=2026-10-06T04:27:26Z` · CRM 200 | — |
 | **M1b** Stripe TEST key | **DONE (Path B, D-20)** | `stripeMode=test` · `/api/stripe/config` pk_test_ acct `51QY4ZQCxi29dqjf` | restricted-key dialog won't render; using the test secret key |
 | **M1c** staging store for realtime | **DONE** | `persistence=redis` `ping=1ms` · engine.io handshake on `/socket.io/` · redis:7-alpine internal, `basic-xxs` **$5/mo** | — |
-| **M1d** boot-completeness CI step | **PR OPEN** | `ridelane-api#571` `cd88aea9` · **`boot-env` SUCCESS in CI** · 6 boots: 1 completeness + 5 necessity controls · drilled both ways · **SO-43** mirrors it onto the staging spec (`8c37174`) | reviewer verdict; stacked on #569 |
+| **M1d** boot-completeness CI step | **PR OPEN, ALL CHECKS GREEN** | `ridelane-api#571` `cd88aea9` · `boot-env` **SUCCESS**, `test` **SUCCESS** · 6 boots: 1 completeness + 5 necessity controls · drilled both ways · **SO-43** mirrors it onto the staging spec (`8c37174`) | reviewer verdict; **merge #569 first** |
 | **Safety** `CRM_BASE_URL` fail closed | **PR OPEN, ALL CHECKS GREEN** | `ridelane-api#569` `4e6312be` · **FOUR** fallbacks, not two — `index.ts` and `employeeRoutes.ts:88` build the EMAILED invite/reset urls · 10/10 at head · class gate counts the literal per file · `ride-chat-sockets` + `test` SUCCESS | reviewer verdict |
-| **M2** EAS walk green on staging ×3 | NOT STARTED | UNKNOWN | M1 |
+| **M2** EAS walk green on staging ×3 | **WIRING PR OPEN; NO RUN STARTED** | `ridelane-passenger-app#101` `b1ebd81` · job `env` outranks the profile env AND the `preview` environment (EAS Precedence table) · trigger's own guard passes on line 59, refuses again if that line is commented · flows renamed to the **required** `MAESTRO_` prefix · dropoff values measured from `fixtureAutocomplete("Amalie")` → one match | **founder: is an EAS e2e build a "new native build" (hard stop) or inside the approved $100/mo cap?** · and someone with `EXPO_TOKEN` must confirm `OTP_TEST_*` exist in the job's EAS environment |
 | **M3** OTA to build 12's runtime | NOT STARTED | UNKNOWN | M2 |
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | *(parallel)* A7 chat server half | DISPATCHED to API | UNKNOWN | none — staging store is live |
@@ -42,11 +42,23 @@ added and wired at birth · `sync-v4.sh` with no arguments no longer publishes
 nothing and exits 0, which is how check-so's own SO-43 fix briefly looked shipped
 while the running loop read a copy 2KB older.
 
+**Founder's open question, answered.** *"Show which pk the e2e profile uses."* **It uses
+none.** No Stripe dependency in the passenger app (0 of 49), no `StripeProvider`, no
+`publishableKey`; `.env.example` says the key "is fetched at runtime from
+`/api/stripe/config` on the api. Do not put a Stripe key here." So **the api base
+decides the pk** — which is the same lever M2 just wired. Point the twin at STG-1 and
+it gets staging's `pk_test_` (acct `51QY4ZQCxi29dqjf`, already proved); leave it as it
+was and it got production's.
+
+**Runner note for M2/M3:** `proof1-cloud-walk.yml` and `e2e-pax.yml` run on
+`ubuntu-latest`, so **SO-42 does not gate them**. `render-ios.yml` is `macos-15` and
+does.
+
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-06 02:03:06   -> pass RAN
-- notifier last ran: 2m ago
+- probe heartbeat: 25s ago
+- last pass: 2026-10-06 02:04:18 TRIGGER cause=state-change NOT RUN -- lock held 55s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -142,6 +154,18 @@ FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
