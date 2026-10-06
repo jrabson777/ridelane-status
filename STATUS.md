@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 03:08:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 03:09:02 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -84,7 +84,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 6s ago
 - last pass: 2026-10-06 03:07:53 TRIGGER cause=state-change NOT RUN -- lock held 74s
 - notifier last ran: 0m ago
 
@@ -122,22 +122,19 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #572 | `989858f28522` | 7 total, 0 failed | **none** | 44 |
-| ridelane-api | #571 | `cd88aea97f67` | 8 total, 0 failed | **none** | 72 |
-| ridelane-api | #570 | `32dd9504fc4b` | 7 total, 0 failed | YES | 103 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 589 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1276 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1348 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17525 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17947 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28828 |
-| ridelane-passenger-app | #102 | `c7b6822796c8` | 3 total, 0 failed | **none** | 20 |
-| ridelane-passenger-app | #78 | `e8e264145a4d` | 3 total, 0 failed | **none** | 11763 |
+| ridelane-api | #571 | `900aefe60d12` | 8 total, 0 failed | **none** | 83 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 600 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1287 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1359 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17536 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17958 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28840 |
+| ridelane-passenger-app | #102 | `c7b6822796c8` | 3 total, 0 failed | YES | 31 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: breaking a stale check-so lock (128s, holder 65672 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  2 open PRs >60m with no verdict at head: api#571, app#78
