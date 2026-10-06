@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 04:04:24 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 04:05:10 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -20,7 +20,7 @@ _Generated 2026-10-06 04:04:24 EDT by the probe. Public mirror; no tokens, keys,
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | **D-17** a binary on his phone | **BUILD 12 IS CUT AND INSTALLABLE** | run `37179820368` from `ca4304ec`, 4 Oct: *"Shipping CFBundleVersion: 12 (prior: 11)"*, *"Build is safe to install"*, GMSApiKey asserted in the shipped `.ipa` · install link on his page · **his page said "NEVER CUT" for two days; corrected** | he installs it |
 | **FD-15 / FD-14** money correctness | **ALREADY DONE ON `main`** | `__tests__/fd15-fd14-walk-ids.test.tsx`: FD-14 lines sum to the total, FD-15 booked total is the server's stored number not the screen's quote, plus a `$NaN` guard and the U+202F AM/PM case · passed in a 19-suite / 289-test run | — |
-| *(parallel)* A7 chat | **4a, 4b, 4e proved on the wire; 4f PARTIAL on the client** | **4a 10.9 ms** · **4b 6 ms** (`authorRole: "driver"`) · **4e** 9 clean frames + a planted 10th that fails the same checker · **client:** the twin was **SIGNED OUT** (screenshot), now signed in with the D-18 identity; cold start keeps the session and the Inbox renders "NO MESSAGES YET" — unread correctly **zero** · places fixture **live** on :4010 ("Amalie" → `fixture:amalie-arena`), so the 30-Sep `503 PLACES_UNCONFIGURED` blocker is gone · 51 artifacts, 7 screenshots | **4f non-zero unread** needs a booking with an assigned driver and auto-dispatch is off · **4c** CRM paused · **4d** is a production write, founder's call · I wrote test data into the live :4010 Redis and cannot attribute it — no before-reading. Self-reported to API/REV; deleted nothing. |
+| *(parallel)* A7 chat | **FIVE OF SIX PROVED** | **4a** 10.9 ms · **4b** 6 ms, now a committed test (`#574` merged `974c82bd`) · **4c** support→passenger, `authorRole: ops` · **4e** 9 clean frames + a planted control that fails · **4f** unread **1→4 after exactly 3**, thread count agrees · run on a Redis I started (`:6396`), never the rig's `:6390` · 74 artifacts | **4d** is a production write — founder's call · **no client-level step claimed**: the bar is a screenshot per step and five of these are wire/API proofs · 4f's *zero* case does have a client screenshot |
 
 **Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, **redis:7-alpine store, engine.io handshake proved on `/socket.io/`** (the "in-memory, no socket until M1c" note that stood here was stale the moment M1c landed).
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 36s ago
 - last pass: 2026-10-06 04:04:08   -> pass RAN
-- notifier last ran: 3m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -146,7 +146,7 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: breaking a stale check-so lock (106s, holder 46883 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
@@ -192,6 +192,18 @@ FAILS: 3   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
