@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 04:52:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 04:52:57 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,7 +97,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 6s ago
 - last pass: 2026-10-06 04:51:49   -> pass RAN
 - notifier last ran: 0m ago
 
@@ -135,18 +135,19 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #575 | `2ba7bbd2f1c3` | 8 total, 0 failed | YES | 29 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 692 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1380 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1452 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17629 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18051 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28932 |
+| ridelane-api | #576 | `9830a042d347` | 8 total, 0 failed | **none** | 1 |
+| ridelane-api | #575 | `2ba7bbd2f1c3` | 8 total, 0 failed | YES | 40 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 704 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1391 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1463 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17640 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18062 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28943 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: breaking a stale check-so lock (264s, holder 1284 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
