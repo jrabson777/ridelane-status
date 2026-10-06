@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 01:33:16 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 01:33:21 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -87,6 +87,7 @@ M1–M4; DRIVER and CRM sessions paused.
 
 ```
 (from the last pass, 0m ago)
+NOTE: another check-so has been running 28s; this is its last result, 0m old.
 NOTE: another check-so has been running 10s; this is its last result, 1m old.
 NOTE: another check-so has been running 10s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (123s, holder 27379 not alive).
