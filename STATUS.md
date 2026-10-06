@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 05:26:38 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 05:30:47 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 1s ago
-- last pass: 2026-10-06 05:25:30 TRIGGER cause=state-change NOT RUN -- lock held 42s
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-06 05:30:43 TRIGGER cause=state-change prev=4489f70d now=ea9eef73
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -135,17 +135,17 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 729 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1416 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1488 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17665 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18088 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28969 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 741 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1429 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1501 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17678 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18100 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28981 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 5m ago)
 NOTE: breaking a stale check-so lock (214s, holder 43249 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
