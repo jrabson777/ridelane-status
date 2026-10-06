@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 00:54:47 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 00:55:53 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -35,9 +35,9 @@ M1–M4; DRIVER and CRM sessions paused.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
+- probe heartbeat: 6s ago
 - last pass: 2026-10-06 00:54:44 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 111s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -73,19 +73,19 @@ M1–M4; DRIVER and CRM sessions paused.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 455 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1142 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1214 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17391 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17813 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28695 |
-| ridelane-passenger-app | #99 | `57f207afe931` | 3 total, 0 failed | **none** | 984 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11629 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 467 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1154 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1226 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17403 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17825 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28706 |
+| ridelane-passenger-app | #99 | `57f207afe931` | 3 total, 0 failed | YES | 996 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11641 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: breaking a stale check-so lock (124s, holder 78709 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  1 open PRs >60m with no verdict at head: app#99
