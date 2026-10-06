@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 01:49:50 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 01:50:22 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -13,14 +13,14 @@ _Generated 2026-10-06 01:49:50 EDT by the probe. Public mirror; no tokens, keys,
 | **M1a** staging redeploy ACTIVE | **DONE** | deploy `b08f1358` · health 200 `commit=e9698534dd4c` `bootedAt=2026-10-06T04:27:26Z` · CRM 200 | — |
 | **M1b** Stripe TEST key | **DONE (Path B, D-20)** | `stripeMode=test` · `/api/stripe/config` pk_test_ acct `51QY4ZQCxi29dqjf` | restricted-key dialog won't render; using the test secret key |
 | **M1c** staging store for realtime | **DONE** | `persistence=redis` `ping=1ms` · engine.io handshake on `/socket.io/` · redis:7-alpine internal, `basic-xxs` **$5/mo** | — |
-| **M1d** boot-completeness CI step | NOT STARTED | UNKNOWN | none |
-| **Safety** `CRM_BASE_URL` fail closed | **PR OPEN** | `ridelane-api#569` `dfb0d852` · fail-on-old 4/6 red, 6/6 at head · **two** fallbacks fixed (`:50` and `:884`) | reviewer verdict |
+| **M1d** boot-completeness CI step | **PR OPEN** | `ridelane-api#571` `cd88aea9` · **`boot-env` SUCCESS in CI** · 6 boots: 1 completeness + 5 necessity controls · drilled both ways · **SO-43** mirrors it onto the staging spec (`8c37174`) | reviewer verdict; stacked on #569 |
+| **Safety** `CRM_BASE_URL` fail closed | **PR OPEN, ALL CHECKS GREEN** | `ridelane-api#569` `4e6312be` · **FOUR** fallbacks, not two — `index.ts` and `employeeRoutes.ts:88` build the EMAILED invite/reset urls · 10/10 at head · class gate counts the literal per file · `ride-chat-sockets` + `test` SUCCESS | reviewer verdict |
 | **M2** EAS walk green on staging ×3 | NOT STARTED | UNKNOWN | M1 |
 | **M3** OTA to build 12's runtime | NOT STARTED | UNKNOWN | M2 |
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | *(parallel)* A7 chat server half | DISPATCHED to API | UNKNOWN | none — staging store is live |
 
-**Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, in-memory store (no socket until M1c).
+**Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, **redis:7-alpine store, engine.io handshake proved on `/socket.io/`** (the "in-memory, no socket until M1c" note that stood here was stale the moment M1c landed).
 
 **Done and carried in:** `ridelane-staging` `36db9a85` created at $10/mo ·
 production unchanged (`ridelane-api` `835c47ae`, `monkfish-app` `13cbce10`) ·
@@ -32,12 +32,21 @@ token containment `POST /v2/droplets` → 403 · first-deploy root cause fixed i
 **Frozen until M4:** no new standing orders; no loop-infra work unless it blocks
 M1–M4; DRIVER and CRM sessions paused.
 
+**Instruments fixed tonight, each drilled both ways:** SO-41 called four committed
+test fixtures a leaked private key the moment a worktree of that repo sat under a
+scanned root — a header is not a key, and a scanner that cries wolf on fixtures
+gets ignored when it catches the real `.pem` · SO-20 can now retire an id that
+can never be acked (closed PR, paused session), derived not curated, with the
+count surfaced — my first rule hid two LIVE work items and was narrowed · SO-43
+added and wired at birth · `sync-v4.sh` with no arguments no longer publishes
+nothing and exits 0, which is how check-so's own SO-43 fix briefly looked shipped
+while the running loop read a copy 2KB older.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
+- probe heartbeat: 28s ago
 - last pass: 2026-10-06 01:45:58 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 34s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -133,6 +142,18 @@ FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
