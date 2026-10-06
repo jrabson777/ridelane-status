@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 05:06:10 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 05:06:19 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -20,7 +20,7 @@ _Generated 2026-10-06 05:06:10 EDT by the probe. Public mirror; no tokens, keys,
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | **D-17** a binary on his phone | **BUILD 12 IS CUT AND INSTALLABLE** | run `37179820368` from `ca4304ec`, 4 Oct: *"Shipping CFBundleVersion: 12 (prior: 11)"*, *"Build is safe to install"*, GMSApiKey asserted in the shipped `.ipa` · install link on his page · **his page said "NEVER CUT" for two days; corrected** | he installs it |
 | **FD-15 / FD-14** money correctness | **FD-14 IS LIVE — and its test passes** | measured on the twin: Fare **$89.10** + Tax **$5.35** = $94.45 against a displayed Total **$112.27**; the missing **$17.82** is the api's `gratuity`, which the card never renders. `summary.tsx` on `main` has only Fare/Tax/Total rows. The test passes because its fixture carries **no gratuity field**, so its own two-sided staleness guard can never fire. Screenshot + api payload captured; dispatched to PAX, component untouched | PAX to decide the fix |
-| *(parallel)* A7 chat | **5 of 6 ON THE WIRE · 0 of 6 ON THE CLIENT** | wire: **4a** 10.9 ms · **4b** 6 ms (committed test, `#574`) · **4c** `authorRole: ops` · **4e** 9 clean + planted control · **4f** unread 1→4 after exactly 3 · 119 artifacts. client: **0/6** — no chat step driven through the app with a screenshot; the thread needs a driver assigned and auto-dispatch is off | **4d** production write, founder's call · both counts are true at different layers and the founder's bar is the client one |
+| *(parallel)* A7 chat | **5 of 6 ON THE WIRE · 0 of 6 ON THE CLIENT** | wire: 4a 10.9 ms · 4b 6 ms · 4c `ops` · 4e 9 clean + planted control · 4f unread 1→4 after exactly 3 · API committed 4b (`#574`) and 4f/4c (`#576`, green, awaiting verdict) · **`#575` MERGED `61ed0c5e`** — the `flushDb` opt-in that fixes the foot-gun I triggered; verified on master both ways | **client 0/6 is blocked on ONE founder decision**: a booking may only be priced on a Google-routed distance and the rig has no Google key, so **no local booking can complete** — reproduced from the app: *NOT BOOKED / Verified address unavailable (QUOTE_UNAVAILABLE)*. `api#568` fixes the address half; the pricing half is his |
 
 **Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, **redis:7-alpine store, engine.io handshake proved on `/socket.io/`** (the "in-memory, no socket until M1c" note that stood here was stale the moment M1c landed).
 
@@ -97,7 +97,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 5s ago
 - last pass: 2026-10-06 05:04:32 TRIGGER cause=state-change NOT RUN -- lock held 107s
 - notifier last ran: 0m ago
 
@@ -193,6 +193,18 @@ FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
