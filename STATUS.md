@@ -1,13 +1,13 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 20:03:46 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 20:04:56 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-05 20:02:38   -> pass RAN
+- probe heartbeat: 4s ago
+- last pass: 2026-10-05 20:03:50 TRIGGER cause=state-change NOT RUN -- lock held 41s
 - notifier last ran: 1m ago
 
 ## Phase board
@@ -56,46 +56,45 @@ _Generated 2026-10-05 20:03:46 EDT by the probe. Public mirror; no tokens, keys,
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
-NOTE: another check-so has been running 110s; this is its last result, 0m old.
-NOTE: another check-so has been running 89s; this is its last result, 0m old.
-NOTE: another check-so has been running 77s; this is its last result, 1m old.
-NOTE: breaking a stale check-so lock (103s, holder 86633 not alive).
-PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (158s, holder 91134 not alive).
+UNPROV SO-1  cannot read his page (mirror STALE 47m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 PASS   SO-2  every open PR has a verdict at its current head
-PASS   SO-3  all 5 build link(s) named by content
-PASS   SO-4  every CLAIMS row carries an artifact id
-PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 98m
-PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
+PASS   SO-3  no build links on the page
+UNPROV SO-4  cannot read his page (mirror STALE 47m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-5  cannot read his page (mirror STALE 47m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 102m
+grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
+UNPROV SO-7  cannot read his page (mirror STALE 47m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 1026m ago
+PASS   SO-10 STANDING-ORDERS.md updated 1030m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 11m ago (12293 lines)
+PASS   SO-15 reviewer session active 1m ago (12306 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
-PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 43m ago, no status ahead of its artifact
+UNPROV SO-17 cannot read his page (mirror STALE 47m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-18 cannot read his page (mirror STALE 47m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 PASS   SO-19 every queue file is read by a session
-FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2809:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 6m ago, 110 ruling(s), file 24m old
+grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
+FAIL   SO-21 PR(s) describing themselves as held in prose but never DECLARING it (no label, no HELD title) -- an undeclared hold is invisible to every check: ridelane-api#492
+PASS   SO-22 advisor live: ADV ran 11m ago, 110 ruling(s), file 28m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:16 (#277,#276,#275,...)  pax:18 (#98,#96,#95,...) -- a run that was created is not a publish (AR-7)
 PASS   SO-20 every dispatched id has been acknowledged in a handback
-PASS   SO-24 heartbeat 20s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-ADV-1952.md(0p/0t) out-CRM-1947.md(2p/0t) out-API-1934.md(14p/5t)
+PASS   SO-24 heartbeat 22s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-CRM-2003.md(2p/0t) out-ADV-1952.md(0p/0t) out-CRM-1947.md(2p/0t) out-API-1934.md(14p/5t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 43m old)
-PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 31 event(s) delivered to date
+FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
+UNPROV SO-29 cannot read his page (mirror STALE 47m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+PASS   SO-33 notifier ran 1m ago; 33 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
-FAIL   SO-39 PR(s) with an EXPECTED CHECK ABSENT (reads green, was never run): ridelane-api#565 -- a missing check is a failing one
+PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
 FAILS: 5   (UNPROV is not a pass and not counted as a fail)
