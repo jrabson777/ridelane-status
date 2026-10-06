@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 00:53:27 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 00:54:40 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -35,8 +35,8 @@ M1–M4; DRIVER and CRM sessions paused.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-06 00:52:18 TRIGGER cause=state-change NOT RUN -- lock held 84s
+- probe heartbeat: 7s ago
+- last pass: 2026-10-06 00:53:31 TRIGGER cause=state-change NOT RUN -- lock held 38s
 - notifier last ran: 1m ago
 
 ## Phase board
@@ -85,7 +85,7 @@ M1–M4; DRIVER and CRM sessions paused.
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: breaking a stale check-so lock (162s, holder 75828 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  1 open PRs >60m with no verdict at head: app#99
