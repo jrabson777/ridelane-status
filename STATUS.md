@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 11:57:39 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 11:59:18 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
-- last pass: 2026-10-06 11:53:55 TRIGGER cause=state-change prev=b2e0ccb7 now=ad1343ec
-- notifier last ran: 2m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-06 11:58:48   -> pass SKIPPED (lock held by a real pass)
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -135,15 +135,15 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #580 | `dd5f5a6c93c4` | 8 total, 0 failed | **none** | 12 |
-| ridelane-api | #579 | `0becdc7dff11` | 8 total, 0 failed | **none** | 19 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1128 |
+| ridelane-api | #580 | `dd5f5a6c93c4` | 8 total, 0 failed | **none** | 13 |
+| ridelane-api | #579 | `0becdc7dff11` | 8 total, 0 failed | **none** | 20 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1129 |
 | ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1816 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1887 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1888 |
 | ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18065 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18487 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29368 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 363 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18488 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29369 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 364 |
 
 ## Last standing-orders run
 
