@@ -1,13 +1,13 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 23:11:54 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 23:12:43 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 7s ago
-- last pass: 2026-10-05 23:10:45 TRIGGER cause=state-change NOT RUN -- lock held 217s
+- probe heartbeat: 2s ago
+- last pass: 2026-10-05 23:11:58 TRIGGER cause=state-change NOT RUN -- lock held 290s
 - notifier last ran: 0m ago
 
 ## Phase board
@@ -57,8 +57,48 @@ _Generated 2026-10-05 23:11:54 EDT by the probe. Public mirror; no tokens, keys,
 ## Last standing-orders run
 
 ```
-NO FRESH STANDING-ORDERS RESULT (none within 20 minutes).
-This is not a clean board -- it is a board nobody has read recently.
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (1317s, holder 58362 not alive).
+UNPROV SO-1  cannot read his page (mirror STALE 49m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-2  1 open PRs >60m with no verdict at head: app#266
+PASS   SO-3  no build links on the page
+UNPROV SO-4  cannot read his page (mirror STALE 49m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-5  cannot read his page (mirror STALE 49m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 117m
+grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
+UNPROV SO-7  cannot read his page (mirror STALE 49m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+PASS   SO-8  no open PR has zero checks
+UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
+PASS   SO-10 STANDING-ORDERS.md updated 1218m ago
+PASS   SO-11 no author over the WIP limit
+PASS   SO-12 no approved PR sitting dirty
+FAIL   SO-13 1 pushed after APPROVE:  jrax-driver-app#266 approved 149d1a8c7f63 but head is 541b9b65f261; 
+UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
+PASS   SO-15 reviewer session active 0m ago (12677 lines)
+PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
+UNPROV SO-17 cannot read his page (mirror STALE 49m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+UNPROV SO-18 cannot read his page (mirror STALE 49m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+PASS   SO-19 every queue file is read by a session
+grep: /Users/mahmoudjrab/Desktop/NEEDS-MAHMOUD.md: Operation not permitted
+FAIL   SO-21 PR(s) describing themselves as held in prose but never DECLARING it (no label, no HELD title) -- an undeclared hold is invisible to every check: ridelane-api#492
+PASS   SO-22 advisor live: ADV ran 1m ago, 111 ruling(s), file 73m old
+FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:16 (#278,#277,#276,...)  pax:17 (#98,#96,#95,...) -- a run that was created is not a publish (AR-7)
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: AR-101(API,53m) AR-19(API,53m) QI-A7-INVENTORY-0929(API,53m) QI-NOTIFY-0929(API,53m) QI-NOTIFY-0929-B(API,53m) QI-DRV-ACK-NOW(DRIVER,51m) QI-FD18-PRESENCE(DRIVER,53m) AR-101(PASSENGER,53m) QI-BOOKINGS-UNBLOCKED(PASSENGER,53m) QI-BUILD12-0929(PASSENGER,53m) QI-BUILD12-RUN(PASSENGER,53m) QI-CHAT-TWIN-BUILD(PASSENGER,53m) QI-FD13-0929(PASSENGER,53m) QI-FD13-0929-B(PASSENGER,53m) QI-FD14-REAL(PASSENGER,53m) QI-PLACES-FIXTURE-ON(PASSENGER,53m) AR-19(REVIEWER,53m) AR-54(REVIEWER,53m) QI-CHAT-REV-1004-C(REVIEWER,53m) QI-REV-557(REVIEWER,53m) QI-REV-97(REVIEWER,53m) QI-REV-98(REVIEWER,53m)
+PASS   SO-24 heartbeat 94s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-2307.md(17p/9t) out-REV-2307.md(1p/0t)
+PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
+UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
+FAIL   SO-28 no nightly result table on his page and it is past 07:00 -- an absent report is not a passing night
+UNPROV SO-29 cannot read his page (mirror STALE 49m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
+PASS   SO-33 notifier ran 3m ago; 36 event(s) delivered to date
+PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
+PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
+PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
+PASS   SO-38 no loop script sources the scratchpad; pass.log grew 1m ago
+FAIL   SO-39 PR(s) with an EXPECTED CHECK ABSENT (reads green, was never run): jrax-driver-app#266 -- a missing check is a failing one
+PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
+---
+FAILS: 9   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
