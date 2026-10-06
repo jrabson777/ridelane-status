@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 00:08:05 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 00:09:18 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-06 00:06:57 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 40s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -102,39 +102,6 @@ FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 
 ```
 ```
-
-## WALKS
-
-| run id | repo | commit | result | failed step |
-|---|---|---|---|---|
-| `37204201794` | jrax-driver-app | `e54e07a2` | FAIL | no jobs created — reusable workflow uncallable (Actions access=none) |
-| `37204417084` | jrax-driver-app | `4711ffef` | FAIL | Build the .app — '' is not a workspace file (pods not installed) |
-| `37205943775` | jrax-driver-app | `e833efc2` | FAIL | no jobs created — error parsing called workflow (YAML block ended early) |
-| `37223229178` | jrax-driver-app | `07e65a5d` | FAIL | log not retained — class unknown |
-| `37223723681` | jrax-driver-app | `3189ad83` | FAIL | Build the .app — no device matching destination (Xcode 16.4) |
-| `37224581375` | jrax-driver-app | `07e65a5d` | FAIL | Build the .app — ExpoModulesCore Swift errors (SDK vs Xcode 16.4) |
-| `37230349450` | jrax-driver-app | `07e65a5d` | FAIL | Build the .app — sentry-cli needs an organization |
-| `37231443545` | jrax-driver-app | `07e65a5d` | FAIL | Prove the twin — guard asserted the impossible (production host is a source fallback) |
-| `37232686444` | jrax-driver-app | `8e157399` | FAIL | Prove the twin — bundle lacked localhost:4010 (export died at the step boundary) |
-| `37257186190` | jrax-driver-app | `8e157399` | GREEN (evidence wrong) | all steps passed; both screenshots were byte-identical SPLASH frames |
-| `37259006809` | jrax-driver-app | `92db0032` | FAIL | Boot the simulator and install — hung, hit the 60-minute timeout |
-
-**EAS cloud runs: 0.** `ridelane-passenger-app#96` (the walk ported to
-Maestro) merged at `f1a02e4b` on 5 Oct after review APPROVE at `d2de3c5a`.
-**A merge is not a run** -- the flows have never executed against the app.
-
-They cannot yet, deliberately: the EAS workflow declares an `api_url` input
-and never consumes it, so a twin resolves its api base from the `e2e-test`
-profile, which inherits the **preview** environment -- production. W10 and
-W11 both tap the booking CTA. The trigger refuses to dispatch until that
-input is wired, and stops refusing on its own once it is. The target it
-needs is STG-1, which does not exist yet.
-
-## OTA
-
-| update id | commit | proving walk id |
-|---|---|---|
-| — | — | **no OTA has been published** |
 
 ## WALKS
 
