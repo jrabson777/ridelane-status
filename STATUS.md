@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 03:06:28 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 03:06:35 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -16,7 +16,7 @@ _Generated 2026-10-06 03:06:28 EDT by the probe. Public mirror; no tokens, keys,
 | **M1d** boot-completeness CI step | **PR OPEN, GREEN, RETARGETED TO `master`** | `ridelane-api#571` `cd88aea9` (head unchanged) · 8/8 SUCCESS · 6 boots: 1 completeness + 5 necessity controls · **SO-43** mirrors it onto the staging spec | reviewer verdict |
 | **Safety** `CRM_BASE_URL` fail closed | **MERGED** `d0f4d0b2` | `ridelane-api#569` on `VERDICT: APPROVE 4e6312be…` at the exact head · **FOUR** fallbacks, not two — `index.ts` and `employeeRoutes.ts:88` build the EMAILED invite/reset urls · **production DID deploy and is healthy** — master auto-deploys; production booted `d0f4d0b2` at 06:14:19Z, `nodeEnv=production`, hydrated, 184 bookings, Redis up, a distance lookup succeeding 06:35:23Z. I first wrote "not deployed" from a check taken three minutes after the merge; that was too early · follow-up `#572` closes the evasion the reviewer found in my own gate | — |
 | **M2** EAS walk green on staging ×3 | **WIRING MERGED; NO RUN STARTED** | `ridelane-passenger-app#101` **MERGED** `7f48d35a` on `VERDICT: APPROVE b1ebd81f…` at the exact head — the reviewer verified the EAS Precedence table independently · follow-up `#102` refuses a blank `api_url` on the EAS worker (measured: unset → **production**, `""` → broken, so that job cannot reach production because it always *sets* the var) | **founder: is an EAS e2e build a "new native build" (hard stop) or inside the approved $100/mo cap?** · someone with `EXPO_TOKEN` must confirm `OTP_TEST_*` exist in the job's EAS `preview` environment |
-| **M3** OTA to build 12's runtime | **PUBLISH SOURCE PREPARED; NOTHING PUBLISHED** | an OTA from `main` reaches **nobody** — `ca4304ec` resolves `bd5d3b19…`, `main` resolves `03aed403…` (one dummy Maps key held constant, so its value cancels). Cause is NOT native: `app.json`/`app.config.js`/`package.json`/lockfile are identical; `@expo/fingerprint` also hashes `eas.json` and `.gitignore`, bisected to `3ce733a0…` and `4f388b1e…`. **The `eas.json` change is the `e2e-test` profile added for the M2 walk.** Branch `ota/build12-runtime-js-only` `cf9d11f` = build 12's base + `main`'s JS (20 files) → still `bd5d3b19…`, 19 suites / 289 tests pass. Rollback target recorded: embedded bundle. | **founder: may I publish an OTA to his channel once a reviewer checks the reasoning?** · values are RELATIVE — the real resolve happens in CI with the real secret |
+| **M3** OTA to build 12's runtime | **PUBLISH SOURCE PREPARED; BUILD 12'S REAL RUNTIME NOW KNOWN** | `pax#78` merged (`39c82d9b`) and I dispatched it: **build 12 is `appBuildVersion 12`, profile `preview`, `isForIosSimulator: false`, runtime **`a0b43caeaf16610e19c9735c1b164c88df8c5123`** — EAS's own number, computed with the real Maps secret. Locally (one dummy key held constant) `ca4304ec` and `ca4304ec + main's JS` resolve IDENTICALLY, while `main` differs — so branch `ota/build12-runtime-js-only` `cf9d11f` should resolve to `a0b43cae…` in CI and be accepted. 30/30 gates, 289 tests, tsc and lint clean on it. Rollback target recorded: the embedded bundle. | **founder: may I publish?** · the absolute match is still CI's to confirm — my local numbers are relative, and `eas-update.yml` resolves with the real secret |
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
 | **D-17** a binary on his phone | **BUILD 12 IS CUT AND INSTALLABLE** | run `37179820368` from `ca4304ec`, 4 Oct: *"Shipping CFBundleVersion: 12 (prior: 11)"*, *"Build is safe to install"*, GMSApiKey asserted in the shipped `.ipa` · install link on his page · **his page said "NEVER CUT" for two days; corrected** | he installs it |
 | **FD-15 / FD-14** money correctness | **ALREADY DONE ON `main`** | `__tests__/fd15-fd14-walk-ids.test.tsx`: FD-14 lines sum to the total, FD-15 booked total is the server's stored number not the screen's quote, plus a `$NaN` guard and the U+202F AM/PM case · passed in a 19-suite / 289-test run | — |
@@ -84,7 +84,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-06 03:01:27   -> pass SKIPPED (lock held by a real pass)
 - notifier last ran: 1m ago
 
@@ -183,6 +183,18 @@ FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
