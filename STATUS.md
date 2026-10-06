@@ -1,12 +1,12 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 20:11:26 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 20:11:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 1s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-05 20:10:17 TRIGGER cause=state-change NOT RUN -- lock held 59s
 - notifier last ran: 0m ago
 
@@ -57,6 +57,7 @@ _Generated 2026-10-05 20:11:26 EDT by the probe. Public mirror; no tokens, keys,
 
 ```
 (from the last pass, 0m ago)
+NOTE: another check-so has been running 2s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (134s, holder 770 not alive).
 UNPROV SO-1  cannot read his page (mirror STALE 53m; TCC blocks Desktop from launchd) -- not reporting a finding about a file this process has not read
 PASS   SO-2  every open PR has a verdict at its current head
