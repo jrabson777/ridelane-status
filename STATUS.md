@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 01:52:19 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 01:52:31 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -44,8 +44,8 @@ while the running loop read a copy 2KB older.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-06 01:51:11 TRIGGER cause=state-change NOT RUN -- lock held 83s
+- probe heartbeat: 17s ago
+- last pass: 2026-10-06 01:52:24 TRIGGER cause=state-change NOT RUN -- lock held 23s
 - notifier last ran: 0m ago
 
 ## Phase board
@@ -141,6 +141,18 @@ FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
