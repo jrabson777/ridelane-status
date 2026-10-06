@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 00:57:29 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 00:58:26 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -11,7 +11,7 @@ _Generated 2026-10-06 00:57:29 EDT by the probe. Public mirror; no tokens, keys,
 | milestone | state | proof id | blocker |
 |---|---|---|---|
 | **M1a** staging redeploy ACTIVE | **DONE** | deploy `b08f1358` · health 200 `commit=e9698534dd4c` `bootedAt=2026-10-06T04:27:26Z` · CRM 200 | — |
-| **M1b** Stripe TEST restricted key | WAITING ON FOUNDER | UNKNOWN (`stripeMode=unknown` now) | he signs in at dashboard.stripe.com |
+| **M1b** Stripe TEST key | **DONE (Path B, D-20)** | `stripeMode=test` · `/api/stripe/config` pk_test_ acct `51QY4ZQCxi29dqjf` | restricted-key dialog won't render; using the test secret key |
 | **M1c** staging store for realtime | **DONE** | `persistence=redis` `ping=1ms` · engine.io handshake on `/socket.io/` · redis:7-alpine internal, `basic-xxs` **$5/mo** | — |
 | **M1d** boot-completeness CI step | NOT STARTED | UNKNOWN | none |
 | **Safety** `rbac.ts:50` fail closed on `CRM_BASE_URL` | DISPATCHED to API | UNKNOWN | none |
@@ -37,7 +37,7 @@ M1–M4; DRIVER and CRM sessions paused.
 
 - probe heartbeat: 2s ago
 - last pass: 2026-10-06 00:54:44 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 111s
-- notifier last ran: 1m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -85,7 +85,7 @@ M1–M4; DRIVER and CRM sessions paused.
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: another check-so has been running 30s; this is its last result, 0m old.
 NOTE: another check-so has been running 16s; this is its last result, 2m old.
 NOTE: breaking a stale check-so lock (124s, holder 78709 not alive).
@@ -132,6 +132,18 @@ FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
