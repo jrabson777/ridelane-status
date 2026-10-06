@@ -1,14 +1,14 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 23:07:34 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 23:11:54 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-05 22:50:54   -> pass RAN
-- notifier last ran: 16m ago
+- probe heartbeat: 7s ago
+- last pass: 2026-10-05 23:10:45 TRIGGER cause=state-change NOT RUN -- lock held 217s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -44,15 +44,15 @@ _Generated 2026-10-05 23:07:34 EDT by the probe. Public mirror; no tokens, keys,
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 358 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1046 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1117 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17295 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17717 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28598 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11533 |
-| jrax-driver-app | #279 | `77877f9c57ed` | 3 total, 0 failed | YES | 128 |
-| jrax-driver-app | #266 | `541b9b65f261` | 4 total, 0 failed | **none** | 1825 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 361 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1048 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1120 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17297 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17719 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28600 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11535 |
+| jrax-driver-app | #279 | `77877f9c57ed` | 3 total, 0 failed | YES | 130 |
+| jrax-driver-app | #266 | `541b9b65f261` | 4 total, 0 failed | **none** | 1827 |
 
 ## Last standing-orders run
 
