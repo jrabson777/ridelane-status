@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 05:02:48 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 05:04:26 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-06 04:54:04 TRIGGER cause=state-change NOT RUN -- lock held 93s
-- notifier last ran: 1m ago
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -135,52 +135,49 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #576 | `9830a042d347` | 8 total, 0 failed | **none** | 1 |
-| ridelane-api | #575 | `2ba7bbd2f1c3` | 8 total, 0 failed | YES | 40 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 704 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1391 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1463 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17640 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18062 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28943 |
+| ridelane-api | #576 | `9830a042d347` | 8 total, 0 failed | YES | 13 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 715 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1402 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1474 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17652 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18074 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28955 |
 
 ## Last standing-orders run
 
 ```
 (from the last pass, 1m ago)
-NOTE: another check-so has been running 74s; this is its last result, 1m old.
-NOTE: another check-so has been running 12s; this is its last result, 0m old.
-NOTE: breaking a stale check-so lock (201s, holder 9435 not alive).
+NOTE: breaking a stale check-so lock (140s, holder 16117 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-PASS   SO-6  FOUNDER-DEFECTS.md touched 37m ago
+PASS   SO-6  FOUNDER-DEFECTS.md touched 41m ago
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 286m ago
+PASS   SO-10 STANDING-ORDERS.md updated 291m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 0m ago (13699 lines)
+PASS   SO-15 reviewer session active 3m ago (13766 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 21m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 25m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2891:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 8m ago, 112 ruling(s), file 118m old
+PASS   SO-22 advisor live: ADV ran 13m ago, 112 ruling(s), file 123m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#279,#278,#277,...)  pax:18 (#102,#101,#100,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-DRIVER-MW-UNSET-GUARD(DRIVER,23m) QI-PAX-GRATUITY-CONTRACT(PASSENGER,23m) QI-PAX-MW-UNSET-GUARD(PASSENGER,23m) [6 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 24s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-REV-0458.md(1p/0t) out-CRM-0450.md(5p/0t)
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-PAX-GRATUITY-CONTRACT(PASSENGER,27m) QI-PAX-MW-UNSET-GUARD(PASSENGER,27m) [6 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+PASS   SO-24 heartbeat 27s old
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-DRV-0458.md(30p/4t) out-CRM-0450.md(5p/0t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 PASS   SO-28 nightly section dated TODAY (6 Oct) on his page
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 39 event(s) delivered to date
+PASS   SO-33 notifier ran 1m ago; 39 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
