@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 02:23:05 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 02:23:20 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -16,8 +16,10 @@ _Generated 2026-10-06 02:23:05 EDT by the probe. Public mirror; no tokens, keys,
 | **M1d** boot-completeness CI step | **PR OPEN, GREEN, RETARGETED TO `master`** | `ridelane-api#571` `cd88aea9` (head unchanged) · 8/8 SUCCESS · 6 boots: 1 completeness + 5 necessity controls · **SO-43** mirrors it onto the staging spec | reviewer verdict |
 | **Safety** `CRM_BASE_URL` fail closed | **MERGED** `d0f4d0b2` | `ridelane-api#569` on `VERDICT: APPROVE 4e6312be…` at the exact head · **FOUR** fallbacks, not two — `index.ts` and `employeeRoutes.ts:88` build the EMAILED invite/reset urls · **production NOT deployed** (still `e3cce008`, booted 5 Oct 14:49) · follow-up `#572` closes the evasion the reviewer found in my own gate | — |
 | **M2** EAS walk green on staging ×3 | **WIRING PR OPEN; NO RUN STARTED** | `ridelane-passenger-app#101` `b1ebd81` · job `env` outranks the profile env AND the `preview` environment (EAS Precedence table) · trigger's own guard passes on line 59, refuses again if that line is commented · flows renamed to the **required** `MAESTRO_` prefix · dropoff values measured from `fixtureAutocomplete("Amalie")` → one match | **founder: is an EAS e2e build a "new native build" (hard stop) or inside the approved $100/mo cap?** · and someone with `EXPO_TOKEN` must confirm `OTP_TEST_*` exist in the job's EAS environment |
-| **M3** OTA to build 12's runtime | **GATE EXISTS AND IS CI-ONLY** | the publish gate is already built (`eas-update.yml` → *Refuse an update no installed build can accept*): resolves the runtime locally, counts installable `preview` builds, refuses on 0 · the 29 Sep refusal (`78ce8bc2`, **0 builds**) was the HARNESS — the key was unset — and is already fixed in-file | **UNPROVABLE from this machine.** The runtime hashes the EVALUATED config, so it tracks `GOOGLE_MAPS_IOS_CONFIG_KEY`'s **value**: same tree `a25b16f` → unset `25ce74c3`, dummy-A `c803f9d1`, dummy-B `d1502fc8`. Needs the real secret (CI) and `eas build:list` (`EXPO_TOKEN`) · **so it waits on `pax#78`** |
+| **M3** OTA to build 12's runtime | **PUBLISH SOURCE PREPARED; NOTHING PUBLISHED** | an OTA from `main` reaches **nobody** — `ca4304ec` resolves `bd5d3b19…`, `main` resolves `03aed403…` (one dummy Maps key held constant, so its value cancels). Cause is NOT native: `app.json`/`app.config.js`/`package.json`/lockfile are identical; `@expo/fingerprint` also hashes `eas.json` and `.gitignore`, bisected to `3ce733a0…` and `4f388b1e…`. **The `eas.json` change is the `e2e-test` profile added for the M2 walk.** Branch `ota/build12-runtime-js-only` `cf9d11f` = build 12's base + `main`'s JS (20 files) → still `bd5d3b19…`, 19 suites / 289 tests pass. Rollback target recorded: embedded bundle. | **founder: may I publish an OTA to his channel once a reviewer checks the reasoning?** · values are RELATIVE — the real resolve happens in CI with the real secret |
 | **M4** his booking's R-number in Dispatch | NOT STARTED | UNKNOWN | M3 |
+| **D-17** a binary on his phone | **BUILD 12 IS CUT AND INSTALLABLE** | run `37179820368` from `ca4304ec`, 4 Oct: *"Shipping CFBundleVersion: 12 (prior: 11)"*, *"Build is safe to install"*, GMSApiKey asserted in the shipped `.ipa` · install link on his page · **his page said "NEVER CUT" for two days; corrected** | he installs it |
+| **FD-15 / FD-14** money correctness | **ALREADY DONE ON `main`** | `__tests__/fd15-fd14-walk-ids.test.tsx`: FD-14 lines sum to the total, FD-15 booked total is the server's stored number not the screen's quote, plus a `$NaN` guard and the U+202F AM/PM case · passed in a 19-suite / 289-test run | — |
 | *(parallel)* A7 chat server half | DISPATCHED to API | UNKNOWN | none — staging store is live |
 
 **Live:** `https://ridelane-staging-mgvis.ondigitalocean.app` — api on `ridelane-api@staging` `e9698534`, crm on `jrax-admin@staging` `0c605d2e`, **redis:7-alpine store, engine.io handshake proved on `/socket.io/`** (the "in-memory, no socket until M1c" note that stood here was stale the moment M1c landed).
@@ -66,7 +68,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 1s ago
 - last pass: 2026-10-06 02:18:19 TRIGGER cause=state-change NOT RUN -- lock held 61s
 - notifier last ran: 2m ago
 
@@ -167,6 +169,18 @@ FAILS: 6   (UNPROV is not a pass and not counted as a fail)
 ## LOOP-ALERTS, tail
 
 ```
+
+**[WATCHDOG 01:13]** no orchestrator pass in 43 minutes — launching one.
+
+**[HEARTBEAT 01:22 EDT]** **The orchestrator has not completed a turn in 29852962 minutes.** Work may be stalled; the cause is not known from here. If this repeats, the loop is not running.
+
+**[HEARTBEAT 01:42 EDT]** **PAX session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **DRV session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **API session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
+
+**[HEARTBEAT 01:42 EDT]** **CRM session idle 22 minutes** with items queued. Nothing is being worked in that repo until it is dispatched.
 ```
 
 ## WALKS
