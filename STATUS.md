@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 10:41:29 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 10:45:23 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,7 +97,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 6s ago
 - last pass: 2026-10-06 10:39:02 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 185s
 - notifier last ran: 1m ago
 
@@ -135,14 +135,14 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #578 | `56fd11a9a8fe` | 8 total, 0 failed | YES | 33 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1042 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1729 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1801 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17978 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18400 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29281 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 277 |
+| ridelane-api | #578 | `56fd11a9a8fe` | 8 total, 0 failed | YES | 46 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1054 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1741 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1813 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17991 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18413 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29294 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 289 |
 
 ## Last standing-orders run
 
