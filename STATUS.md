@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 17:13:35 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 17:17:43 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-06 17:12:27   -> pass RAN
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-06 17:17:39 TRIGGER cause=state-change prev=17f94ddd now=3fffebec
+- notifier last ran: 3m ago
 
 ## Phase board
 
@@ -135,18 +135,18 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1436 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2124 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 2196 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18373 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18795 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29676 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 671 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1448 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2136 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 2208 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18385 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18807 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29688 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 683 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
+(from the last pass, 6m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 49047 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
