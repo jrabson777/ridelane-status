@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 18:42:28 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 18:46:36 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-06 18:36:08   -> pass RAN
-- notifier last ran: 3m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-06 18:46:32 TRIGGER cause=idle-floor-10m prev=89725029 now=89725029
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -135,18 +135,18 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1523 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2210 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 2282 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18459 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18882 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29763 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 758 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1536 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2224 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 2295 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18473 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 18895 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 29776 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 771 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 3m ago)
+(from the last pass, 7m ago)
 NOTE: another check-so has been running 80s; this is its last result, 2m old.
 NOTE: breaking a dead check-so lock after 90s (holder 45010 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
