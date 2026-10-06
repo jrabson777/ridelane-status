@@ -1,13 +1,13 @@
 # RideLane — loop status
 
-_Generated 2026-10-05 23:43:26 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-05 23:43:35 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-05 23:42:18 TRIGGER cause=state-change NOT RUN -- lock held 48s
+- probe heartbeat: 2s ago
+- last pass: 2026-10-05 23:43:30 TRIGGER cause=state-change NOT RUN -- lock held 120s
 - notifier last ran: 0m ago
 
 ## Phase board
@@ -56,38 +56,38 @@ _Generated 2026-10-05 23:43:26 EDT by the probe. Public mirror; no tokens, keys,
 ## Last standing-orders run
 
 ```
-(from the last pass, 2m ago)
-NOTE: breaking a stale check-so lock (149s, holder 92137 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a stale check-so lock (129s, holder 94888 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 5 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-FAIL   SO-6  FOUNDER-DEFECTS.md untouched 145m
+FAIL   SO-6  FOUNDER-DEFECTS.md untouched 147m
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 1247m ago
+PASS   SO-10 STANDING-ORDERS.md updated 1249m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 UNPROV SO-14 labelling clean, but builds-list.yml exists in 0/2 app repos -- BATCHING half unprovable
-PASS   SO-15 reviewer session active 1m ago (12756 lines)
+PASS   SO-15 reviewer session active 3m ago (12756 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 0m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 2m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2809:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 13m ago, 111 ruling(s), file 101m old
+PASS   SO-22 advisor live: ADV ran 0m ago, 111 ruling(s), file 104m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:16 (#278,#277,#276,...)  pax:18 (#100,#98,#96,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: AR-101(API,81m) AR-19(API,81m) QI-A7-INVENTORY-0929(API,81m) QI-NOTIFY-0929(API,81m) QI-NOTIFY-0929-B(API,81m) QI-DRV-ACK-NOW(DRIVER,80m) QI-FD18-PRESENCE(DRIVER,81m) AR-101(PASSENGER,81m) QI-BOOKINGS-UNBLOCKED(PASSENGER,81m) QI-BUILD12-0929(PASSENGER,81m) QI-BUILD12-RUN(PASSENGER,81m) QI-CHAT-TWIN-BUILD(PASSENGER,81m) QI-FD13-0929(PASSENGER,81m) QI-FD13-0929-B(PASSENGER,81m) QI-FD14-REAL(PASSENGER,81m) QI-PLACES-FIXTURE-ON(PASSENGER,81m) AR-19(REVIEWER,81m) AR-54(REVIEWER,81m) QI-CHAT-REV-1004-C(REVIEWER,81m) QI-REV-266(REVIEWER,30m) QI-REV-557(REVIEWER,81m) QI-REV-97(REVIEWER,81m) QI-REV-98(REVIEWER,81m)
-PASS   SO-24 heartbeat 23s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-2307.md(17p/9t)
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: AR-101(API,84m) AR-19(API,84m) QI-A7-INVENTORY-0929(API,84m) QI-NOTIFY-0929(API,84m) QI-NOTIFY-0929-B(API,84m) QI-DRV-ACK-NOW(DRIVER,82m) QI-FD18-PRESENCE(DRIVER,84m) AR-101(PASSENGER,84m) QI-BOOKINGS-UNBLOCKED(PASSENGER,84m) QI-BUILD12-0929(PASSENGER,84m) QI-BUILD12-RUN(PASSENGER,84m) QI-CHAT-TWIN-BUILD(PASSENGER,84m) QI-FD13-0929(PASSENGER,84m) QI-FD13-0929-B(PASSENGER,84m) QI-FD14-REAL(PASSENGER,84m) QI-PLACES-FIXTURE-ON(PASSENGER,84m) AR-19(REVIEWER,84m) AR-54(REVIEWER,84m) QI-CHAT-REV-1004-C(REVIEWER,84m) QI-REV-266(REVIEWER,32m) QI-REV-557(REVIEWER,84m) QI-REV-97(REVIEWER,84m) QI-REV-98(REVIEWER,84m)
+PASS   SO-24 heartbeat 8s old
+PASS   SO-25 recent handbacks are tables with <=5 prose lines
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-PASS   SO-28 nightly section present on the page (page 0m old)
+PASS   SO-28 nightly section present on the page (page 2m old)
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 36 event(s) delivered to date
+PASS   SO-33 notifier ran 1m ago; 36 event(s) delivered to date
 PASS   SO-34 public mirror pushed 0m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
@@ -95,7 +95,7 @@ PASS   SO-38 no loop script sources the scratchpad; pass.log grew 0m ago
 FAIL   SO-39 PR(s) with an EXPECTED CHECK ABSENT (reads green, was never run): jrax-driver-app#266 -- a missing check is a failing one
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 ---
-FAILS: 6   (UNPROV is not a pass and not counted as a fail)
+FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
