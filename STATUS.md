@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 01:55:56 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 01:56:03 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -44,7 +44,7 @@ while the running loop read a copy 2KB older.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-06 01:54:48 TRIGGER cause=state-change NOT RUN -- lock held 54s
 - notifier last ran: 0m ago
 
@@ -90,7 +90,7 @@ while the running loop read a copy 2KB older.
 | ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1286 |
 | ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17463 |
 | ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17885 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28766 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28767 |
 | ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11701 |
 
 ## Last standing-orders run
