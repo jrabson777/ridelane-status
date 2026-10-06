@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 00:34:51 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 00:34:57 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -86,6 +86,7 @@ M1–M4; DRIVER and CRM sessions paused.
 
 ```
 (from the last pass, 0m ago)
+NOTE: another check-so has been running 6s; this is its last result, 0m old.
 NOTE: breaking a stale check-so lock (209s, holder 54755 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2417:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
