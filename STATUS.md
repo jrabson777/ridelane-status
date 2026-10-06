@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 01:45:26 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 01:44:50 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -35,7 +35,7 @@ M1–M4; DRIVER and CRM sessions paused.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
+- probe heartbeat: 6s ago
 - last pass: 2026-10-06 01:43:42 TRIGGER cause=state-change NOT RUN -- lock held 88s
 - notifier last ran: 1m ago
 
@@ -73,15 +73,15 @@ M1–M4; DRIVER and CRM sessions paused.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #570 | `32dd9504fc4b` | 7 total, 0 failed | **none** | 29 |
-| ridelane-api | #569 | `4e6312beea10` | 7 total, 0 failed | YES | 39 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 515 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1202 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1274 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17451 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17873 |
+| ridelane-api | #570 | `32dd9504fc4b` | 7 total, 0 failed | **none** | 30 |
+| ridelane-api | #569 | `4e6312beea10` | 7 total, 0 failed | YES | 40 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 516 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 1203 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 1275 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 17452 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 17874 |
 | ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 28755 |
-| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11689 |
+| ridelane-passenger-app | #78 | `fa2a02daf47d` | 2 total, 1 failed | YES | 11690 |
 
 ## Last standing-orders run
 
