@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-07 03:36:36 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-07 03:41:48 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -99,7 +99,7 @@ is not a lifted block.
 
 - probe heartbeat: 6s ago
 - last pass: 2026-10-07 03:35:27   -> pass RAN
-- notifier last ran: 3m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -135,18 +135,18 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #588 | `1bb7811aa369` | 8 total, 0 failed | **none** | 68 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 2056 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2744 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18993 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 19415 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 30296 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 1291 |
+| ridelane-api | #588 | `1bb7811aa369` | 8 total, 0 failed | **none** | 79 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 2067 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2755 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 19004 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 19426 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 30307 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 1302 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
+(from the last pass, 6m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 48776 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  1 open PRs >60m with no verdict at head: api#588
