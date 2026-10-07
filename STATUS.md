@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 23:14:42 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 23:16:20 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -99,7 +99,7 @@ is not a lifted block.
 
 - probe heartbeat: 2s ago
 - last pass: 2026-10-06 23:13:31 TRIGGER cause=idle-floor-10m NOT RUN -- lock held 248s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -149,6 +149,7 @@ is not a lifted block.
 
 ```
 (from the last pass, 0m ago)
+NOTE: another check-so has been running 96s; this is its last result, 2m old.
 NOTE: breaking a dead check-so lock after 90s (holder 83527 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  1 open PRs >60m with no verdict at head: app#108
