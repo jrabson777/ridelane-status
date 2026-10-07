@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 22:54:25 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 22:57:17 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,7 +97,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 5s ago
 - last pass: 2026-10-06 22:50:57 TRIGGER cause=state-change NOT RUN -- lock held 200s
 - notifier last ran: 1m ago
 
@@ -135,46 +135,46 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1776 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2463 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 2535 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18712 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 19135 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 30016 |
-| ridelane-passenger-app | #109 | `af6e20dd68de` | 3 total, 0 failed | **none** | 14 |
-| ridelane-passenger-app | #108 | `4157a98d201e` | 4 total, 0 failed | **none** | 110 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 1011 |
-| jrax-driver-app | #280 | `9192a9b6963c` | 3 total, 0 failed | YES | 109 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1788 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2475 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 2547 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18724 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 19147 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 30028 |
+| ridelane-passenger-app | #109 | `af6e20dd68de` | 3 total, 0 failed | **none** | 26 |
+| ridelane-passenger-app | #108 | `4157a98d201e` | 4 total, 0 failed | YES | 122 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 1023 |
+| jrax-driver-app | #280 | `9192a9b6963c` | 3 total, 0 failed | YES | 121 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 2m ago)
-NOTE: breaking a dead check-so lock after 90s (holder 39169 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a dead check-so lock after 90s (holder 50583 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  1 open PRs >60m with no verdict at head: app#108
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 960m old, which is no longer a finding
+UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 966m old, which is no longer a finding
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 1357m ago
+PASS   SO-10 STANDING-ORDERS.md updated 1364m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 0m ago (15914 lines)
+PASS   SO-15 reviewer session active 7m ago (15914 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-PASS   SO-18 5 rows, written 10m ago, no status ahead of its artifact
+PASS   SO-18 5 rows, written 16m ago, no status ahead of its artifact
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 2891:- **(b)** "held" really is reserved for money, and `#562` should 
-PASS   SO-22 advisor live: ADV ran 1m ago, 116 ruling(s), file 520m old
-FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#279,#278,#277,...)  pax:17 (#106,#105,#104,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-PAX-WALK-LOGS(PASSENGER,21m) [8 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 125s old
+PASS   SO-22 advisor live: ADV ran 8m ago, 116 ruling(s), file 527m old
+FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#279,#278,#277,...)  pax:18 (#107,#106,#105,...) -- a run that was created is not a publish (AR-7)
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-PAX-WALK-LOGS(PASSENGER,27m) [8 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+PASS   SO-24 heartbeat 124s old
 PASS   SO-25 recent handbacks are tables with <=5 prose lines
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
@@ -189,7 +189,7 @@ PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 PASS   SO-43 all 5 boot-required name(s) bound by the staging spec (11 api keys), contract from origin/master
 ---
-BOARD-COMPUTED: 1791341501 2026-10-06 22:51:42 EDT
+BOARD-COMPUTED: 1791341891 2026-10-06 22:58:11 EDT
 FAILS: 4   (UNPROV is not a pass and not counted as a fail)
 ```
 
