@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-06 22:44:35 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-06 22:45:14 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-06 22:43:27 TRIGGER cause=state-change NOT RUN -- lock held 118s
-- notifier last ran: 0m ago
+- notifier last ran: 1m ago
 
 ## Phase board
 
@@ -135,21 +135,21 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1775 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 1776 |
 | ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 2463 |
-| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 2534 |
+| ridelane-api | #562 | `4cd691581aa1` | 7 total, 0 failed | YES | 2535 |
 | ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 18712 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 19134 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 30015 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 19135 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 30016 |
 | ridelane-passenger-app | #109 | `af6e20dd68de` | 3 total, 0 failed | **none** | 14 |
-| ridelane-passenger-app | #108 | `4157a98d201e` | 4 total, 0 failed | **none** | 109 |
-| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 1010 |
-| jrax-driver-app | #280 | `9192a9b6963c` | 3 total, 0 failed | YES | 108 |
+| ridelane-passenger-app | #108 | `4157a98d201e` | 4 total, 0 failed | **none** | 110 |
+| ridelane-passenger-app | #103 | `087e2cbe1c33` | 3 total, 1 failed | YES | 1011 |
+| jrax-driver-app | #280 | `9192a9b6963c` | 3 total, 0 failed | YES | 109 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 24872 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  1 open PRs >60m with no verdict at head: app#108
