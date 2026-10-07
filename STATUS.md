@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-07 13:05:11 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-07 13:08:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -144,48 +144,48 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 5m ago)
-NOTE: breaking a dead check-so lock after 90s (holder 35439 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a dead check-so lock after 90s (holder 46799 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
-UNPROV SO-2  the open-PR set was unreadable (Expecting value: line 1 column 1 (char 0)) -- not reporting a verdict finding about PRs this run could not read
+PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 1808m old, which is no longer a finding
+UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 1817m old, which is no longer a finding
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
-UNPROV SO-8  the open-PR set was unreadable -- cannot say whether any PR has zero checks
+PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 2206m ago
-UNPROV SO-11 the open-PR set was unreadable -- cannot count work in progress
-UNPROV SO-12 the open-PR set was unreadable -- cannot say whether an approved PR is dirty
+PASS   SO-10 STANDING-ORDERS.md updated 2215m ago
+PASS   SO-11 no author over the WIP limit
+PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 1m ago (16916 lines)
+PASS   SO-15 reviewer session active 10m ago (16916 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 667m stale -- it is an hourly board
+FAIL   SO-18 board 676m stale -- it is an hourly board
 PASS   SO-19 every queue file is read by a session
-UNPROV SO-21 page-held scan needs the open-PR set and /tmp/so_prs.json was unreadable -- not reporting a clean board for a check that could not see
-PASS   SO-22 advisor live: ADV ran 15m ago, 117 ruling(s), file 690m old
+FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 3074:4. **The driver-availability fix** — `#565` is the fail-on-old 
+PASS   SO-22 advisor live: ADV ran 1m ago, 117 ruling(s), file 699m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#280,#279,#278,...)  pax:18 (#113,#112,#111,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-PAX-GRATUITY-CONTRACT(PASSENGER,1942m) QI-PROOF1-REVERDICT-3(REVIEWER,2320m) [12 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-PAX-GRATUITY-CONTRACT(PASSENGER,1951m) QI-PROOF1-REVERDICT-3(REVIEWER,2329m) [12 retired as unackable -- see state/retired-ids.tsv for the reason on each]
 PASS   SO-24 heartbeat 124s old
-FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-1241.md(12p/12t)
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-1305.md(11p/11t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 nightly section is STALE -- newest heading is '6 Oct', not today (7 Oct), and it is past 07:00
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 1m ago; 59 event(s) delivered to date
-FAIL   SO-34 mirror 7m stale, over the 5m line -- the advisor is reading a dead page
+PASS   SO-33 notifier ran 0m ago; 59 event(s) delivered to date
+PASS   SO-34 public mirror pushed 2m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 6/6 sessions have transcripts
 PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
 PASS   SO-38 no loop script sources the scratchpad; pass.log grew 2m ago
-FAIL   SO-39 PR(s) with an EXPECTED CHECK ABSENT (reads green, was never run): ridelane-api#568 ridelane-api#565 ridelane-api#517 ridelane-api#505 -- a missing check is a failing one
+PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 PASS   SO-43 all 5 boot-required name(s) bound by the staging spec (11 api keys), contract from origin/master
 ---
-BOARD-COMPUTED: 1791392364 2026-10-07 12:59:24 EDT
-FAILS: 7   (UNPROV is not a pass and not counted as a fail)
+BOARD-COMPUTED: 1791392911 2026-10-07 13:08:31 EDT
+FAILS: 6   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
