@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-07 19:22:11 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-07 20:50:16 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 1033s ago
+- probe heartbeat: 0s ago
 - last pass: 2026-10-07 18:52:37   -> pass SKIPPED (lock held by a real pass)
-- notifier last ran: 52m ago
+- notifier last ran: 43m ago
 
 ## Phase board
 
@@ -138,8 +138,48 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 ## Last standing-orders run
 
 ```
-NO FRESH STANDING-ORDERS RESULT (none within 20 minutes).
-This is not a clean board -- it is a board nobody has read recently.
+(from the last pass, 0m ago)
+NOTE: breaking a dead check-so lock after 90s (holder 55472 not alive).
+PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
+UNPROV SO-2  the open-PR set was unreadable (Expecting value: line 1 column 1 (char 0)) -- not reporting a verdict finding about PRs this run could not read
+PASS   SO-3  all 7 build link(s) named by content
+PASS   SO-4  every CLAIMS row carries an artifact id
+PASS   SO-5  blocking list stated and scoped
+UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 2280m old, which is no longer a finding
+PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
+UNPROV SO-8  the open-PR set was unreadable -- cannot say whether any PR has zero checks
+UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
+PASS   SO-10 STANDING-ORDERS.md updated 2678m ago
+UNPROV SO-11 the open-PR set was unreadable -- cannot count work in progress
+UNPROV SO-12 the open-PR set was unreadable -- cannot say whether an approved PR is dirty
+UNPROV SO-13 REFUSE: curl failed on repos/jrabson777/ridelane-api/pulls?state=open&per_page=100
+UNPROV SO-14 REFUSE: curl failed on repos/jrabson777/ridelane-api/pulls?state=open&per_page=100
+FAIL   SO-15 reviewer session idle 115m -- over the 60m line
+PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
+PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
+FAIL   SO-18 board 1138m stale -- it is an hourly board
+PASS   SO-19 every queue file is read by a session
+UNPROV SO-21 GitHub call did not answer -- not reporting a clean board
+FAIL   SO-22 ADV idle 115m, over the 30m line -- the loop cannot see its advisor
+UNPROV SO-23 GitHub call did not answer -- not reporting delivery as clean
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-PAX-GRATUITY-CONTRACT(PASSENGER,2414m) QI-PROOF1-REVERDICT-3(REVIEWER,2791m) [12 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+FAIL   SO-24 heartbeat 6310s old and phase 'check-so' is 6310s over a 300s budget (budget provisional) -- this is a wedge, not a slow pass
+FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-1852.md(9p/11t)
+PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
+UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
+FAIL   SO-28 nightly section is STALE -- newest heading is '6 Oct', not today (7 Oct), and it is past 07:00
+PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
+FAIL   SO-33 notifier last ran 43m ago, over the 10m line -- the channel to the founder is going quiet
+FAIL   SO-34 mirror 143m stale, over the 5m line -- the advisor is reading a dead page
+FAIL   SO-35 control-plane verifier 87m stale
+PASS   SO-37 dispatch loop sees 6/6 session rows and all 6 queue files exist
+FAIL   SO-38 pass.log has not grown in 105m, past two fire intervals -- the loop is firing and producing nothing, which is exactly how 4 Oct lost six hours
+PASS   SO-39 every expected check is present as a check run on the open PRs
+PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
+PASS   SO-43 all 5 boot-required name(s) bound by the staging spec (11 api keys), contract from origin/master
+---
+BOARD-COMPUTED: 1791420616 2026-10-07 20:50:16 EDT
+FAILS: 11   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
