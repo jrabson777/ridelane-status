@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-08 05:20:08 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-08 05:20:17 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-08 05:19:00 TRIGGER cause=state-change NOT RUN -- lock held 138s
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-08 05:20:12 TRIGGER cause=state-change NOT RUN -- lock held 210s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -144,32 +144,32 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 7m ago)
-NOTE: breaking a dead check-so lock after 90s (holder 65421 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a dead check-so lock after 90s (holder 78939 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 2781m old, which is no longer a finding
+UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 2789m old, which is no longer a finding
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 3179m ago
+PASS   SO-10 STANDING-ORDERS.md updated 3186m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
 PASS   SO-13 no open PR was pushed after its approval
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 11m ago (17483 lines)
+PASS   SO-15 reviewer session active 1m ago (17496 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 1640m stale -- it is an hourly board
+FAIL   SO-18 board 1647m stale -- it is an hourly board
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 3074:4. **The driver-availability fix** — `#565` is the fail-on-old 
-PASS   SO-22 advisor live: ADV ran 11m ago, 117 ruling(s), file 1663m old
+PASS   SO-22 advisor live: ADV ran 1m ago, 117 ruling(s), file 1671m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:17 (#280,#279,#278,...)  pax:18 (#113,#112,#111,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-NOTIFY-DELIVERY(API,3293m) QI-PAX-GRATUITY-CONTRACT(PASSENGER,2915m) QI-PAX-SQUASH-CONFIRMED(PASSENGER,1695m) QI-WALK-RESUME-1003(PASSENGER,3293m) QI-WALK-W9-1004(PASSENGER,3293m) QI-PROOF1-REVERDICT-3(REVIEWER,3293m) [12 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 125s old
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-NOTIFY-DELIVERY(API,3301m) QI-PAX-GRATUITY-CONTRACT(PASSENGER,2923m) QI-PAX-SQUASH-CONFIRMED(PASSENGER,1703m) QI-WALK-RESUME-1003(PASSENGER,3301m) QI-WALK-W9-1004(PASSENGER,3301m) QI-PROOF1-REVERDICT-3(REVIEWER,3301m) [12 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+PASS   SO-24 heartbeat 126s old
 FAIL   SO-25 handback(s) over the format bar -- a table cannot bury a null: out-PAX-0509.md(6p/12t)
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
@@ -184,7 +184,7 @@ PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 PASS   SO-43 all 5 boot-required name(s) bound by the staging spec (11 api keys), contract from origin/master
 ---
-BOARD-COMPUTED: 1791450763 2026-10-08 05:12:43 EDT
+BOARD-COMPUTED: 1791451215 2026-10-08 05:20:15 EDT
 FAILS: 5   (UNPROV is not a pass and not counted as a fail)
 ```
 
