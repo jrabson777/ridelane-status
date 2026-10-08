@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-07 23:55:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-07 23:59:41 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-07 23:49:14   -> pass RAN
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-07 23:59:37 TRIGGER cause=idle-floor-10m prev=bea6e44e now=bea6e44e
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -135,16 +135,16 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 3278 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 3966 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 20215 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 20637 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 31518 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 3290 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 3978 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 20227 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 20649 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 31530 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 2m ago)
+(from the last pass, 7m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 49541 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
