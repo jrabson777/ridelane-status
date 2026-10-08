@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-08 13:47:44 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-08 13:49:44 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 1s ago
-- last pass: 2026-10-08 13:44:33 TRIGGER cause=idle-floor-10m prev=a922a4d8 now=a922a4d8
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-08 13:48:51   -> pass RAN
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -144,7 +144,7 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 1m ago)
+(from the last pass, 2m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 36084 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
