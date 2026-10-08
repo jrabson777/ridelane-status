@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-07 20:50:16 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-07 20:52:26 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 0s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-07 18:52:37   -> pass SKIPPED (lock held by a real pass)
-- notifier last ran: 43m ago
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -133,12 +133,18 @@ is not a lifted block.
 
 ## Open PRs, verdict at head
 
-REFUSED: the PR read did not answer. Not reporting an empty board.
+| repo | pr | head | checks | verdict at head | age (m) |
+|---|---|---|---|---|---|
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 3103 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 3790 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 20040 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 20462 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 31343 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 3m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 55472 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 UNPROV SO-2  the open-PR set was unreadable (Expecting value: line 1 column 1 (char 0)) -- not reporting a verdict finding about PRs this run could not read
