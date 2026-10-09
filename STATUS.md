@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-09 01:31:06 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-09 01:31:29 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 5s ago
-- last pass: 2026-10-09 01:29:59 TRIGGER cause=state-change NOT RUN -- lock held 164s
-- notifier last ran: 1m ago
+- probe heartbeat: 2s ago
+- last pass: 2026-10-09 01:31:11 TRIGGER cause=state-change NOT RUN -- lock held 236s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -149,39 +149,38 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 4m ago)
-NOTE: another check-so has been running 138s; this is its last result, 2m old.
-NOTE: breaking a dead check-so lock after 90s (holder 2392 not alive).
+(from the last pass, 0m ago)
+NOTE: breaking a dead check-so lock after 90s (holder 19126 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
-PASS   SO-2  every open PR has a verdict at its current head
+FAIL   SO-2  1 open PRs >60m with no verdict at head: app#273
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 3992m old, which is no longer a finding
+UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 3999m old, which is no longer a finding
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 PASS   SO-8  no open PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 4389m ago
+PASS   SO-10 STANDING-ORDERS.md updated 4397m ago
 PASS   SO-11 no author over the WIP limit
 PASS   SO-12 no approved PR sitting dirty
-PASS   SO-13 no open PR was pushed after its approval
+FAIL   SO-13 1 pushed after APPROVE:  ridelane-passenger-app#121 approved a9078e421d5c but head is e243a387e3fd; 
 PASS   SO-14 labelling clean and builds-list.yml present in both app repos
-PASS   SO-15 reviewer session active 6m ago (18643 lines)
+PASS   SO-15 reviewer session active 1m ago (18667 lines)
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 2850m stale -- it is an hourly board
+FAIL   SO-18 board 2858m stale -- it is an hourly board
 PASS   SO-19 every queue file is read by a session
 FAIL   SO-21 his page calls a STILL-OPEN PR held without a money citation: 3074:4. **The driver-availability fix** — `#565` is the fail-on-old 
-PASS   SO-22 advisor live: ADV ran 3m ago, 117 ruling(s), file 2874m old
+PASS   SO-22 advisor live: ADV ran 11m ago, 117 ruling(s), file 2881m old
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:16 (#280,#279,#278,...)  pax:18 (#118,#117,#116,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-CHAT-MIGRATE-1004-CORRECTION(API,4504m) QI-NOTIFY-DELIVERY(API,4504m) QI-DRV-UNFROZEN(DRIVER,106m) QI-CHAT-PAX-1004(PASSENGER,4504m) QI-CHAT-PAX-1004-B(PASSENGER,4504m) QI-CHAT-PAX-1004-C(PASSENGER,4504m) QI-PAX-107-BLOCKED(PASSENGER,3167m) QI-PAX-GRATUITY-CONTRACT(PASSENGER,4126m) QI-PAX-SQUASH-CONFIRMED(PASSENGER,2906m) QI-WALK-RESUME-1003(PASSENGER,4504m) QI-WALK-W9-1004(PASSENGER,4504m) QI-CHAT-REV-1004-AMENDMENT(REVIEWER,4504m) QI-CHAT-REV-1004-B(REVIEWER,4504m) QI-PROOF1-REVERDICT-3(REVIEWER,4504m) QI-REV-118-REREVIEW(REVIEWER,96m) [12 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 135s old
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-CHAT-MIGRATE-1004-CORRECTION(API,4511m) QI-NOTIFY-DELIVERY(API,4511m) QI-DRV-UNFROZEN(DRIVER,113m) QI-CHAT-PAX-1004(PASSENGER,4511m) QI-CHAT-PAX-1004-B(PASSENGER,4511m) QI-CHAT-PAX-1004-C(PASSENGER,4511m) QI-PAX-107-BLOCKED(PASSENGER,3174m) QI-PAX-GRATUITY-CONTRACT(PASSENGER,4133m) QI-PAX-SQUASH-CONFIRMED(PASSENGER,2913m) QI-WALK-RESUME-1003(PASSENGER,4511m) QI-WALK-W9-1004(PASSENGER,4511m) QI-CHAT-REV-1004-AMENDMENT(REVIEWER,4511m) QI-CHAT-REV-1004-B(REVIEWER,4511m) QI-PROOF1-REVERDICT-3(REVIEWER,4511m) QI-REV-118-REREVIEW(REVIEWER,103m) [12 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+PASS   SO-24 heartbeat 133s old
 PASS   SO-25 recent handbacks are tables with <=5 prose lines
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 UNPROV SO-28 nightly for 9 Oct not written yet (newest: 6 Oct); not due until 07:00
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-PASS   SO-33 notifier ran 0m ago; 63 event(s) delivered to date
+PASS   SO-33 notifier ran 1m ago; 63 event(s) delivered to date
 PASS   SO-34 public mirror pushed 2m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
 PASS   SO-35 control plane intact: 7 files present, lib.sh matches the committed copy, 7/7 sessions have transcripts
 FAIL   SO-37 the dispatch loop sees 7 session rows, not 6 -- it is dispatching to nobody while every other check passes
@@ -190,8 +189,8 @@ PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 PASS   SO-43 all 5 boot-required name(s) bound by the staging spec (11 api keys), contract from origin/master
 ---
-BOARD-COMPUTED: 1791523445 2026-10-09 01:24:05 EDT
-FAILS: 5   (UNPROV is not a pass and not counted as a fail)
+BOARD-COMPUTED: 1791523886 2026-10-09 01:31:27 EDT
+FAILS: 7   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
