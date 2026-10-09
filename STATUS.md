@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-09 00:46:32 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-09 00:46:45 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,7 +97,7 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
+- probe heartbeat: 2s ago
 - last pass: 2026-10-09 00:45:24 TRIGGER cause=state-change NOT RUN -- lock held 142s
 - notifier last ran: 0m ago
 
@@ -142,13 +142,13 @@ is not a lifted block.
 | ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22136 |
 | ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33017 |
 | jrax-driver-app | #282 | `9d3f8d0a72c6` | 3 total, 0 failed | YES | 46 |
-| jrax-driver-app | #281 | `c2e9693dd5df` | 3 total, 0 failed | YES | 63 |
+| jrax-driver-app | #281 | `c2e9693dd5df` | 3 total, 0 failed | YES | 64 |
 | jrax-driver-app | #273 | `b2c0a9de7dd6` | 4 total, 0 failed | YES | 5378 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 1m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 1895 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 PASS   SO-2  every open PR has a verdict at its current head
