@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-09 03:03:08 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-09 03:08:20 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -99,7 +99,7 @@ is not a lifted block.
 
 - probe heartbeat: 2s ago
 - last pass: 2026-10-09 03:03:04 TRIGGER cause=state-change prev=d2c7a6e8 now=71b267a3
-- notifier last ran: 0m ago
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -135,18 +135,18 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #590 | `81c496f7aa8b` | 8 total, 0 failed | YES | 67 |
-| ridelane-api | #589 | `cd02a1b3cce4` | 8 total, 0 failed | YES | 185 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 4903 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 5591 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 21840 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22262 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33143 |
-| ridelane-passenger-app | #121 | `e243a387e3fd` | 4 total, 0 failed | YES | 107 |
-| ridelane-passenger-app | #120 | `8ba67a0a302a` | 4 total, 0 failed | **none** | 117 |
-| jrax-driver-app | #283 | `02cb80d544f7` | 3 total, 0 failed | **none** | 83 |
-| jrax-driver-app | #282 | `34e208d5dc77` | 3 total, 0 failed | **none** | 172 |
-| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5504 |
+| ridelane-api | #590 | `81c496f7aa8b` | 8 total, 0 failed | YES | 81 |
+| ridelane-api | #589 | `cd02a1b3cce4` | 8 total, 0 failed | YES | 199 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 4917 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 5604 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 21853 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22275 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33157 |
+| ridelane-passenger-app | #121 | `e243a387e3fd` | 4 total, 0 failed | YES | 121 |
+| ridelane-passenger-app | #120 | `8ba67a0a302a` | 4 total, 0 failed | **none** | 130 |
+| jrax-driver-app | #283 | `02cb80d544f7` | 3 total, 0 failed | YES | 96 |
+| jrax-driver-app | #282 | `34e208d5dc77` | 3 total, 0 failed | **none** | 185 |
+| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5517 |
 
 ## Last standing-orders run
 
