@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-09 09:53:52 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-09 09:54:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-09 09:50:50 TRIGGER cause=state-change NOT RUN -- lock held 3301s
-- notifier last ran: 5m ago
+- notifier last ran: 6m ago
 
 ## Phase board
 
@@ -136,17 +136,17 @@ is not a lifted block.
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
 | ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 5325 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 6012 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 22261 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22683 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33564 |
-| ridelane-passenger-app | #125 | `dd25b8369984` | 4 total, 0 failed | **none** | 66 |
-| ridelane-passenger-app | #124 | `a1648690ebfa` | 4 total, 0 failed | **none** | 132 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 6013 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 22262 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22684 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33565 |
+| ridelane-passenger-app | #125 | `dd25b8369984` | 4 total, 0 failed | **none** | 67 |
+| ridelane-passenger-app | #124 | `a1648690ebfa` | 4 total, 0 failed | **none** | 133 |
 | ridelane-passenger-app | #121 | `e243a387e3fd` | 4 total, 0 failed | YES | 529 |
-| ridelane-passenger-app | #120 | `8ba67a0a302a` | 4 total, 0 failed | **none** | 538 |
+| ridelane-passenger-app | #120 | `8ba67a0a302a` | 4 total, 0 failed | **none** | 539 |
 | jrax-driver-app | #288 | `7e226c2e8937` | 3 total, 0 failed | **none** | 61 |
-| jrax-driver-app | #287 | `916808481c75` | 3 total, 0 failed | **none** | 82 |
-| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5925 |
+| jrax-driver-app | #287 | `916808481c75` | 3 total, 0 failed | **none** | 83 |
+| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5926 |
 
 ## Last standing-orders run
 
