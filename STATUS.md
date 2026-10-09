@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-09 03:39:29 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-09 03:41:39 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -98,8 +98,8 @@ is not a lifted block.
 ## Heartbeat
 
 - probe heartbeat: 2s ago
-- last pass: 2026-10-09 03:36:23 TRIGGER cause=state-change NOT RUN -- lock held 54s
-- notifier last ran: 0m ago
+- last pass: 2026-10-09 03:41:35 TRIGGER cause=state-change prev=9c51cad5 now=7b238097
+- notifier last ran: 2m ago
 
 ## Phase board
 
@@ -152,7 +152,7 @@ is not a lifted block.
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: another check-so has been running 111s; this is its last result, 1m old.
 NOTE: another check-so has been running 4s; this is its last result, 7m old.
 NOTE: breaking a dead check-so lock after 90s (holder 62644 not alive).
