@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-09 06:26:20 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-09 06:27:34 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
-- last pass: 2026-10-09 06:16:00 TRIGGER cause=state-change NOT RUN -- lock held 307s
-- notifier last ran: 1m ago
+- probe heartbeat: 6s ago
+- last pass: 2026-10-09 06:26:26 TRIGGER cause=state-change NOT RUN -- lock held 9s
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -135,23 +135,23 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #590 | `81c496f7aa8b` | 8 total, 0 failed | YES | 281 |
-| ridelane-api | #589 | `cd02a1b3cce4` | 8 total, 0 failed | YES | 399 |
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 5117 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 5804 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 22053 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22476 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33357 |
-| ridelane-passenger-app | #123 | `ae74e063a7cf` | 4 total, 0 failed | **none** | 38 |
-| ridelane-passenger-app | #122 | `52c579cedec4` | 4 total, 0 failed | **none** | 108 |
-| ridelane-passenger-app | #121 | `e243a387e3fd` | 4 total, 0 failed | YES | 321 |
-| ridelane-passenger-app | #120 | `8ba67a0a302a` | 4 total, 0 failed | **none** | 331 |
-| ridelane-passenger-app | #115 | `ee6ba9c95098` | 4 total, 0 failed | YES | 1137 |
-| ridelane-passenger-app | #114 | `a0814ed7aadd` | 4 total, 0 failed | YES | 1318 |
-| jrax-driver-app | #286 | `f166e1b24894` | 3 total, 0 failed | **none** | 21 |
-| jrax-driver-app | #285 | `835594682c03` | 3 total, 0 failed | **none** | 71 |
-| jrax-driver-app | #284 | `7b5feed36786` | 3 total, 0 failed | **none** | 188 |
-| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5718 |
+| ridelane-api | #590 | `81c496f7aa8b` | 8 total, 0 failed | YES | 282 |
+| ridelane-api | #589 | `cd02a1b3cce4` | 8 total, 0 failed | YES | 400 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 5118 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 5806 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 22055 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22477 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33358 |
+| ridelane-passenger-app | #123 | `ae74e063a7cf` | 4 total, 0 failed | **none** | 39 |
+| ridelane-passenger-app | #122 | `52c579cedec4` | 4 total, 0 failed | **none** | 109 |
+| ridelane-passenger-app | #121 | `e243a387e3fd` | 4 total, 0 failed | YES | 322 |
+| ridelane-passenger-app | #120 | `8ba67a0a302a` | 4 total, 0 failed | **none** | 332 |
+| ridelane-passenger-app | #115 | `ee6ba9c95098` | 4 total, 0 failed | YES | 1139 |
+| ridelane-passenger-app | #114 | `a0814ed7aadd` | 4 total, 0 failed | YES | 1320 |
+| jrax-driver-app | #286 | `f166e1b24894` | 3 total, 0 failed | **none** | 22 |
+| jrax-driver-app | #285 | `835594682c03` | 3 total, 0 failed | **none** | 72 |
+| jrax-driver-app | #284 | `7b5feed36786` | 3 total, 0 failed | **none** | 190 |
+| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5719 |
 
 ## Last standing-orders run
 
