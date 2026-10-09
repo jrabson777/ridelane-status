@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-09 11:05:59 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-09 11:07:11 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
-- last pass: 2026-10-09 11:01:26 TRIGGER cause=state-change prev=5b101f8d now=d6b1c06d
-- notifier last ran: 2m ago
+- probe heartbeat: 6s ago
+- last pass: 2026-10-09 11:06:03   -> pass RAN
+- notifier last ran: 0m ago
 
 ## Phase board
 
@@ -135,21 +135,22 @@ is not a lifted block.
 
 | repo | pr | head | checks | verdict at head | age (m) |
 |---|---|---|---|---|---|
-| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 5387 |
-| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 6074 |
-| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 22323 |
-| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22746 |
-| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33627 |
-| ridelane-passenger-app | #125 | `dd25b8369984` | 4 total, 0 failed | **none** | 128 |
-| ridelane-passenger-app | #121 | `7568c983ed3b` | 4 total, 0 failed | YES | 591 |
-| jrax-driver-app | #288 | `7e226c2e8937` | 3 total, 0 failed | **none** | 123 |
-| jrax-driver-app | #287 | `17ae74ce6869` | 3 total, 0 failed | **none** | 144 |
-| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5987 |
+| ridelane-api | #568 | `8dae9431e2c9` | 7 total, 1 failed | YES | 5398 |
+| ridelane-api | #565 | `6a82a645c61a` | 7 total, 1 failed | YES | 6085 |
+| ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 22334 |
+| ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22757 |
+| ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33638 |
+| ridelane-passenger-app | #126 | `0e45d4f1e509` | 4 total, 0 failed | **none** | 4 |
+| ridelane-passenger-app | #125 | `dd25b8369984` | 4 total, 0 failed | YES | 139 |
+| ridelane-passenger-app | #121 | `7568c983ed3b` | 4 total, 0 failed | YES | 602 |
+| jrax-driver-app | #288 | `7e226c2e8937` | 3 total, 0 failed | YES | 134 |
+| jrax-driver-app | #287 | `17ae74ce6869` | 3 total, 0 failed | **none** | 155 |
+| jrax-driver-app | #273 | `c23301695158` | 3 total, 0 failed | **none** | 5999 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
+(from the last pass, 2m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 9054 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  3 open PRs >60m with no verdict at head: app#125, app#288, app#287
