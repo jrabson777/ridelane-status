@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-09 05:47:07 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-09 05:49:34 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,8 +97,8 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 6s ago
-- last pass: 2026-10-09 05:45:58 TRIGGER cause=state-change NOT RUN -- lock held 52s
+- probe heartbeat: 7s ago
+- last pass: 2026-10-09 05:48:25 TRIGGER cause=state-change NOT RUN -- lock held 199s
 - notifier last ran: 0m ago
 
 ## Phase board
@@ -142,19 +142,19 @@ is not a lifted block.
 | ridelane-api | #517 | `42e34e5b3515` | 4 total, 0 failed | YES | 22014 |
 | ridelane-api | #505 | `e1d9243859bf` | 4 total, 0 failed | YES | 22437 |
 | ridelane-api | #459 | `b648529c23b3` | 3 total, 0 failed | YES | 33318 |
-| ridelane-passenger-app | #122 | `6e511d689ed2` | 4 total, 0 failed | **none** | 68 |
+| ridelane-passenger-app | #122 | `6e511d689ed2` | 4 total, 0 failed | **none** | 69 |
 | ridelane-passenger-app | #121 | `e243a387e3fd` | 4 total, 0 failed | YES | 282 |
 | ridelane-passenger-app | #120 | `8ba67a0a302a` | 4 total, 0 failed | **none** | 292 |
 | ridelane-passenger-app | #115 | `ee6ba9c95098` | 4 total, 0 failed | **none** | 1098 |
 | ridelane-passenger-app | #114 | `a0814ed7aadd` | 4 total, 0 failed | **none** | 1279 |
 | jrax-driver-app | #285 | `835594682c03` | 3 total, 0 failed | **none** | 32 |
 | jrax-driver-app | #284 | `7b5feed36786` | 3 total, 0 failed | **none** | 149 |
-| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5678 |
+| jrax-driver-app | #273 | `1e91d443c9e6` | 3 total, 0 failed | YES | 5679 |
 
 ## Last standing-orders run
 
 ```
-(from the last pass, 7m ago)
+(from the last pass, 8m ago)
 NOTE: breaking a dead check-so lock after 90s (holder 88034 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 FAIL   SO-2  4 open PRs >60m with no verdict at head: app#120, app#115, app#114, app#284
