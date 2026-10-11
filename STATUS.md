@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-10 02:42:19 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-10 20:41:45 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -99,7 +99,7 @@ is not a lifted block.
 
 - probe heartbeat: 2s ago
 - last pass: 2026-10-09 11:16:58   -> pass RAN
-- notifier last ran: 932m ago
+- notifier last ran: 2012m ago
 
 ## Phase board
 
@@ -138,52 +138,8 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 ## Last standing-orders run
 
 ```
-(from the last pass, 0m ago)
-NOTE: breaking a dead check-so lock after 90s (holder 75539 not alive).
-PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
-UNPROV SO-2  the open-PR set was unreadable (Expecting value: line 1 column 1 (char 0)) -- not reporting a verdict finding about PRs this run could not read
-PASS   SO-3  all 7 build link(s) named by content
-PASS   SO-4  every CLAIMS row carries an artifact id
-PASS   SO-5  blocking list stated and scoped
-UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 5511m old, which is no longer a finding
-PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
-UNPROV SO-8  the open-PR set was unreadable -- cannot say whether any PR has zero checks
-UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 5908m ago
-UNPROV SO-11 the open-PR set was unreadable -- cannot count work in progress
-UNPROV SO-12 the open-PR set was unreadable -- cannot say whether an approved PR is dirty
-FAIL   SO-13  pushed after APPROVE: 
-FAIL   SO-14  native PR(s) with no [native] in the title: 
-awk: can't open file /private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/lib.sh
- source line number 1
-FAIL   SO-15 no REV row in lib.sh -- there is no reviewer session
-PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
-PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 4369m stale -- it is an hourly board
-PASS   SO-19 every queue file is read by a session
-UNPROV SO-21 page-held scan needs the open-PR set and /tmp/so_prs.json was unreadable -- not reporting a clean board for a check that could not see
-awk: can't open file /private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/lib.sh
- source line number 1
-FAIL   SO-22 THE LOOP HAS NO ADVISOR -- no ADV row in lib.sh
-FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#288,#286,#285,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-CHAT-ADV-1004-C(ADV,6022m) QI-PROOF1-MERGES(ADV,6022m) AR-101(API,6022m) AR-19(API,6022m) QI-A7-INVENTORY-0929(API,6022m) QI-API-REDIS-RUNNING(API,6268m) QI-CAPACITY-COPY(API,6022m) QI-CHAT-MIGRATE-1004(API,6022m) QI-CHAT-MIGRATE-1004-CORRECTION(API,6022m) QI-FD19-SERVER(API,6022m) QI-KV-SPLIT-NOREDIS(API,6022m) QI-NOTIFY-0929(API,6022m) QI-NOTIFY-0929-B(API,6022m) QI-NOTIFY-DELIVERY(API,6022m) QI-WIRE-TEST(API,6022m) QI-CHAT-CRM-1004(CRM,6022m) QI-CRM-REVIEW-278(CRM,6259m) QI-API-REDIS-RUNNING(DRIVER,6022m) QI-CHAT-DRV-1004(DRIVER,6022m) QI-CHAT-DRV-1004-C(DRIVER,6022m) QI-FD18-PART1(DRIVER,6022m) AR-101(PASSENGER,6022m) QI-CHAT-PAX-1004(PASSENGER,6022m) QI-CHAT-PAX-1004-B(PASSENGER,6022m) QI-CHAT-PAX-1004-C(PASSENGER,6022m) QI-CHAT-PAX-READY(PASSENGER,6022m) QI-CHAT-PAX-UNBLOCKED(PASSENGER,6022m) QI-CHAT-TWIN-JSBUNDLE(PASSENGER,6022m) QI-CHAT-TWIN-REBUILD(PASSENGER,6022m) QI-FD10-15MIN-0028(PASSENGER,7302m) QI-FD19-CLIENT(PASSENGER,6022m) QI-KV-SPLIT(PASSENGER,6022m) QI-NIGHTLY-20260929(PASSENGER,6697m) QI-NIGHTLY-20260930(PASSENGER,7180m) QI-NIGHTLY-20261001(PASSENGER,7169m) QI-NIGHTLY-20261003(PASSENGER,6224m) QI-NIGHTLY-20261004(PASSENGER,7180m) QI-NIGHTLY-20261005(PASSENGER,7180m) QI-PAX-107-BLOCKED(PASSENGER,4685m) QI-PAX-120-LOCAL-RUN(PASSENGER,1069m) QI-PAX-FD19-GUARD(PASSENGER,6267m) QI-PAX-FIXTURE-IDENTITY(PASSENGER,6209m) QI-PAX-GRATUITY-CONTRACT(PASSENGER,5644m) QI-PAX-SQUASH-CONFIRMED(PASSENGER,4424m) QI-PAX-W10-NOBOOKING(PASSENGER,42m) QI-SPLASH-HANG(PASSENGER,6022m) QI-TWIN-BUNDLE-STALE(PASSENGER,6022m) QI-TWIN-WRONG-TREE(PASSENGER,6022m) QI-WALK-APPID(PASSENGER,6022m) QI-WALK-EVIDENCE(PASSENGER,6022m) QI-WALK-RESUME-1003(PASSENGER,6022m) QI-WALK-W9-1004(PASSENGER,6022m) AR-19(REVIEWER,6022m) QI-CHAT-MIGRATE-1004(REVIEWER,6022m) QI-CHAT-REV-1004-AMENDMENT(REVIEWER,6022m) QI-CHAT-REV-1004-B(REVIEWER,6022m) QI-PAX-FD19-GUARD(REVIEWER,6022m) QI-PROOF1-REVERDICT-3(REVIEWER,6022m) QI-PROOF1-REVERDICT-4(REVIEWER,6022m) QI-REV-118-REREVIEW(REVIEWER,1614m) QI-REV-266(REVIEWER,5970m) QI-REV-267(REVIEWER,6022m) QI-REV-279(REVIEWER,6100m) QI-REV-279B(REVIEWER,6007m) QI-REV-560-269(REVIEWER,6022m) QI-REV-561(REVIEWER,6022m) QI-REV-567(REVIEWER,6022m) QI-REV-567-CHASE(REVIEWER,6022m) QI-REV-CARRIED-CLEAR(REVIEWER,6242m) QI-REV-SAMESHA(REVIEWER,6022m) [12 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 124s old
-PASS   SO-25 recent handbacks are tables with <=5 prose lines
-PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
-UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
-UNPROV SO-28 nightly for 10 Oct not written yet (newest: 6 Oct); not due until 07:00
-PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-FAIL   SO-33 notifier last ran 931m ago, over the 10m line -- the channel to the founder is going quiet
-PASS   SO-34 public mirror pushed 2m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
-FAIL   SO-35 control-plane verifier 933m stale
-FAIL   SO-37 the dispatch loop sees 7 session rows, not 6 -- it is dispatching to nobody while every other check passes
-PASS   SO-38 no loop script sources the scratchpad; pass.log grew 1m ago
-PASS   SO-39 every expected check is present as a check run on the open PRs
-PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
-PASS   SO-43 all 5 boot-required name(s) bound by the staging spec (11 api keys), contract from origin/master
----
-BOARD-COMPUTED: 1791614537 2026-10-10 02:42:17 EDT
-FAILS: 10   (UNPROV is not a pass and not counted as a fail)
+NO FRESH STANDING-ORDERS RESULT (none within 20 minutes).
+This is not a clean board -- it is a board nobody has read recently.
 ```
 
 ## LOOP-ALERTS, tail
