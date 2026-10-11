@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-10 23:18:03 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-10 23:45:33 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 2s ago
+- probe heartbeat: 3s ago
 - last pass: 2026-10-09 11:16:58   -> pass RAN
-- notifier last ran: 2168m ago
+- notifier last ran: 2196m ago
 
 ## Phase board
 
@@ -139,17 +139,17 @@ REFUSED: the PR read did not answer. Not reporting an empty board.
 
 ```
 (from the last pass, 0m ago)
-NOTE: breaking a dead check-so lock after 90s (holder 93234 not alive).
+NOTE: breaking a dead check-so lock after 90s (holder 2459 not alive).
 PASS   SO-1  an [HOURLY] is on his page: 2463:**[HOURLY] 15:13 EDT, 27 Sep — the first one ever p
 UNPROV SO-2  the open-PR set was unreadable (Expecting value: line 1 column 1 (char 0)) -- not reporting a verdict finding about PRs this run could not read
 PASS   SO-3  all 7 build link(s) named by content
 PASS   SO-4  every CLAIMS row carries an artifact id
 PASS   SO-5  blocking list stated and scoped
-UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 6746m old, which is no longer a finding
+UNPROV SO-6  n/a per AR-113 -- the 60m timer is withdrawn (the file changes when a founder defect moves, not on a clock). Rebuild as: no row status ahead of its artifact, plus staleness only against a newer FD-citing event. File is 6767m old, which is no longer a finding
 PASS   SO-7  CLAIMS: zero OTAs published — none can target an unposted runtime
 UNPROV SO-8  the open-PR set was unreadable -- cannot say whether any PR has zero checks
 UNPROV SO-9  no automated proof yet — relay/page hash comparison not built
-PASS   SO-10 STANDING-ORDERS.md updated 104m ago
+PASS   SO-10 STANDING-ORDERS.md updated 125m ago
 UNPROV SO-11 the open-PR set was unreadable -- cannot count work in progress
 UNPROV SO-12 the open-PR set was unreadable -- cannot say whether an approved PR is dirty
 FAIL   SO-13  pushed after APPROVE: 
@@ -159,31 +159,31 @@ awk: can't open file /private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOK
 FAIL   SO-15 no REV row in lib.sh -- there is no reviewer session
 PASS   SO-16 file-watch loaded (com.ridelane.watch); tick remains the fallback
 PASS   SO-17 3 ask(s), all [MONEY] or [PHONE-OPTIONAL] -- no legwork on his page
-FAIL   SO-18 board 5604m stale -- it is an hourly board
+FAIL   SO-18 board 5625m stale -- it is an hourly board
 PASS   SO-19 every queue file is read by a session
 UNPROV SO-21 page-held scan needs the open-PR set and /tmp/so_prs.json was unreadable -- not reporting a clean board for a check that could not see
 awk: can't open file /private/tmp/claude-505/-[REDACTED-TOKENLIKE]/[REDACTED-TOKENLIKE]/scratchpad/v4/lib.sh
  source line number 1
 FAIL   SO-22 THE LOOP HAS NO ADVISOR -- no ADV row in lib.sh
 FAIL   SO-23 merged app PR(s) with no SUCCESSFUL OTA after them: drv:20 (#290,#289,#288,...) -- a run that was created is not a publish (AR-7)
-FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-CHAT-ADV-1004-C(ADV,7258m) QI-PROOF1-MERGES(ADV,7258m) AR-101(API,7258m) AR-19(API,7258m) QI-A7-INVENTORY-0929(API,7258m) QI-API-REDIS-RUNNING(API,7504m) QI-CAPACITY-COPY(API,7258m) QI-CHAT-MIGRATE-1004(API,7258m) QI-CHAT-MIGRATE-1004-CORRECTION(API,7258m) QI-FD19-SERVER(API,7258m) QI-KV-SPLIT-NOREDIS(API,7258m) QI-NOTIFY-0929(API,7258m) QI-NOTIFY-0929-B(API,7258m) QI-NOTIFY-DELIVERY(API,7258m) QI-WIRE-TEST(API,7258m) QI-CHAT-CRM-1004(CRM,7258m) QI-CRM-REVIEW-278(CRM,7495m) QI-API-REDIS-RUNNING(DRIVER,7258m) QI-CHAT-DRV-1004(DRIVER,7258m) QI-CHAT-DRV-1004-C(DRIVER,7258m) QI-FD18-PART1(DRIVER,7258m) AR-101(PASSENGER,7258m) QI-CHAT-PAX-1004(PASSENGER,7258m) QI-CHAT-PAX-1004-B(PASSENGER,7258m) QI-CHAT-PAX-1004-C(PASSENGER,7258m) QI-CHAT-PAX-READY(PASSENGER,7258m) QI-CHAT-PAX-UNBLOCKED(PASSENGER,7258m) QI-CHAT-TWIN-JSBUNDLE(PASSENGER,7258m) QI-CHAT-TWIN-REBUILD(PASSENGER,7258m) QI-FD10-15MIN-0028(PASSENGER,8538m) QI-FD19-CLIENT(PASSENGER,7258m) QI-KV-SPLIT(PASSENGER,7258m) QI-NIGHTLY-20260929(PASSENGER,7933m) QI-NIGHTLY-20260930(PASSENGER,8416m) QI-NIGHTLY-20261001(PASSENGER,8405m) QI-NIGHTLY-20261003(PASSENGER,7460m) QI-NIGHTLY-20261004(PASSENGER,8416m) QI-NIGHTLY-20261005(PASSENGER,8416m) QI-PAX-107-BLOCKED(PASSENGER,5921m) QI-PAX-120-LOCAL-RUN(PASSENGER,2304m) QI-PAX-FD19-GUARD(PASSENGER,7503m) QI-PAX-FIXTURE-IDENTITY(PASSENGER,7445m) QI-PAX-GRATUITY-CONTRACT(PASSENGER,6880m) QI-PAX-SQUASH-CONFIRMED(PASSENGER,5660m) QI-SPLASH-HANG(PASSENGER,7258m) QI-TWIN-BUNDLE-STALE(PASSENGER,7258m) QI-TWIN-WRONG-TREE(PASSENGER,7258m) QI-WALK-APPID(PASSENGER,7258m) QI-WALK-EVIDENCE(PASSENGER,7258m) QI-WALK-RESUME-1003(PASSENGER,7258m) QI-WALK-W9-1004(PASSENGER,7258m) AR-19(REVIEWER,7258m) QI-CHAT-MIGRATE-1004(REVIEWER,7258m) QI-CHAT-REV-1004-AMENDMENT(REVIEWER,7258m) QI-CHAT-REV-1004-B(REVIEWER,7258m) QI-PAX-FD19-GUARD(REVIEWER,7258m) QI-PROOF1-REVERDICT-3(REVIEWER,7258m) QI-PROOF1-REVERDICT-4(REVIEWER,7258m) QI-REV-118-REREVIEW(REVIEWER,2850m) QI-REV-266(REVIEWER,7206m) QI-REV-267(REVIEWER,7258m) QI-REV-279(REVIEWER,7336m) QI-REV-279B(REVIEWER,7243m) QI-REV-560-269(REVIEWER,7258m) QI-REV-561(REVIEWER,7258m) QI-REV-567(REVIEWER,7258m) QI-REV-567-CHASE(REVIEWER,7258m) QI-REV-CARRIED-CLEAR(REVIEWER,7478m) QI-REV-SAMESHA(REVIEWER,7258m) [11 retired as unackable -- see state/retired-ids.tsv for the reason on each]
-PASS   SO-24 heartbeat 125s old
+FAIL   SO-20 id(s) dispatched >20m ago and never acknowledged: QI-CHAT-ADV-1004-C(ADV,7285m) QI-PROOF1-MERGES(ADV,7285m) AR-101(API,7285m) AR-19(API,7285m) QI-A7-INVENTORY-0929(API,7285m) QI-API-DISPATCH-UNPAID-REASON(API,31m) QI-API-REDIS-RUNNING(API,7531m) QI-CAPACITY-COPY(API,7285m) QI-CHAT-MIGRATE-1004(API,7285m) QI-CHAT-MIGRATE-1004-CORRECTION(API,7285m) QI-FD19-SERVER(API,7285m) QI-KV-SPLIT-NOREDIS(API,7285m) QI-NOTIFY-0929(API,7285m) QI-NOTIFY-0929-B(API,7285m) QI-NOTIFY-DELIVERY(API,7285m) QI-WIRE-TEST(API,7285m) QI-API-DISPATCH-UNPAID-REASON(CRM,31m) QI-CHAT-CRM-1004(CRM,7285m) QI-CRM-DISPATCH-UNPAID(CRM,31m) QI-CRM-REVIEW-278(CRM,7522m) QI-API-REDIS-RUNNING(DRIVER,7285m) QI-CHAT-DRV-1004(DRIVER,7285m) QI-CHAT-DRV-1004-C(DRIVER,7285m) QI-FD18-PART1(DRIVER,7285m) AR-101(PASSENGER,7285m) QI-CHAT-PAX-1004(PASSENGER,7285m) QI-CHAT-PAX-1004-B(PASSENGER,7285m) QI-CHAT-PAX-1004-C(PASSENGER,7285m) QI-CHAT-PAX-READY(PASSENGER,7285m) QI-CHAT-PAX-UNBLOCKED(PASSENGER,7285m) QI-CHAT-TWIN-JSBUNDLE(PASSENGER,7285m) QI-CHAT-TWIN-REBUILD(PASSENGER,7285m) QI-FD10-15MIN-0028(PASSENGER,8565m) QI-FD19-CLIENT(PASSENGER,7285m) QI-KV-SPLIT(PASSENGER,7285m) QI-NIGHTLY-20260929(PASSENGER,7960m) QI-NIGHTLY-20260930(PASSENGER,8443m) QI-NIGHTLY-20261001(PASSENGER,8432m) QI-NIGHTLY-20261003(PASSENGER,7487m) QI-NIGHTLY-20261004(PASSENGER,8443m) QI-NIGHTLY-20261005(PASSENGER,8443m) QI-PAX-107-BLOCKED(PASSENGER,5948m) QI-PAX-120-LOCAL-RUN(PASSENGER,2332m) QI-PAX-FD19-GUARD(PASSENGER,7530m) QI-PAX-FIXTURE-IDENTITY(PASSENGER,7472m) QI-PAX-GRATUITY-CONTRACT(PASSENGER,6907m) QI-PAX-SQUASH-CONFIRMED(PASSENGER,5687m) QI-SPLASH-HANG(PASSENGER,7285m) QI-TWIN-BUNDLE-STALE(PASSENGER,7285m) QI-TWIN-WRONG-TREE(PASSENGER,7285m) QI-WALK-APPID(PASSENGER,7285m) QI-WALK-EVIDENCE(PASSENGER,7285m) QI-WALK-RESUME-1003(PASSENGER,7285m) QI-WALK-W9-1004(PASSENGER,7285m) AR-19(REVIEWER,7285m) QI-CHAT-MIGRATE-1004(REVIEWER,7285m) QI-CHAT-REV-1004-AMENDMENT(REVIEWER,7285m) QI-CHAT-REV-1004-B(REVIEWER,7285m) QI-PAX-FD19-GUARD(REVIEWER,7285m) QI-PROOF1-REVERDICT-3(REVIEWER,7285m) QI-PROOF1-REVERDICT-4(REVIEWER,7285m) QI-REV-118-REREVIEW(REVIEWER,2877m) QI-REV-266(REVIEWER,7233m) QI-REV-267(REVIEWER,7285m) QI-REV-279(REVIEWER,7363m) QI-REV-279B(REVIEWER,7270m) QI-REV-560-269(REVIEWER,7285m) QI-REV-561(REVIEWER,7285m) QI-REV-567(REVIEWER,7285m) QI-REV-567-CHASE(REVIEWER,7285m) QI-REV-CARRIED-CLEAR(REVIEWER,7505m) QI-REV-SAMESHA(REVIEWER,7285m) [11 retired as unackable -- see state/retired-ids.tsv for the reason on each]
+FAIL   SO-24 heartbeat 1554s old and phase 'check-so' is 1547s over a 300s budget (budget provisional) -- this is a wedge, not a slow pass
 PASS   SO-25 recent handbacks are tables with <=5 prose lines
 PASS   SO-26 every queue's newest item cites an FD/phase/QI/AR id
 UNPROV SO-27 proof-bar completeness is a judgement on item text -- ADV rules it; no mechanical check claimed
 FAIL   SO-28 nightly section is STALE -- newest heading is '6 Oct', not today (10 Oct), and it is past 07:00
 PASS   SO-29 page states AUTOPILOT: NOT YET PROVED -- no unproved claim is being made
-FAIL   SO-33 notifier last ran 2167m ago, over the 10m line -- the channel to the founder is going quiet
-PASS   SO-34 public mirror pushed 2m ago (raw.githubusercontent.com/jrabson777/ridelane-status/main/STATUS.md)
-FAIL   SO-35 control-plane verifier 2169m stale
+FAIL   SO-33 notifier last ran 2194m ago, over the 10m line -- the channel to the founder is going quiet
+FAIL   SO-34 mirror 25m stale, over the 5m line -- the advisor is reading a dead page
+FAIL   SO-35 control-plane verifier 2196m stale
 FAIL   SO-37 the dispatch loop sees 7 session rows, not 6 -- it is dispatching to nobody while every other check passes
-PASS   SO-38 no loop script sources the scratchpad; pass.log grew 1m ago
+FAIL   SO-38 pass.log has not grown in 25m, past two fire intervals -- the loop is firing and producing nothing, which is exactly how 4 Oct lost six hours
 PASS   SO-39 every expected check is present as a check run on the open PRs
 PASS   SO-41 6 remote(s) checked, none carries userinfo; 0 private-key bodies in publishable paths
 PASS   SO-43 all 5 boot-required name(s) bound by the staging spec (11 api keys), contract from origin/master
 ---
-BOARD-COMPUTED: 1791688671 2026-10-10 23:17:51 EDT
-FAILS: 11   (UNPROV is not a pass and not counted as a fail)
+BOARD-COMPUTED: 1791690330 2026-10-10 23:45:30 EDT
+FAILS: 14   (UNPROV is not a pass and not counted as a fail)
 ```
 
 ## LOOP-ALERTS, tail
