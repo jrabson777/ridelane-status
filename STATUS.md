@@ -1,6 +1,6 @@
 # RideLane — loop status
 
-_Generated 2026-10-10 21:28:23 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
+_Generated 2026-10-10 21:30:27 EDT by the probe. Public mirror; no tokens, keys, phone numbers or env values._
 
 **AUTOPILOT: NOT YET PROVED** — SO-29 requires a 24h window with zero human touches.
 
@@ -97,9 +97,9 @@ is not a lifted block.
 
 ## Heartbeat
 
-- probe heartbeat: 3s ago
+- probe heartbeat: 85s ago
 - last pass: 2026-10-09 11:16:58   -> pass RAN
-- notifier last ran: 2058m ago
+- notifier last ran: 2061m ago
 
 ## Phase board
 
@@ -155,17 +155,15 @@ This is not a clean board -- it is a board nobody has read recently.
 
 **EAS cloud runs: 0.** `ridelane-passenger-app#96` (the walk ported to
 Maestro) merged at `f1a02e4b` on 5 Oct after review APPROVE at `d2de3c5a`.
-**A merge is not a run** -- the flows have never executed against the app.
-
-They cannot yet, deliberately: the EAS workflow declares an `api_url` input
-and never consumes it, so a twin resolves its api base from the `e2e-test`
-profile, which inherits the **preview** environment -- production. W10 and
-W11 both tap the booking CTA. The trigger refuses to dispatch until that
-input is wired, and stops refusing on its own once it is. The target it
-needs is STG-1, which does not exist yet.
+**The flows have executed.** This paragraph previously said they never
+had, and that the trigger refused to dispatch until the `api_url` input was
+wired. Both were true when written and are now false: the input is wired,
+walks have run against staging, and W9 -- the first-time sign-in path --
+PASSES. The live red is W10, where no booking is created so the booking
+reference cannot render. See the WALKS table above for run ids.
 
 ## OTA
 
-| update id | commit | proving walk id |
-|---|---|---|
-| — | — | **no OTA has been published** |
+| update group | ios update id | commit | published | channel | runtime | proving walk |
+|---|---|---|---|---|---|---|
+| `8fe08424-3880-48de-9774-a32d63a2b9ab` | `01a12488-17fa-7898-82cc-0dc0e9509072` | `84947f1770ca482be3af84f73599c33a1b0caee0` | 2026-10-10T06:37:41Z | preview | `a0b43caeaf16610e19c9735c1b164c88df8c5123` | **none — published on the founder's order, not walk-proven** |
